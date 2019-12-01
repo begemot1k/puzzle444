@@ -38,7 +38,6 @@
 		896F730C238577F900238FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		896F73172385798C00238FAF /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		896F7319238579B500238FAF /* puzzle444.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = puzzle444.entitlements; sourceTree = "<group>"; };
-		896F73532389EB7400238FAF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		896F73562389EFA700238FAF /* MonoGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoGameViewController.swift; sourceTree = "<group>"; };
 		896F7358238A9D6300238FAF /* PrimitivesScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimitivesScene.swift; sourceTree = "<group>"; };
 		896F736E238C460A00238FAF /* puzzle444Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = puzzle444Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +94,6 @@
 				896F7307238577F900238FAF /* Assets.xcassets */,
 				896F7309238577F900238FAF /* LaunchScreen.storyboard */,
 				896F730C238577F900238FAF /* Info.plist */,
-				896F73532389EB7400238FAF /* README.md */,
 				896F7358238A9D6300238FAF /* PrimitivesScene.swift */,
 				896F737823932D6400238FAF /* WiFiGameViewController.swift */,
 				896F73562389EFA700238FAF /* MonoGameViewController.swift */,
