@@ -8,26 +8,56 @@
 
 /* Begin PBXBuildFile section */
 		896F72FF238577F800238FAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F72FE238577F800238FAF /* AppDelegate.swift */; };
-		896F7301238577F800238FAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F7300238577F800238FAF /* SceneDelegate.swift */; };
 		896F7303238577F800238FAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F7302238577F800238FAF /* ViewController.swift */; };
-		896F7306238577F800238FAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896F7304238577F800238FAF /* Main.storyboard */; };
 		896F7308238577F900238FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896F7307238577F900238FAF /* Assets.xcassets */; };
 		896F730B238577F900238FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896F7309238577F900238FAF /* LaunchScreen.storyboard */; };
+		896F73182385798C00238FAF /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 896F73172385798C00238FAF /* GameKit.framework */; };
+		896F73572389EFA700238FAF /* MonoGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F73562389EFA700238FAF /* MonoGameViewController.swift */; };
+		896F7359238A9D6300238FAF /* PrimitivesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F7358238A9D6300238FAF /* PrimitivesScene.swift */; };
+		896F7371238C460A00238FAF /* puzzle444Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F7370238C460A00238FAF /* puzzle444Tests.swift */; };
+		896F737923932D6400238FAF /* WiFiGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F737823932D6400238FAF /* WiFiGameViewController.swift */; };
+		896F737B2393BBAD00238FAF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F737A2393BBAD00238FAF /* Game.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		896F7373238C460A00238FAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 896F72F3238577F800238FAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 896F72FA238577F800238FAF;
+			remoteInfo = puzzle444;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		896F72FB238577F800238FAF /* puzzle444.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = puzzle444.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		896F72FE238577F800238FAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		896F7300238577F800238FAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		896F7302238577F800238FAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		896F7305238577F800238FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		896F7307238577F900238FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		896F730A238577F900238FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		896F730C238577F900238FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		896F73172385798C00238FAF /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		896F7319238579B500238FAF /* puzzle444.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = puzzle444.entitlements; sourceTree = "<group>"; };
+		896F73532389EB7400238FAF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		896F73562389EFA700238FAF /* MonoGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoGameViewController.swift; sourceTree = "<group>"; };
+		896F7358238A9D6300238FAF /* PrimitivesScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimitivesScene.swift; sourceTree = "<group>"; };
+		896F736E238C460A00238FAF /* puzzle444Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = puzzle444Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		896F7370238C460A00238FAF /* puzzle444Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = puzzle444Tests.swift; sourceTree = "<group>"; };
+		896F7372238C460A00238FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		896F737823932D6400238FAF /* WiFiGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiGameViewController.swift; sourceTree = "<group>"; };
+		896F737A2393BBAD00238FAF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		896F72F8238577F800238FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896F73182385798C00238FAF /* GameKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		896F736B238C460A00238FAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +71,9 @@
 			isa = PBXGroup;
 			children = (
 				896F72FD238577F800238FAF /* puzzle444 */,
+				896F736F238C460A00238FAF /* puzzle444Tests */,
 				896F72FC238577F800238FAF /* Products */,
+				896F73162385798C00238FAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				896F72FB238577F800238FAF /* puzzle444.app */,
+				896F736E238C460A00238FAF /* puzzle444Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +89,36 @@
 		896F72FD238577F800238FAF /* puzzle444 */ = {
 			isa = PBXGroup;
 			children = (
+				896F7319238579B500238FAF /* puzzle444.entitlements */,
 				896F72FE238577F800238FAF /* AppDelegate.swift */,
-				896F7300238577F800238FAF /* SceneDelegate.swift */,
 				896F7302238577F800238FAF /* ViewController.swift */,
-				896F7304238577F800238FAF /* Main.storyboard */,
 				896F7307238577F900238FAF /* Assets.xcassets */,
 				896F7309238577F900238FAF /* LaunchScreen.storyboard */,
 				896F730C238577F900238FAF /* Info.plist */,
+				896F73532389EB7400238FAF /* README.md */,
+				896F7358238A9D6300238FAF /* PrimitivesScene.swift */,
+				896F737823932D6400238FAF /* WiFiGameViewController.swift */,
+				896F73562389EFA700238FAF /* MonoGameViewController.swift */,
+				896F737A2393BBAD00238FAF /* Game.swift */,
 			);
 			path = puzzle444;
+			sourceTree = "<group>";
+		};
+		896F73162385798C00238FAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				896F73172385798C00238FAF /* GameKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		896F736F238C460A00238FAF /* puzzle444Tests */ = {
+			isa = PBXGroup;
+			children = (
+				896F7370238C460A00238FAF /* puzzle444Tests.swift */,
+				896F7372238C460A00238FAF /* Info.plist */,
+			);
+			path = puzzle444Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +141,24 @@
 			productReference = 896F72FB238577F800238FAF /* puzzle444.app */;
 			productType = "com.apple.product-type.application";
 		};
+		896F736D238C460A00238FAF /* puzzle444Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 896F7375238C460A00238FAF /* Build configuration list for PBXNativeTarget "puzzle444Tests" */;
+			buildPhases = (
+				896F736A238C460A00238FAF /* Sources */,
+				896F736B238C460A00238FAF /* Frameworks */,
+				896F736C238C460A00238FAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				896F7374238C460A00238FAF /* PBXTargetDependency */,
+			);
+			name = puzzle444Tests;
+			productName = puzzle444Tests;
+			productReference = 896F736E238C460A00238FAF /* puzzle444Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +171,10 @@
 				TargetAttributes = {
 					896F72FA238577F800238FAF = {
 						CreatedOnToolsVersion = 11.2.1;
+					};
+					896F736D238C460A00238FAF = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 896F72FA238577F800238FAF;
 					};
 				};
 			};
@@ -116,6 +192,7 @@
 			projectRoot = "";
 			targets = (
 				896F72FA238577F800238FAF /* puzzle444 */,
+				896F736D238C460A00238FAF /* puzzle444Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,7 +204,13 @@
 			files = (
 				896F730B238577F900238FAF /* LaunchScreen.storyboard in Resources */,
 				896F7308238577F900238FAF /* Assets.xcassets in Resources */,
-				896F7306238577F800238FAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		896F736C238C460A00238FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,22 +222,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				896F7303238577F800238FAF /* ViewController.swift in Sources */,
+				896F737B2393BBAD00238FAF /* Game.swift in Sources */,
+				896F7359238A9D6300238FAF /* PrimitivesScene.swift in Sources */,
 				896F72FF238577F800238FAF /* AppDelegate.swift in Sources */,
-				896F7301238577F800238FAF /* SceneDelegate.swift in Sources */,
+				896F737923932D6400238FAF /* WiFiGameViewController.swift in Sources */,
+				896F73572389EFA700238FAF /* MonoGameViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		896F736A238C460A00238FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896F7371238C460A00238FAF /* puzzle444Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		896F7304238577F800238FAF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				896F7305238577F800238FAF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		896F7374238C460A00238FAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 896F72FA238577F800238FAF /* puzzle444 */;
+			targetProxy = 896F7373238C460A00238FAF /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		896F7309238577F900238FAF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,7 +378,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = puzzle444/puzzle444.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YGH6RWHKR;
 				INFOPLIST_FILE = puzzle444/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +397,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = puzzle444/puzzle444.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YGH6RWHKR;
 				INFOPLIST_FILE = puzzle444/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,6 +409,48 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		896F7376238C460A00238FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YGH6RWHKR;
+				INFOPLIST_FILE = puzzle444Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.khamnuev.vadim.puzzle444Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/puzzle444.app/puzzle444";
+			};
+			name = Debug;
+		};
+		896F7377238C460A00238FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2YGH6RWHKR;
+				INFOPLIST_FILE = puzzle444Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.khamnuev.vadim.puzzle444Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/puzzle444.app/puzzle444";
 			};
 			name = Release;
 		};
@@ -331,6 +471,15 @@
 			buildConfigurations = (
 				896F7310238577F900238FAF /* Debug */,
 				896F7311238577F900238FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		896F7375238C460A00238FAF /* Build configuration list for PBXNativeTarget "puzzle444Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				896F7376238C460A00238FAF /* Debug */,
+				896F7377238C460A00238FAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
