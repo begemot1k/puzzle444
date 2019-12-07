@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var mpcHandler = MPCHandler()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -24,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         navigationController.viewControllers=[ViewController()]
         navigationController.setNavigationBarHidden(false, animated: true)
+        navigationController.setToolbarHidden(false, animated: true)
+//        navigationController.toolbar.items?.append(<#T##newElement: UIBarButtonItem##UIBarButtonItem#>)
         
         let viewController = ViewController()
         viewController.view.backgroundColor = .white

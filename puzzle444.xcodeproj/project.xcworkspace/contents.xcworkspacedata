@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "absolute:../puzzle444/MPCHandler.swift">
+   </FileRef>
+   <FileRef
       location = "group:../README.md">
    </FileRef>
    <FileRef

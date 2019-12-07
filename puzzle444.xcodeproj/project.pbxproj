@@ -11,12 +11,14 @@
 		896F7303238577F800238FAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F7302238577F800238FAF /* ViewController.swift */; };
 		896F7308238577F900238FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896F7307238577F900238FAF /* Assets.xcassets */; };
 		896F730B238577F900238FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896F7309238577F900238FAF /* LaunchScreen.storyboard */; };
-		896F73182385798C00238FAF /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 896F73172385798C00238FAF /* GameKit.framework */; };
 		896F73572389EFA700238FAF /* MonoGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F73562389EFA700238FAF /* MonoGameViewController.swift */; };
 		896F7359238A9D6300238FAF /* PrimitivesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F7358238A9D6300238FAF /* PrimitivesScene.swift */; };
 		896F7371238C460A00238FAF /* puzzle444Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F7370238C460A00238FAF /* puzzle444Tests.swift */; };
 		896F737923932D6400238FAF /* WiFiGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F737823932D6400238FAF /* WiFiGameViewController.swift */; };
 		896F737B2393BBAD00238FAF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F737A2393BBAD00238FAF /* Game.swift */; };
+		896F737F239A84DA00238FAF /* MPCHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F737E239A84DA00238FAF /* MPCHandler.swift */; };
+		89EB3EDE239A85BC00CA116D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 89EB3EDD239A85BC00CA116D /* README.md */; };
+		89EB3EE0239C4A5300CA116D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EB3EDF239C4A5300CA116D /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,15 +38,17 @@
 		896F7307238577F900238FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		896F730A238577F900238FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		896F730C238577F900238FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		896F73172385798C00238FAF /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		896F7319238579B500238FAF /* puzzle444.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = puzzle444.entitlements; sourceTree = "<group>"; };
-		896F73562389EFA700238FAF /* MonoGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoGameViewController.swift; sourceTree = "<group>"; };
+		896F73562389EFA700238FAF /* MonoGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoGameViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		896F7358238A9D6300238FAF /* PrimitivesScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimitivesScene.swift; sourceTree = "<group>"; };
 		896F736E238C460A00238FAF /* puzzle444Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = puzzle444Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		896F7370238C460A00238FAF /* puzzle444Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = puzzle444Tests.swift; sourceTree = "<group>"; };
 		896F7372238C460A00238FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		896F737823932D6400238FAF /* WiFiGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiGameViewController.swift; sourceTree = "<group>"; };
 		896F737A2393BBAD00238FAF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		896F737E239A84DA00238FAF /* MPCHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCHandler.swift; sourceTree = "<group>"; };
+		89EB3EDD239A85BC00CA116D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		89EB3EDF239C4A5300CA116D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				896F73182385798C00238FAF /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,10 +72,10 @@
 		896F72F2238577F800238FAF = {
 			isa = PBXGroup;
 			children = (
+				89EB3EDD239A85BC00CA116D /* README.md */,
 				896F72FD238577F800238FAF /* puzzle444 */,
 				896F736F238C460A00238FAF /* puzzle444Tests */,
 				896F72FC238577F800238FAF /* Products */,
-				896F73162385798C00238FAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +91,7 @@
 		896F72FD238577F800238FAF /* puzzle444 */ = {
 			isa = PBXGroup;
 			children = (
+				896F737E239A84DA00238FAF /* MPCHandler.swift */,
 				896F7319238579B500238FAF /* puzzle444.entitlements */,
 				896F72FE238577F800238FAF /* AppDelegate.swift */,
 				896F7302238577F800238FAF /* ViewController.swift */,
@@ -95,19 +99,12 @@
 				896F7309238577F900238FAF /* LaunchScreen.storyboard */,
 				896F730C238577F900238FAF /* Info.plist */,
 				896F7358238A9D6300238FAF /* PrimitivesScene.swift */,
-				896F737823932D6400238FAF /* WiFiGameViewController.swift */,
 				896F73562389EFA700238FAF /* MonoGameViewController.swift */,
+				896F737823932D6400238FAF /* WiFiGameViewController.swift */,
 				896F737A2393BBAD00238FAF /* Game.swift */,
+				89EB3EDF239C4A5300CA116D /* Player.swift */,
 			);
 			path = puzzle444;
-			sourceTree = "<group>";
-		};
-		896F73162385798C00238FAF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				896F73172385798C00238FAF /* GameKit.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		896F736F238C460A00238FAF /* puzzle444Tests */ = {
@@ -200,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89EB3EDE239A85BC00CA116D /* README.md in Resources */,
 				896F730B238577F900238FAF /* LaunchScreen.storyboard in Resources */,
 				896F7308238577F900238FAF /* Assets.xcassets in Resources */,
 			);
@@ -223,7 +221,9 @@
 				896F737B2393BBAD00238FAF /* Game.swift in Sources */,
 				896F7359238A9D6300238FAF /* PrimitivesScene.swift in Sources */,
 				896F72FF238577F800238FAF /* AppDelegate.swift in Sources */,
+				89EB3EE0239C4A5300CA116D /* Player.swift in Sources */,
 				896F737923932D6400238FAF /* WiFiGameViewController.swift in Sources */,
+				896F737F239A84DA00238FAF /* MPCHandler.swift in Sources */,
 				896F73572389EFA700238FAF /* MonoGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -362,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

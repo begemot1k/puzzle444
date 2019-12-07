@@ -9,66 +9,52 @@
 import UIKit
 
 class Game: NSObject {
-    var activePlayer: String!
+    var activePlayer: Player!
     var isGameOver: Bool!
-    var dots: Array<String>!
+    var dots: Array<Player>!
+    var status: String!
     
     override init(){
         super.init()
         self.reset()
     }
     
+    /// Сброс игры в начальное состояние
     func reset(){
-        activePlayer = "x"
+        activePlayer = .blue
         isGameOver = false
-        dots = Array(repeating: " ", count: 64)
+        dots = Array(repeating: Player.free, count: 64)
+        status = "Первый ход СИНИХ"
     }
     
+    /// Проверка на допустимость хода, активна ли игра и не занята ли ячейка
+    /// - Parameter dotName: координата ячейки в формате xyz
     func isValidMove(dotName: String)->Bool{
-        print("проверяем валидность \(dotName)")
-        if dotName.count != 3 {
-            return false
-        }
-        let array = dotName.map { $0 }
-        guard let x = array[0].wholeNumberValue else { return false }
-        guard let y = array[1].wholeNumberValue else { return false }
-        guard let z = array[2].wholeNumberValue else { return false }
-        if x >= 0 && x <= 3 && y >= 0 && y <= 3 && z >= 0 && z <= 3 {
-            return dots[ x + y * 4 + z * 16] == " "
-        }
-        return false
+        guard !isGameOver else { return false }
+        guard coordToIndex(coord: dotName)>=0 else { return false }
+        return dots[ coordToIndex( coord: dotName ) ] == .free
     }
     
-    func pressed(dotName: String)->Bool{
-        if isGameOver {
-            print("game over")
-            return false
-        }
+    /// Совершаем ход в ячейку
+    /// - Parameter dotName: координата ячейки в которую совершается ход
+    func move(dotName: String){
+        guard isValidMove(dotName: dotName) else { return }
+        dots[ coordToIndex( coord: dotName ) ] = activePlayer
         
-        if isValidMove(dotName: dotName) {
-            let array = dotName.map { $0 }
-            guard let x = array[0].wholeNumberValue else { return false }
-            guard let y = array[1].wholeNumberValue else { return false }
-            guard let z = array[2].wholeNumberValue else { return false }
-            print("метим точку \(x) \(y) \(z) за игроком \(activePlayer ?? "")")
-            dots[ x + y * 4 + z * 16] = activePlayer
-            activePlayer = activePlayer == "x" ? "o" : "x"
-            checkGameOver()
-            return true
+        // меняем текущего игрока, обновляем статус, проверяем выигрыш
+        if activePlayer == .blue {
+            activePlayer = .red
+            status = "Ход КРАСНЫХ"
         } else {
-            return false
+            activePlayer = .blue
+            status = "Ход СИНИХ"
         }
-        
+        checkGameOver()
     }
     
+    /// Проверка на завершение игры по комбинациям и по заполнению всего игрового поля
     func checkGameOver(){
-        print("проверяем выигрыш")
-        checkGameOver(player: "x")
-        checkGameOver(player: "o")
-    }
-    
-    func checkGameOver(player: String){
-        var winx="", winy="", winz=""
+        // маски выигрышных позиций в массиве dots
         let winPositions = [
             "!!!!                                                            ",
             "    !!!!                                                        ",
@@ -148,19 +134,40 @@ class Game: NSObject {
             "               !          !          !          !               "
         ]
         for mask in winPositions {
-            if checkDotsByMask(mask: mask, player: player){
+            if checkDotsByMask(mask: mask, player: .blue){
                 isGameOver = true
+                status = "Игра окончена, победили СИНИЕ"
+                return
+            }
+            if checkDotsByMask(mask: mask, player: .red){
+                isGameOver = true
+                status = "Игра окончена, победили КРАСНЫЕ"
                 return
             }
         }
-        
+        if dots.firstIndex(of: .free) == nil  {
+            isGameOver=true
+            status = "Игра окончена, НИЧЬЯ"
+        }
     }
     
-    func coordinatesToIndex(x: Int, y: Int, z: Int)->Int{
-        return x+y*4+z*16;
+    /// Возвращает индекс в массиве по координатам точки
+    /// - Parameter coord: координаты ячейки в формате xyz
+    func coordToIndex(coord: String)->Int{
+        if coord.count != 3 { return -1 }
+        let array = coord.map { $0 }
+        guard let x = array[0].wholeNumberValue else { return -1 }
+        guard let y = array[1].wholeNumberValue else { return -1 }
+        guard let z = array[2].wholeNumberValue else { return -1 }
+        return x + y * 4 + z * 16
     }
     
-    func checkDotsByMask(mask: String, player: String)->Bool{
+    /// Проверка на соответствие ячеек в массиве заданной маске выигрышных позиций
+    /// возвращает true если совпала хоть одна маска
+    /// - Parameters:
+    ///   - mask: маска выигрышных позиций
+    ///   - player: игрок, чьи точки необходимо проверить
+    func checkDotsByMask(mask: String, player: Player)->Bool{
         let array = mask.map{$0}
         var result = true
         for index in 0...array.count-1 {

@@ -14,7 +14,13 @@ class MonoGameViewController: UIViewController {
     let mainMenuButton = UIButton()
     let resetGameButton = UIButton()
     let scene = SCNView()
+    let toolbar = UIToolbar()
+    let statusToolbar = UIToolbar()
     
+    let itemText = UIBarButtonItem()
+    let itemHotSpot = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: nil)
+    let itemReset = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: nil)
+    let divider = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
     let game = Game()
     
     override func viewDidLoad() {
@@ -22,74 +28,103 @@ class MonoGameViewController: UIViewController {
         view.backgroundColor = .white
         // Do any additional setup after loading the view.
         
-        navigationController?.setNavigationBarHidden(true, animated: true)
-        mainMenuButton.setTitle("Меню", for: .normal)
-        mainMenuButton.setTitleColor(.blue, for: .normal)
-        mainMenuButton.addTarget(self, action: #selector(mainMenuPressed), for: .touchUpInside)
-        view.addSubview(mainMenuButton)
-        resetGameButton.setTitle("Сброс", for: .normal)
-        resetGameButton.setTitleColor(.red, for: .normal)
-        resetGameButton.addTarget(self, action: #selector(resetGamePressed), for: .touchUpInside)
-        view.addSubview(resetGameButton)
-        
         scene.backgroundColor = .black
         scene.scene = PrimitivesScene()
+        scene.frame = self.view.frame
         scene.allowsCameraControl = true
         scene.autoenablesDefaultLighting = true
         let tapGesture = UITapGestureRecognizer( target: self, action: #selector(handleTap))
         scene.addGestureRecognizer(tapGesture)
         view.addSubview(scene)
-        placeButtons()
+        
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        navigationController?.setToolbarHidden(true, animated: true)
+        setupToolBar()
     }
     
+    /// Настройка тулбаров. да, их два
+    func setupToolBar(){
+        toolbar.autoresizesSubviews = true
+        
+        itemText.tag = 0
+        itemText.title = game.status
+        itemText.setTitleTextAttributes(nil, for: .normal)
+        itemText.action = #selector(placeButtons(sender:))
+        itemHotSpot.tag = 1
+        itemHotSpot.action = #selector(placeButtons(sender:))
+        itemReset.tag = 2
+        itemReset.action = #selector(placeButtons(sender:))
+        
+        toolbar.setItems([itemHotSpot, itemReset, divider ], animated: true)
+        statusToolbar.setItems([itemText ], animated: true)
+        view.addSubview(toolbar)
+        view.addSubview(statusToolbar)
+        
+        
+        toolbar.translatesAutoresizingMaskIntoConstraints = false
+        toolbar.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        toolbar.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        toolbar.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        toolbar.heightAnchor.constraint(equalToConstant: 44).isActive = true
+        
+        statusToolbar.translatesAutoresizingMaskIntoConstraints = false
+        statusToolbar.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        statusToolbar.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        statusToolbar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        statusToolbar.heightAnchor.constraint(equalToConstant: 44).isActive = true
+
+    }
+    
+    /// Сбос игры
     func resetGame(){
         game.reset()
         for node in (scene.scene?.rootNode.childNodes)! {
             node.geometry?.firstMaterial?.diffuse.contents = UIColor.gray
         }
+        itemText.title = game.status
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        placeButtons()
+        
     }
     
+    /// Обработка нажатия на объекты сцены
+    /// - Parameter gestureRecognizer: распознаватель жеста
     @objc func handleTap(gestureRecognizer: UIGestureRecognizer){
         var color: UIColor
         let p = gestureRecognizer.location(in: scene)
         let hitResults = scene.hitTest(p, options: [:])
         if hitResults.count > 0 {
             let result: SCNHitTestResult = hitResults[0]
-            if game.pressed(dotName: result.node.name ?? ""){
-                if game.activePlayer == "x" {
-                    color = UIColor.red
-                } else {
+            guard let name = result.node.name else { return }
+            if game.isValidMove(dotName: name ){
+                if game.activePlayer == .blue {
                     color = UIColor.blue
+                } else {
+                    color = UIColor.red
                 }
                 result.node.geometry?.firstMaterial?.diffuse.contents = color
+                game.move(dotName: name )
             }
+            itemText.title = game.status
         }
     }
     
-    func placeButtons(){
-        let buttonsWidth = 150
-        let topMargin = UIScreen.main.bounds.width>UIScreen.main.bounds.height ? 10 : 50
-        mainMenuButton.frame = CGRect(x: 10, y: topMargin, width: buttonsWidth, height: 30)
-        resetGameButton.frame = CGRect(x: Int(view.frame.width) - buttonsWidth - 10, y: topMargin, width: buttonsWidth, height: 30)
-        scene.frame = CGRect(x: 0, y: topMargin+30, width: Int(view.frame.width), height: Int(view.frame.height)-topMargin-30)
+    /// Обработка нажатий на кнопки тулбаров
+    /// - Parameter sender: нажатая кнопка
+    @objc func placeButtons(sender: UIBarButtonItem){
+        print("test event fired with \(sender)")
+        // TODO: добавить запрос на выполнение действия
+        if sender.tag == 1 {
+            navigationController?.popViewController(animated: true)
+        }
+        if sender.tag == 2 {
+            resetGame()
+        }
     }
     
-    @objc func mainMenuPressed(){
-        navigationController?.popViewController(animated: true)
-    }
     
-    @objc func resetGamePressed(){
-        print("reset fired.")
-        game.reset()
-        resetGame()
-        
-        
-    }
     
     /*
      // MARK: - Navigation

@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>06E35E68-B108-4AD6-9BAE-288858E96585</key>
+		<key>093AA378-E785-4832-BA34-0A0359C5F99E</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>06E35E68-B108-4AD6-9BAE-288858E96585.xcactivitylog</string>
+			<string>093AA378-E785-4832-BA34-0A0359C5F99E.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,15 +32,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596281920.12949002</real>
+			<real>597330088.22777998</real>
 			<key>timeStoppedRecording</key>
-			<real>596284970.82467103</real>
+			<real>597330437.80677497</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>06E35E68-B108-4AD6-9BAE-288858E96585</string>
+			<string>093AA378-E785-4832-BA34-0A0359C5F99E</string>
 		</dict>
-		<key>0A69F975-6027-4C0A-AD57-C176294F92F6</key>
+		<key>0A886575-5D1E-4B2B-A031-230CBFBACD71</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -49,7 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>0A69F975-6027-4C0A-AD57-C176294F92F6.xcactivitylog</string>
+			<string>0A886575-5D1E-4B2B-A031-230CBFBACD71.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,15 +66,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596279859.26808596</real>
+			<real>597447617.36234605</real>
 			<key>timeStoppedRecording</key>
-			<real>596279897.37866402</real>
+			<real>597447638.22545302</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>0A69F975-6027-4C0A-AD57-C176294F92F6</string>
+			<string>0A886575-5D1E-4B2B-A031-230CBFBACD71</string>
 		</dict>
-		<key>1153BCD0-A34E-41FE-9303-DF7E42BCAF54</key>
+		<key>13285788-B2C0-40E8-8DD2-EE91C83510DC</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -83,7 +83,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>1153BCD0-A34E-41FE-9303-DF7E42BCAF54.xcactivitylog</string>
+			<string>13285788-B2C0-40E8-8DD2-EE91C83510DC.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -100,15 +100,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596883818.43214297</real>
+			<real>597337287.89381695</real>
 			<key>timeStoppedRecording</key>
-			<real>596883845.29619706</real>
+			<real>597337562.54282296</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>1153BCD0-A34E-41FE-9303-DF7E42BCAF54</string>
+			<string>13285788-B2C0-40E8-8DD2-EE91C83510DC</string>
 		</dict>
-		<key>11A42EB7-45CF-4A5B-98D0-B23C33CC7032</key>
+		<key>1864A4B9-CDC9-4999-A93F-B86AC019AD5B</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -117,7 +117,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>11A42EB7-45CF-4A5B-98D0-B23C33CC7032.xcactivitylog</string>
+			<string>1864A4B9-CDC9-4999-A93F-B86AC019AD5B.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -134,15 +134,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596397134.75497901</real>
+			<real>597447687.96082199</real>
 			<key>timeStoppedRecording</key>
-			<real>596898781.59830797</real>
+			<real>597448116.25129604</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>11A42EB7-45CF-4A5B-98D0-B23C33CC7032</string>
+			<string>1864A4B9-CDC9-4999-A93F-B86AC019AD5B</string>
 		</dict>
-		<key>150E90C6-EE0C-46FE-8C3C-43A3AFB35684</key>
+		<key>1F0BE728-94B8-4AED-B9C6-603C02A38664</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -151,7 +151,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>150E90C6-EE0C-46FE-8C3C-43A3AFB35684.xcactivitylog</string>
+			<string>1F0BE728-94B8-4AED-B9C6-603C02A38664.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -168,15 +168,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596898813.77686203</real>
+			<real>597338070.77364194</real>
 			<key>timeStoppedRecording</key>
-			<real>596912915.97603703</real>
+			<real>597338526.71803701</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>150E90C6-EE0C-46FE-8C3C-43A3AFB35684</string>
+			<string>1F0BE728-94B8-4AED-B9C6-603C02A38664</string>
 		</dict>
-		<key>15FE8ADE-DAF3-41E5-A752-3ED24C8D9303</key>
+		<key>269FE30D-34D8-4A7C-BA3F-594DBCE90681</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -185,7 +185,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>15FE8ADE-DAF3-41E5-A752-3ED24C8D9303.xcactivitylog</string>
+			<string>269FE30D-34D8-4A7C-BA3F-594DBCE90681.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -202,15 +202,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596884966.90962303</real>
+			<real>597447012.68034697</real>
 			<key>timeStoppedRecording</key>
-			<real>596885746.47359502</real>
+			<real>597447075.37982202</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>15FE8ADE-DAF3-41E5-A752-3ED24C8D9303</string>
+			<string>269FE30D-34D8-4A7C-BA3F-594DBCE90681</string>
 		</dict>
-		<key>1792B41A-1BD1-4F07-AB60-700D8E694AB4</key>
+		<key>2A37992C-91F2-4866-8B77-DBD93B1A5952</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -219,7 +219,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>1792B41A-1BD1-4F07-AB60-700D8E694AB4.xcactivitylog</string>
+			<string>2A37992C-91F2-4866-8B77-DBD93B1A5952.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -236,15 +236,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596278218.49796903</real>
+			<real>597332624.26050198</real>
 			<key>timeStoppedRecording</key>
-			<real>596278275.72622395</real>
+			<real>597337221.096753</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>1792B41A-1BD1-4F07-AB60-700D8E694AB4</string>
+			<string>2A37992C-91F2-4866-8B77-DBD93B1A5952</string>
 		</dict>
-		<key>181D678D-AA71-4BD8-9AA7-892A7D73F380</key>
+		<key>2A6A7001-A7AF-4C0F-8A8E-894CA10DA6CA</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -253,7 +253,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>181D678D-AA71-4BD8-9AA7-892A7D73F380.xcactivitylog</string>
+			<string>2A6A7001-A7AF-4C0F-8A8E-894CA10DA6CA.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -270,15 +270,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596898309.44060302</real>
+			<real>597448503.34304905</real>
 			<key>timeStoppedRecording</key>
-			<real>596898450.31960404</real>
+			<real>597448702.783319</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>181D678D-AA71-4BD8-9AA7-892A7D73F380</string>
+			<string>2A6A7001-A7AF-4C0F-8A8E-894CA10DA6CA</string>
 		</dict>
-		<key>1AB7F619-D161-4280-B9F1-2D90D228FE82</key>
+		<key>2BF80CF7-81FF-4E03-AA27-6B8AFFEA968E</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -287,7 +287,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>1AB7F619-D161-4280-B9F1-2D90D228FE82.xcactivitylog</string>
+			<string>2BF80CF7-81FF-4E03-AA27-6B8AFFEA968E.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -304,15 +304,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596281287.13024795</real>
+			<real>597329517.55875897</real>
 			<key>timeStoppedRecording</key>
-			<real>596281700.66852605</real>
+			<real>597329559.04660106</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>1AB7F619-D161-4280-B9F1-2D90D228FE82</string>
+			<string>2BF80CF7-81FF-4E03-AA27-6B8AFFEA968E</string>
 		</dict>
-		<key>1DF6E28C-CF8F-48D6-8172-A242D6BFD1AE</key>
+		<key>2DE8EF70-553C-4229-9A31-58CE1EA5F014</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -321,7 +321,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>1DF6E28C-CF8F-48D6-8172-A242D6BFD1AE.xcactivitylog</string>
+			<string>2DE8EF70-553C-4229-9A31-58CE1EA5F014.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -338,15 +338,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596280275.72243202</real>
+			<real>597446151.06912696</real>
 			<key>timeStoppedRecording</key>
-			<real>596280455.50298095</real>
+			<real>597446655.75295603</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>1DF6E28C-CF8F-48D6-8172-A242D6BFD1AE</string>
+			<string>2DE8EF70-553C-4229-9A31-58CE1EA5F014</string>
 		</dict>
-		<key>21F36464-1444-4413-9874-C991F577D59B</key>
+		<key>302264A3-B6F7-4AC2-85DC-33DD1E92A053</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -355,7 +355,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>21F36464-1444-4413-9874-C991F577D59B.xcactivitylog</string>
+			<string>302264A3-B6F7-4AC2-85DC-33DD1E92A053.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -372,15 +372,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596397078.28592706</real>
+			<real>597448455.20987499</real>
 			<key>timeStoppedRecording</key>
-			<real>596397132.41366696</real>
+			<real>597448501.21206498</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>21F36464-1444-4413-9874-C991F577D59B</string>
+			<string>302264A3-B6F7-4AC2-85DC-33DD1E92A053</string>
 		</dict>
-		<key>226314EC-9B57-4B76-B904-00BBA5AF4082</key>
+		<key>325EF9F2-553F-4C6A-8807-76BA7AA038DA</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -389,7 +389,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>226314EC-9B57-4B76-B904-00BBA5AF4082.xcactivitylog</string>
+			<string>325EF9F2-553F-4C6A-8807-76BA7AA038DA.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -406,15 +406,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596287629.07859099</real>
+			<real>597352762.88112497</real>
 			<key>timeStoppedRecording</key>
-			<real>596288035.32215595</real>
+			<real>597353191.08842397</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>226314EC-9B57-4B76-B904-00BBA5AF4082</string>
+			<string>325EF9F2-553F-4C6A-8807-76BA7AA038DA</string>
 		</dict>
-		<key>274D0166-09A8-42D4-B802-8926DDE80ED4</key>
+		<key>3BC5E9CD-68CA-4C32-BC92-43BBDF4FDFC1</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -423,7 +423,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>274D0166-09A8-42D4-B802-8926DDE80ED4.xcactivitylog</string>
+			<string>3BC5E9CD-68CA-4C32-BC92-43BBDF4FDFC1.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -440,15 +440,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596244329.27844596</real>
+			<real>597447640.34623301</real>
 			<key>timeStoppedRecording</key>
-			<real>596244356.28632998</real>
+			<real>597447659.18017602</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>274D0166-09A8-42D4-B802-8926DDE80ED4</string>
+			<string>3BC5E9CD-68CA-4C32-BC92-43BBDF4FDFC1</string>
 		</dict>
-		<key>2A2935FA-1FA4-434D-A47D-F1B6DE0F2A27</key>
+		<key>3EDB4587-75C6-4200-BD19-8D9A3C410874</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -457,7 +457,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>2A2935FA-1FA4-434D-A47D-F1B6DE0F2A27.xcactivitylog</string>
+			<string>3EDB4587-75C6-4200-BD19-8D9A3C410874.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -474,15 +474,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596897767.46053398</real>
+			<real>597448262.725021</real>
 			<key>timeStoppedRecording</key>
-			<real>596898306.97052395</real>
+			<real>597448437.69628596</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>2A2935FA-1FA4-434D-A47D-F1B6DE0F2A27</string>
+			<string>3EDB4587-75C6-4200-BD19-8D9A3C410874</string>
 		</dict>
-		<key>2A73E562-B6C5-4A1E-BF5C-F4E87FD7F586</key>
+		<key>43B3B9DF-8C82-4513-AE3A-B04576180A8F</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -491,7 +491,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>2A73E562-B6C5-4A1E-BF5C-F4E87FD7F586.xcactivitylog</string>
+			<string>43B3B9DF-8C82-4513-AE3A-B04576180A8F.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -508,15 +508,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596243242.13092995</real>
+			<real>597353527.96337199</real>
 			<key>timeStoppedRecording</key>
-			<real>596243942.72893405</real>
+			<real>597354034.52319705</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>2A73E562-B6C5-4A1E-BF5C-F4E87FD7F586</string>
+			<string>43B3B9DF-8C82-4513-AE3A-B04576180A8F</string>
 		</dict>
-		<key>339BCECC-FC6B-4D58-B75C-9BA2126EB16B</key>
+		<key>488716DD-BC23-49DE-A082-DECFF878C166</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -525,7 +525,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>339BCECC-FC6B-4D58-B75C-9BA2126EB16B.xcactivitylog</string>
+			<string>488716DD-BC23-49DE-A082-DECFF878C166.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -542,15 +542,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596244834.56541097</real>
+			<real>597351571.12347496</real>
 			<key>timeStoppedRecording</key>
-			<real>596245015.67272496</real>
+			<real>597352457.742419</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>339BCECC-FC6B-4D58-B75C-9BA2126EB16B</string>
+			<string>488716DD-BC23-49DE-A082-DECFF878C166</string>
 		</dict>
-		<key>34BE0204-F728-4064-935B-609AAC7BAD2C</key>
+		<key>4A56AE63-2670-4B23-9D8A-ACE6DA26DE81</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -559,7 +559,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>34BE0204-F728-4064-935B-609AAC7BAD2C.xcactivitylog</string>
+			<string>4A56AE63-2670-4B23-9D8A-ACE6DA26DE81.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -576,15 +576,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596884662.85513794</real>
+			<real>597439431.58591604</real>
 			<key>timeStoppedRecording</key>
-			<real>596884966.27885103</real>
+			<real>597440120.29322898</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>34BE0204-F728-4064-935B-609AAC7BAD2C</string>
+			<string>4A56AE63-2670-4B23-9D8A-ACE6DA26DE81</string>
 		</dict>
-		<key>3535872A-CBD3-49B2-AC03-F188D73CA547</key>
+		<key>4C5EA26E-84C6-4788-9A86-47DE02E0D9A7</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -593,7 +593,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>3535872A-CBD3-49B2-AC03-F188D73CA547.xcactivitylog</string>
+			<string>4C5EA26E-84C6-4788-9A86-47DE02E0D9A7.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -610,15 +610,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596279001.10263705</real>
+			<real>597338685.464095</real>
 			<key>timeStoppedRecording</key>
-			<real>596279213.20565498</real>
+			<real>597338845.35643196</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>3535872A-CBD3-49B2-AC03-F188D73CA547</string>
+			<string>4C5EA26E-84C6-4788-9A86-47DE02E0D9A7</string>
 		</dict>
-		<key>386D563A-AEE3-4A56-B685-B29A56ADD690</key>
+		<key>4CDB8A48-34A3-4185-979E-A541BBE9B1AE</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -627,7 +627,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>386D563A-AEE3-4A56-B685-B29A56ADD690.xcactivitylog</string>
+			<string>4CDB8A48-34A3-4185-979E-A541BBE9B1AE.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -644,15 +644,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596278574.79983902</real>
+			<real>597448167.78377497</real>
 			<key>timeStoppedRecording</key>
-			<real>596278595.57751501</real>
+			<real>597448259.70868504</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>386D563A-AEE3-4A56-B685-B29A56ADD690</string>
+			<string>4CDB8A48-34A3-4185-979E-A541BBE9B1AE</string>
 		</dict>
-		<key>3F4BF350-1B8A-4262-868A-E3700F53179D</key>
+		<key>4EE0FB76-241F-4AD4-BF19-9E82147A6842</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -661,7 +661,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>3F4BF350-1B8A-4262-868A-E3700F53179D.xcactivitylog</string>
+			<string>4EE0FB76-241F-4AD4-BF19-9E82147A6842.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -678,15 +678,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596245316.215307</real>
+			<real>597319235.00366199</real>
 			<key>timeStoppedRecording</key>
-			<real>596245349.34449601</real>
+			<real>597329124.51340604</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>3F4BF350-1B8A-4262-868A-E3700F53179D</string>
+			<string>4EE0FB76-241F-4AD4-BF19-9E82147A6842</string>
 		</dict>
-		<key>40DB0D01-C093-4CE8-865D-259363378EBC</key>
+		<key>5017EDAD-068D-443B-9A68-EAAEFDACCEF5</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -695,7 +695,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>40DB0D01-C093-4CE8-865D-259363378EBC.xcactivitylog</string>
+			<string>5017EDAD-068D-443B-9A68-EAAEFDACCEF5.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -712,15 +712,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596888526.26440704</real>
+			<real>597441336.17828405</real>
 			<key>timeStoppedRecording</key>
-			<real>596897186.77961504</real>
+			<real>597441357.52221406</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>40DB0D01-C093-4CE8-865D-259363378EBC</string>
+			<string>5017EDAD-068D-443B-9A68-EAAEFDACCEF5</string>
 		</dict>
-		<key>4237717D-C9AE-443A-AEA7-7396387836CE</key>
+		<key>545F4CD4-1FAA-46D8-8414-970D369B8F39</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -729,7 +729,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>4237717D-C9AE-443A-AEA7-7396387836CE.xcactivitylog</string>
+			<string>545F4CD4-1FAA-46D8-8414-970D369B8F39.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -746,15 +746,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596278544.11356103</real>
+			<real>597446850.07975996</real>
 			<key>timeStoppedRecording</key>
-			<real>596278574.73087895</real>
+			<real>597447010.13344395</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>4237717D-C9AE-443A-AEA7-7396387836CE</string>
+			<string>545F4CD4-1FAA-46D8-8414-970D369B8F39</string>
 		</dict>
-		<key>45035617-DDF8-45B2-A09A-E234824213E5</key>
+		<key>56272807-7BB5-4681-A0CF-4EDDD1E26204</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -763,7 +763,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>45035617-DDF8-45B2-A09A-E234824213E5.xcactivitylog</string>
+			<string>56272807-7BB5-4681-A0CF-4EDDD1E26204.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -780,15 +780,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596279684.40580201</real>
+			<real>597354036.37517202</real>
 			<key>timeStoppedRecording</key>
-			<real>596279857.65440702</real>
+			<real>597354170.79818499</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>45035617-DDF8-45B2-A09A-E234824213E5</string>
+			<string>56272807-7BB5-4681-A0CF-4EDDD1E26204</string>
 		</dict>
-		<key>455BCD4D-05BD-44FB-A506-3DE01EB31A04</key>
+		<key>5845A934-7854-4F62-8DEF-6DF6FDA7514D</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -797,7 +797,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>455BCD4D-05BD-44FB-A506-3DE01EB31A04.xcactivitylog</string>
+			<string>5845A934-7854-4F62-8DEF-6DF6FDA7514D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -814,15 +814,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596281702.53059804</real>
+			<real>597330602.36525905</real>
 			<key>timeStoppedRecording</key>
-			<real>596281918.15342999</real>
+			<real>597330617.15142</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>455BCD4D-05BD-44FB-A506-3DE01EB31A04</string>
+			<string>5845A934-7854-4F62-8DEF-6DF6FDA7514D</string>
 		</dict>
-		<key>48E8FA05-2245-4668-B0DD-C10E8E6BDCC0</key>
+		<key>5B039EAF-827A-46B6-BC58-157D88D0A5CD</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -831,7 +831,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>48E8FA05-2245-4668-B0DD-C10E8E6BDCC0.xcactivitylog</string>
+			<string>5B039EAF-827A-46B6-BC58-157D88D0A5CD.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -848,15 +848,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596278528.08308697</real>
+			<real>597354372.36263096</real>
 			<key>timeStoppedRecording</key>
-			<real>596278542.53553402</real>
+			<real>597439309.20470703</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>48E8FA05-2245-4668-B0DD-C10E8E6BDCC0</string>
+			<string>5B039EAF-827A-46B6-BC58-157D88D0A5CD</string>
 		</dict>
-		<key>4D85E1B9-949E-471B-8BF8-A4B9B4860550</key>
+		<key>5D9FC2C9-7B18-4457-9E97-73B10A2B43CC</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -865,7 +865,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>4D85E1B9-949E-471B-8BF8-A4B9B4860550.xcactivitylog</string>
+			<string>5D9FC2C9-7B18-4457-9E97-73B10A2B43CC.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -882,15 +882,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596286511.34236503</real>
+			<real>597351209.57405996</real>
 			<key>timeStoppedRecording</key>
-			<real>596288031.53439605</real>
+			<real>597351306.55652797</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>4D85E1B9-949E-471B-8BF8-A4B9B4860550</string>
+			<string>5D9FC2C9-7B18-4457-9E97-73B10A2B43CC</string>
 		</dict>
-		<key>506C5AB4-8EA0-4F15-AAC7-DF4D181C7E17</key>
+		<key>61470ECD-AA2C-4248-AD31-C82B5B3B86B4</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -899,7 +899,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>506C5AB4-8EA0-4F15-AAC7-DF4D181C7E17.xcactivitylog</string>
+			<string>61470ECD-AA2C-4248-AD31-C82B5B3B86B4.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -916,15 +916,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596394864.61291897</real>
+			<real>597352465.01738203</real>
 			<key>timeStoppedRecording</key>
-			<real>596395283.26070905</real>
+			<real>597352760.89934897</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>506C5AB4-8EA0-4F15-AAC7-DF4D181C7E17</string>
+			<string>61470ECD-AA2C-4248-AD31-C82B5B3B86B4</string>
 		</dict>
-		<key>50FC9628-C5B6-4F29-97C2-424AF8465FBA</key>
+		<key>6B51EC03-213A-403B-85EB-9E41F8948303</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -933,7 +933,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>50FC9628-C5B6-4F29-97C2-424AF8465FBA.xcactivitylog</string>
+			<string>6B51EC03-213A-403B-85EB-9E41F8948303.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -950,15 +950,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596393164.71992397</real>
+			<real>597448119.27749395</real>
 			<key>timeStoppedRecording</key>
-			<real>596393200.46380794</real>
+			<real>597448165.47691</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>50FC9628-C5B6-4F29-97C2-424AF8465FBA</string>
+			<string>6B51EC03-213A-403B-85EB-9E41F8948303</string>
 		</dict>
-		<key>52059887-EEFF-4076-BF04-8C54504D31AC</key>
+		<key>6BE37CD2-1459-4728-AAEE-43D2B325D576</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -967,7 +967,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>52059887-EEFF-4076-BF04-8C54504D31AC.xcactivitylog</string>
+			<string>6BE37CD2-1459-4728-AAEE-43D2B325D576.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -984,15 +984,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596286599.78278506</real>
+			<real>597446658.24873805</real>
 			<key>timeStoppedRecording</key>
-			<real>596286631.98917603</real>
+			<real>597446724.224473</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>52059887-EEFF-4076-BF04-8C54504D31AC</string>
+			<string>6BE37CD2-1459-4728-AAEE-43D2B325D576</string>
 		</dict>
-		<key>54E59324-4497-4266-8BF2-8729E5A73BA7</key>
+		<key>6D6B67C0-DEEB-41D8-AB92-541CF98BB874</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1001,7 +1001,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>54E59324-4497-4266-8BF2-8729E5A73BA7.xcactivitylog</string>
+			<string>6D6B67C0-DEEB-41D8-AB92-541CF98BB874.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1018,15 +1018,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596280485.96277404</real>
+			<real>597337998.137977</real>
 			<key>timeStoppedRecording</key>
-			<real>596281285.31439996</real>
+			<real>597338068.11500096</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>54E59324-4497-4266-8BF2-8729E5A73BA7</string>
+			<string>6D6B67C0-DEEB-41D8-AB92-541CF98BB874</string>
 		</dict>
-		<key>58DFE654-DEE5-4917-836F-4E9ABFDD3A31</key>
+		<key>6EDD540C-E282-4B0E-A90F-680B33FD5C4C</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1035,7 +1035,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>58DFE654-DEE5-4917-836F-4E9ABFDD3A31.xcactivitylog</string>
+			<string>6EDD540C-E282-4B0E-A90F-680B33FD5C4C.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1052,15 +1052,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596897190.21617198</real>
+			<real>597440195.18345404</real>
 			<key>timeStoppedRecording</key>
-			<real>596897256.60630596</real>
+			<real>597440611.39002895</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>58DFE654-DEE5-4917-836F-4E9ABFDD3A31</string>
+			<string>6EDD540C-E282-4B0E-A90F-680B33FD5C4C</string>
 		</dict>
-		<key>5B027117-35C4-4F13-92BC-19B1E133E583</key>
+		<key>7027A0E1-EBE8-4882-BE0D-46DD62B6F4AA</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1069,7 +1069,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>5B027117-35C4-4F13-92BC-19B1E133E583.xcactivitylog</string>
+			<string>7027A0E1-EBE8-4882-BE0D-46DD62B6F4AA.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1086,15 +1086,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596395286.80736601</real>
+			<real>597447661.33072901</real>
 			<key>timeStoppedRecording</key>
-			<real>596397075.92929804</real>
+			<real>597447685.69671094</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>5B027117-35C4-4F13-92BC-19B1E133E583</string>
+			<string>7027A0E1-EBE8-4882-BE0D-46DD62B6F4AA</string>
 		</dict>
-		<key>5BE3DCA4-3C6A-4220-95B6-9DF3C455B08C</key>
+		<key>7618C3F9-E529-410F-9D1E-0F96024A03B6</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1103,7 +1103,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>5BE3DCA4-3C6A-4220-95B6-9DF3C455B08C.xcactivitylog</string>
+			<string>7618C3F9-E529-410F-9D1E-0F96024A03B6.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1120,15 +1120,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596884100.88501406</real>
+			<real>597330618.692366</real>
 			<key>timeStoppedRecording</key>
-			<real>596884119.411919</real>
+			<real>597330636.65581405</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>5BE3DCA4-3C6A-4220-95B6-9DF3C455B08C</string>
+			<string>7618C3F9-E529-410F-9D1E-0F96024A03B6</string>
 		</dict>
-		<key>5C376BF2-EA6A-4739-B7CA-EF7FFD359E7E</key>
+		<key>7ACB815D-D4CD-47D9-AFC8-ACF7BF37655C</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1137,7 +1137,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>5C376BF2-EA6A-4739-B7CA-EF7FFD359E7E.xcactivitylog</string>
+			<string>7ACB815D-D4CD-47D9-AFC8-ACF7BF37655C.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1154,15 +1154,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596245349.40331697</real>
+			<real>597353193.12577701</real>
 			<key>timeStoppedRecording</key>
-			<real>596245395.47679603</real>
+			<real>597353238.33906198</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>5C376BF2-EA6A-4739-B7CA-EF7FFD359E7E</string>
+			<string>7ACB815D-D4CD-47D9-AFC8-ACF7BF37655C</string>
 		</dict>
-		<key>5FB6B97E-725A-42B1-8500-675FAB23CB41</key>
+		<key>7AFE6679-27AE-4D00-8343-5E9EF30FDB15</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1171,7 +1171,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>5FB6B97E-725A-42B1-8500-675FAB23CB41.xcactivitylog</string>
+			<string>7AFE6679-27AE-4D00-8343-5E9EF30FDB15.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1188,15 +1188,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596394180.48205304</real>
+			<real>597337224.62216198</real>
 			<key>timeStoppedRecording</key>
-			<real>596394306.20269704</real>
+			<real>597337269.33650804</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>5FB6B97E-725A-42B1-8500-675FAB23CB41</string>
+			<string>7AFE6679-27AE-4D00-8343-5E9EF30FDB15</string>
 		</dict>
-		<key>618BC577-392A-44C0-B1F8-14E6B233B2DB</key>
+		<key>7BE4BFA1-87E9-4179-B95E-5589FDD46703</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1205,7 +1205,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>618BC577-392A-44C0-B1F8-14E6B233B2DB.xcactivitylog</string>
+			<string>7BE4BFA1-87E9-4179-B95E-5589FDD46703.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1222,15 +1222,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596897511.08726394</real>
+			<real>597347713.52319002</real>
 			<key>timeStoppedRecording</key>
-			<real>596897649.95474803</real>
+			<real>597347990.868487</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>618BC577-392A-44C0-B1F8-14E6B233B2DB</string>
+			<string>7BE4BFA1-87E9-4179-B95E-5589FDD46703</string>
 		</dict>
-		<key>619E117B-427D-47D9-93EA-DA4A1C365D9A</key>
+		<key>7CB3299A-933C-4AD7-8046-4D525916EF3F</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1239,7 +1239,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>619E117B-427D-47D9-93EA-DA4A1C365D9A.xcactivitylog</string>
+			<string>7CB3299A-933C-4AD7-8046-4D525916EF3F.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1256,15 +1256,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596244513.55795705</real>
+			<real>597337906.35592306</real>
 			<key>timeStoppedRecording</key>
-			<real>596244666.35249698</real>
+			<real>597337996.27962101</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>619E117B-427D-47D9-93EA-DA4A1C365D9A</string>
+			<string>7CB3299A-933C-4AD7-8046-4D525916EF3F</string>
 		</dict>
-		<key>6443ACC8-BECF-42DB-8D31-A1A02B70A7E7</key>
+		<key>8359E8B4-030A-430E-9274-6F003C8534F6</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1273,7 +1273,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>6443ACC8-BECF-42DB-8D31-A1A02B70A7E7.xcactivitylog</string>
+			<string>8359E8B4-030A-430E-9274-6F003C8534F6.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1290,15 +1290,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596394335.00372601</real>
+			<real>597329670.656721</real>
 			<key>timeStoppedRecording</key>
-			<real>596394515.18793094</real>
+			<real>597329919.38950706</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>6443ACC8-BECF-42DB-8D31-A1A02B70A7E7</string>
+			<string>8359E8B4-030A-430E-9274-6F003C8534F6</string>
 		</dict>
-		<key>65C03CA9-F723-4034-A18F-ACF60C24B37C</key>
+		<key>903DF34F-8154-4D46-8414-73108D56E041</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1307,7 +1307,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>65C03CA9-F723-4034-A18F-ACF60C24B37C.xcactivitylog</string>
+			<string>903DF34F-8154-4D46-8414-73108D56E041.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1324,15 +1324,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596286985.89648402</real>
+			<real>597448705.86258304</real>
 			<key>timeStoppedRecording</key>
-			<real>596287045.70676506</real>
+			<real>597448917.32978797</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>65C03CA9-F723-4034-A18F-ACF60C24B37C</string>
+			<string>903DF34F-8154-4D46-8414-73108D56E041</string>
 		</dict>
-		<key>673BD9DC-AC8A-497F-ACEB-EDCC16C55832</key>
+		<key>90A514E1-541E-4113-8C95-7A61390C5AE5</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1341,7 +1341,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>673BD9DC-AC8A-497F-ACEB-EDCC16C55832.xcactivitylog</string>
+			<string>90A514E1-541E-4113-8C95-7A61390C5AE5.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1358,15 +1358,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596286894.23394406</real>
+			<real>597442437.68410695</real>
 			<key>timeStoppedRecording</key>
-			<real>596286983.46108305</real>
+			<real>597442457.24371505</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>673BD9DC-AC8A-497F-ACEB-EDCC16C55832</string>
+			<string>90A514E1-541E-4113-8C95-7A61390C5AE5</string>
 		</dict>
-		<key>685B8517-5123-4756-AD3D-D582D984B905</key>
+		<key>979D0544-CFFD-41D2-9A55-D1DEBB2DBCFC</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1375,7 +1375,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>685B8517-5123-4756-AD3D-D582D984B905.xcactivitylog</string>
+			<string>979D0544-CFFD-41D2-9A55-D1DEBB2DBCFC.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1392,15 +1392,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596245457.67799604</real>
+			<real>597330638.22716999</real>
 			<key>timeStoppedRecording</key>
-			<real>596246212.71533501</real>
+			<real>597330923.08327901</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>685B8517-5123-4756-AD3D-D582D984B905</string>
+			<string>979D0544-CFFD-41D2-9A55-D1DEBB2DBCFC</string>
 		</dict>
-		<key>6B0C7FD6-677E-4FD8-B5C2-A0763F8971B0</key>
+		<key>9AE9FBCC-E304-4EB8-9866-56A6ADE93610</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1409,7 +1409,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>6B0C7FD6-677E-4FD8-B5C2-A0763F8971B0.xcactivitylog</string>
+			<string>9AE9FBCC-E304-4EB8-9866-56A6ADE93610.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1426,15 +1426,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596390523.00116599</real>
+			<real>597441359.39269698</real>
 			<key>timeStoppedRecording</key>
-			<real>596390583.73691595</real>
+			<real>597441442.68781102</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>6B0C7FD6-677E-4FD8-B5C2-A0763F8971B0</string>
+			<string>9AE9FBCC-E304-4EB8-9866-56A6ADE93610</string>
 		</dict>
-		<key>6BCD4B76-CA37-46F6-BC75-D93B6AB42B45</key>
+		<key>9D14C829-8C69-458E-A2A9-28AF3EC3FCAA</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1443,7 +1443,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>6BCD4B76-CA37-46F6-BC75-D93B6AB42B45.xcactivitylog</string>
+			<string>9D14C829-8C69-458E-A2A9-28AF3EC3FCAA.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1460,15 +1460,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596245015.75683796</real>
+			<real>597338847.09089303</real>
 			<key>timeStoppedRecording</key>
-			<real>596245115.60877395</real>
+			<real>597338901.77440798</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>6BCD4B76-CA37-46F6-BC75-D93B6AB42B45</string>
+			<string>9D14C829-8C69-458E-A2A9-28AF3EC3FCAA</string>
 		</dict>
-		<key>6DA1EC2F-BC16-4473-BE9B-65803124E543</key>
+		<key>A3F5612B-49EF-499D-969D-8DA1D002DDA9</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1477,7 +1477,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>6DA1EC2F-BC16-4473-BE9B-65803124E543.xcactivitylog</string>
+			<string>A3F5612B-49EF-499D-969D-8DA1D002DDA9.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1494,15 +1494,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596279899.03515899</real>
+			<real>597439398.27396405</real>
 			<key>timeStoppedRecording</key>
-			<real>596279963.42560196</real>
+			<real>597439426.23485005</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>6DA1EC2F-BC16-4473-BE9B-65803124E543</string>
+			<string>A3F5612B-49EF-499D-969D-8DA1D002DDA9</string>
 		</dict>
-		<key>720EE8CF-EFF2-4D85-A1EA-04834FCC63DF</key>
+		<key>A96DDCA5-965A-4980-9EAD-86DB4B8B1214</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1511,7 +1511,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>720EE8CF-EFF2-4D85-A1EA-04834FCC63DF.xcactivitylog</string>
+			<string>A96DDCA5-965A-4980-9EAD-86DB4B8B1214.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1528,15 +1528,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596245395.61716294</real>
+			<real>597330924.766909</real>
 			<key>timeStoppedRecording</key>
-			<real>596245455.94419706</real>
+			<real>597331824.009372</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>720EE8CF-EFF2-4D85-A1EA-04834FCC63DF</string>
+			<string>A96DDCA5-965A-4980-9EAD-86DB4B8B1214</string>
 		</dict>
-		<key>800AE80C-2B6D-4DB7-B92E-2D3A60FCDD8B</key>
+		<key>B1661925-FFA4-49B1-8DD4-94F99033E7E0</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1545,7 +1545,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>800AE80C-2B6D-4DB7-B92E-2D3A60FCDD8B.xcactivitylog</string>
+			<string>B1661925-FFA4-49B1-8DD4-94F99033E7E0.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1562,15 +1562,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596244211.21155906</real>
+			<real>597330467.51952505</real>
 			<key>timeStoppedRecording</key>
-			<real>596244297.64664996</real>
+			<real>597330600.77508903</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>800AE80C-2B6D-4DB7-B92E-2D3A60FCDD8B</string>
+			<string>B1661925-FFA4-49B1-8DD4-94F99033E7E0</string>
 		</dict>
-		<key>8518D332-BE25-4FCB-A28B-C672A5305433</key>
+		<key>BD22D297-8336-400B-A16B-2AD63D2A6569</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1579,7 +1579,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>8518D332-BE25-4FCB-A28B-C672A5305433.xcactivitylog</string>
+			<string>BD22D297-8336-400B-A16B-2AD63D2A6569.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1596,15 +1596,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596286540.11322904</real>
+			<real>597332550.20756495</real>
 			<key>timeStoppedRecording</key>
-			<real>596286597.21414006</real>
+			<real>597332576.75783098</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>8518D332-BE25-4FCB-A28B-C672A5305433</string>
+			<string>BD22D297-8336-400B-A16B-2AD63D2A6569</string>
 		</dict>
-		<key>863ECC5C-A8F4-4405-8D1B-11E495C7D985</key>
+		<key>BEEDB7F0-FB87-4137-B2F6-E71DDA4CA091</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1613,7 +1613,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>863ECC5C-A8F4-4405-8D1B-11E495C7D985.xcactivitylog</string>
+			<string>BEEDB7F0-FB87-4137-B2F6-E71DDA4CA091.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1630,15 +1630,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596244667.97629797</real>
+			<real>597337564.44707406</real>
 			<key>timeStoppedRecording</key>
-			<real>596244834.17092097</real>
+			<real>597337904.42724705</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>863ECC5C-A8F4-4405-8D1B-11E495C7D985</string>
+			<string>BEEDB7F0-FB87-4137-B2F6-E71DDA4CA091</string>
 		</dict>
-		<key>89D03527-6F0C-40BA-A09D-FAE67B2C502F</key>
+		<key>BFA657F4-3C50-4C2C-8B3C-EEC48A3E1E9D</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1647,7 +1647,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>89D03527-6F0C-40BA-A09D-FAE67B2C502F.xcactivitylog</string>
+			<string>BFA657F4-3C50-4C2C-8B3C-EEC48A3E1E9D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1664,15 +1664,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596394308.07711899</real>
+			<real>597440164.83675206</real>
 			<key>timeStoppedRecording</key>
-			<real>596394333.17451596</real>
+			<real>597440192.50313199</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>89D03527-6F0C-40BA-A09D-FAE67B2C502F</string>
+			<string>BFA657F4-3C50-4C2C-8B3C-EEC48A3E1E9D</string>
 		</dict>
-		<key>8F0DF1DA-2073-4EEB-826E-630FFED0909F</key>
+		<key>C2F6C429-A567-4792-BC75-2E232C378529</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1681,7 +1681,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>8F0DF1DA-2073-4EEB-826E-630FFED0909F.xcactivitylog</string>
+			<string>C2F6C429-A567-4792-BC75-2E232C378529.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1698,15 +1698,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596394517.10047996</real>
+			<real>597332331.19385803</real>
 			<key>timeStoppedRecording</key>
-			<real>596394620.37384403</real>
+			<real>597332505.93275595</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>8F0DF1DA-2073-4EEB-826E-630FFED0909F</string>
+			<string>C2F6C429-A567-4792-BC75-2E232C378529</string>
 		</dict>
-		<key>93F0F20F-6C2D-4B60-9CBA-83776E83C120</key>
+		<key>C4B5BEA9-1BBB-480C-A70E-4B666F74B953</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1715,7 +1715,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>93F0F20F-6C2D-4B60-9CBA-83776E83C120.xcactivitylog</string>
+			<string>C4B5BEA9-1BBB-480C-A70E-4B666F74B953.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1732,15 +1732,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596279215.58290303</real>
+			<real>597447077.861112</real>
 			<key>timeStoppedRecording</key>
-			<real>596279291.82769704</real>
+			<real>597447125.30471802</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>93F0F20F-6C2D-4B60-9CBA-83776E83C120</string>
+			<string>C4B5BEA9-1BBB-480C-A70E-4B666F74B953</string>
 		</dict>
-		<key>95866938-D8C0-48FC-93AB-D20DF414157C</key>
+		<key>C5A1FDFE-37C6-4D33-BC26-9739027F14F9</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1749,7 +1749,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>95866938-D8C0-48FC-93AB-D20DF414157C.xcactivitylog</string>
+			<string>C5A1FDFE-37C6-4D33-BC26-9739027F14F9.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1766,15 +1766,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596885788.31559801</real>
+			<real>597329920.97328103</real>
 			<key>timeStoppedRecording</key>
-			<real>596885967.73793995</real>
+			<real>597330086.64917505</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>95866938-D8C0-48FC-93AB-D20DF414157C</string>
+			<string>C5A1FDFE-37C6-4D33-BC26-9739027F14F9</string>
 		</dict>
-		<key>962E5AF3-22C9-4CE1-BA39-24D330C50DAC</key>
+		<key>C7F4639A-0E06-4FF9-A598-7FF6C2E5BEB9</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1783,7 +1783,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>962E5AF3-22C9-4CE1-BA39-24D330C50DAC.xcactivitylog</string>
+			<string>C7F4639A-0E06-4FF9-A598-7FF6C2E5BEB9.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1800,15 +1800,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596245158.92954504</real>
+			<real>597332578.65357196</real>
 			<key>timeStoppedRecording</key>
-			<real>596245316.06069696</real>
+			<real>597332622.34979796</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>962E5AF3-22C9-4CE1-BA39-24D330C50DAC</string>
+			<string>C7F4639A-0E06-4FF9-A598-7FF6C2E5BEB9</string>
 		</dict>
-		<key>9977AF5E-910F-4B4C-97ED-95F1C0367150</key>
+		<key>C9722DE4-65D3-4BCA-A78B-9F28BD8BC34C</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1817,7 +1817,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>9977AF5E-910F-4B4C-97ED-95F1C0367150.xcactivitylog</string>
+			<string>C9722DE4-65D3-4BCA-A78B-9F28BD8BC34C.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1834,15 +1834,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596278597.147192</real>
+			<real>597347999.02796102</real>
 			<key>timeStoppedRecording</key>
-			<real>596278880.01756096</real>
+			<real>597351211.37459803</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>9977AF5E-910F-4B4C-97ED-95F1C0367150</string>
+			<string>C9722DE4-65D3-4BCA-A78B-9F28BD8BC34C</string>
 		</dict>
-		<key>9E71F1D1-40C2-47A4-8480-B7613959C378</key>
+		<key>CBB1ED2B-9069-49D0-95D7-BDEC8DE19D2E</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1851,7 +1851,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>9E71F1D1-40C2-47A4-8480-B7613959C378.xcactivitylog</string>
+			<string>CBB1ED2B-9069-49D0-95D7-BDEC8DE19D2E.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1868,15 +1868,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596244358.87774897</real>
+			<real>597351308.63925505</real>
 			<key>timeStoppedRecording</key>
-			<real>596244512.01172996</real>
+			<real>597351569.113114</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>9E71F1D1-40C2-47A4-8480-B7613959C378</string>
+			<string>CBB1ED2B-9069-49D0-95D7-BDEC8DE19D2E</string>
 		</dict>
-		<key>9E738B66-30C9-4244-9F22-0C5A20493E17</key>
+		<key>CE9C861C-5C88-4E8E-9255-C0A3EE5253E0</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1885,7 +1885,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>9E738B66-30C9-4244-9F22-0C5A20493E17.xcactivitylog</string>
+			<string>CE9C861C-5C88-4E8E-9255-C0A3EE5253E0.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1902,15 +1902,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596243118.13013601</real>
+			<real>597440120.36309099</real>
 			<key>timeStoppedRecording</key>
-			<real>596243184.60156</real>
+			<real>597440164.77468896</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>9E738B66-30C9-4244-9F22-0C5A20493E17</string>
+			<string>CE9C861C-5C88-4E8E-9255-C0A3EE5253E0</string>
 		</dict>
-		<key>9F6C6292-D970-4691-989F-EBA3434517C8</key>
+		<key>D5225171-95C1-4298-A5DF-A2FC12164EF1</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1919,7 +1919,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>9F6C6292-D970-4691-989F-EBA3434517C8.xcactivitylog</string>
+			<string>D5225171-95C1-4298-A5DF-A2FC12164EF1.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1936,15 +1936,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596898452.69396102</real>
+			<real>597338528.661888</real>
 			<key>timeStoppedRecording</key>
-			<real>596898636.81100202</real>
+			<real>597338683.73147202</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>9F6C6292-D970-4691-989F-EBA3434517C8</string>
+			<string>D5225171-95C1-4298-A5DF-A2FC12164EF1</string>
 		</dict>
-		<key>9F90BBAC-DEB4-493C-8DEA-C63F9988923E</key>
+		<key>D8ACD518-BF80-4B86-98AA-A92659E73358</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1953,7 +1953,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>9F90BBAC-DEB4-493C-8DEA-C63F9988923E.xcactivitylog</string>
+			<string>D8ACD518-BF80-4B86-98AA-A92659E73358.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -1970,15 +1970,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596287603.74529696</real>
+			<real>597338995.86202097</real>
 			<key>timeStoppedRecording</key>
-			<real>596287626.691239</real>
+			<real>597339204.90047705</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>9F90BBAC-DEB4-493C-8DEA-C63F9988923E</string>
+			<string>D8ACD518-BF80-4B86-98AA-A92659E73358</string>
 		</dict>
-		<key>A224B87A-3F40-41A5-BE1E-859237781F21</key>
+		<key>DEC56039-C40C-4508-860C-F62B75EBBC08</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -1987,7 +1987,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>A224B87A-3F40-41A5-BE1E-859237781F21.xcactivitylog</string>
+			<string>DEC56039-C40C-4508-860C-F62B75EBBC08.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2004,15 +2004,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596883733.23442698</real>
+			<real>597354302.038571</real>
 			<key>timeStoppedRecording</key>
-			<real>596883816.33247805</real>
+			<real>597354346.03325701</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>A224B87A-3F40-41A5-BE1E-859237781F21</string>
+			<string>DEC56039-C40C-4508-860C-F62B75EBBC08</string>
 		</dict>
-		<key>A45967B7-6E10-4DC0-91F8-EBD2BC9BA9F0</key>
+		<key>E16EDA9B-973B-4353-83F4-227E8554B0F4</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -2021,7 +2021,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>A45967B7-6E10-4DC0-91F8-EBD2BC9BA9F0.xcactivitylog</string>
+			<string>E16EDA9B-973B-4353-83F4-227E8554B0F4.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2038,15 +2038,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596243955.52841306</real>
+			<real>597354245.90022397</real>
 			<key>timeStoppedRecording</key>
-			<real>596244009.14716899</real>
+			<real>597354300.16552699</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>A45967B7-6E10-4DC0-91F8-EBD2BC9BA9F0</string>
+			<string>E16EDA9B-973B-4353-83F4-227E8554B0F4</string>
 		</dict>
-		<key>AEA2A6A8-3B57-4321-91CF-C119B53D2521</key>
+		<key>E17FEBD6-A4B1-4829-85BA-89BC48E3234C</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -2055,7 +2055,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>AEA2A6A8-3B57-4321-91CF-C119B53D2521.xcactivitylog</string>
+			<string>E17FEBD6-A4B1-4829-85BA-89BC48E3234C.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2072,15 +2072,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596887943.66819501</real>
+			<real>597441444.55393505</real>
 			<key>timeStoppedRecording</key>
-			<real>596888523.88594306</real>
+			<real>597442401.14487803</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>AEA2A6A8-3B57-4321-91CF-C119B53D2521</string>
+			<string>E17FEBD6-A4B1-4829-85BA-89BC48E3234C</string>
 		</dict>
-		<key>AFAB7FB3-D937-4464-B923-4528B1848B46</key>
+		<key>E1D9AE99-68CF-4E06-A8D5-616FEBA03C49</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -2089,7 +2089,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>AFAB7FB3-D937-4464-B923-4528B1848B46.xcactivitylog</string>
+			<string>E1D9AE99-68CF-4E06-A8D5-616FEBA03C49.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2106,15 +2106,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596276965.35010898</real>
+			<real>597354347.90573895</real>
 			<key>timeStoppedRecording</key>
-			<real>596277223.43680298</real>
+			<real>597354369.69465399</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>AFAB7FB3-D937-4464-B923-4528B1848B46</string>
+			<string>E1D9AE99-68CF-4E06-A8D5-616FEBA03C49</string>
 		</dict>
-		<key>B0B8B969-D799-4F0E-8997-F135B9B60F31</key>
+		<key>E204D92B-BE77-438E-9C43-D68C42007F4F</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -2123,7 +2123,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>B0B8B969-D799-4F0E-8997-F135B9B60F31.xcactivitylog</string>
+			<string>E204D92B-BE77-438E-9C43-D68C42007F4F.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2140,15 +2140,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596281957.42265606</real>
+			<real>597332507.69072497</real>
 			<key>timeStoppedRecording</key>
-			<real>596286508.77492702</real>
+			<real>597332548.39748502</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>B0B8B969-D799-4F0E-8997-F135B9B60F31</string>
+			<string>E204D92B-BE77-438E-9C43-D68C42007F4F</string>
 		</dict>
-		<key>B2720C84-40B9-4D5B-9F8B-B5CE8D2AB80E</key>
+		<key>E6731186-0D24-4DC5-BA0C-786E8CEB43A3</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -2157,7 +2157,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>B2720C84-40B9-4D5B-9F8B-B5CE8D2AB80E.xcactivitylog</string>
+			<string>E6731186-0D24-4DC5-BA0C-786E8CEB43A3.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2174,15 +2174,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596883847.36598098</real>
+			<real>597339206.80648506</real>
 			<key>timeStoppedRecording</key>
-			<real>596883895.15180898</real>
+			<real>597347710.25145805</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>B2720C84-40B9-4D5B-9F8B-B5CE8D2AB80E</string>
+			<string>E6731186-0D24-4DC5-BA0C-786E8CEB43A3</string>
 		</dict>
-		<key>B4206044-851E-4992-979C-61EC19848B78</key>
+		<key>E69762A8-CB6B-46E8-B65B-06134B74D8A6</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -2191,7 +2191,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>B4206044-851E-4992-979C-61EC19848B78.xcactivitylog</string>
+			<string>E69762A8-CB6B-46E8-B65B-06134B74D8A6.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2208,15 +2208,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596897296.48135495</real>
+			<real>597354173.30633998</real>
 			<key>timeStoppedRecording</key>
-			<real>596897366.67644095</real>
+			<real>597354244.07736301</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>B4206044-851E-4992-979C-61EC19848B78</string>
+			<string>E69762A8-CB6B-46E8-B65B-06134B74D8A6</string>
 		</dict>
-		<key>B5BF01D6-3E03-4C47-9815-0C3309BB18F2</key>
+		<key>EB84BA9A-D0FB-4B72-9D88-ADFC4B733B97</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -2225,7 +2225,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>B5BF01D6-3E03-4C47-9815-0C3309BB18F2.xcactivitylog</string>
+			<string>EB84BA9A-D0FB-4B72-9D88-ADFC4B733B97.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2242,15 +2242,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596897369.00209796</real>
+			<real>597440614.27179801</real>
 			<key>timeStoppedRecording</key>
-			<real>596897507.86849797</real>
+			<real>597440742.82057202</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>B5BF01D6-3E03-4C47-9815-0C3309BB18F2</string>
+			<string>EB84BA9A-D0FB-4B72-9D88-ADFC4B733B97</string>
 		</dict>
-		<key>B84A0BB3-8497-4023-A605-412F3361A87D</key>
+		<key>EC104EDE-BCF1-4A28-8044-A3D73022C715</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -2259,7 +2259,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>B84A0BB3-8497-4023-A605-412F3361A87D.xcactivitylog</string>
+			<string>EC104EDE-BCF1-4A28-8044-A3D73022C715.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2276,15 +2276,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596243218.82908201</real>
+			<real>597353241.13387096</real>
 			<key>timeStoppedRecording</key>
-			<real>596243240.42316401</real>
+			<real>597353380.549191</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>B84A0BB3-8497-4023-A605-412F3361A87D</string>
+			<string>EC104EDE-BCF1-4A28-8044-A3D73022C715</string>
 		</dict>
-		<key>C8043B31-9B8C-42FF-BB4F-EC38991E93D9</key>
+		<key>EDAAB4DF-7718-4AD0-AAAC-7612A032E215</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -2293,7 +2293,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>C8043B31-9B8C-42FF-BB4F-EC38991E93D9.xcactivitylog</string>
+			<string>EDAAB4DF-7718-4AD0-AAAC-7612A032E215.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2310,15 +2310,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596897258.98752296</real>
+			<real>597330439.44758606</real>
 			<key>timeStoppedRecording</key>
-			<real>596897294.19698298</real>
+			<real>597330466.13995898</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>C8043B31-9B8C-42FF-BB4F-EC38991E93D9</string>
+			<string>EDAAB4DF-7718-4AD0-AAAC-7612A032E215</string>
 		</dict>
-		<key>C86B2AAB-9D9F-4FD6-B19C-D4E5F07CB5F0</key>
+		<key>F49B4257-183E-499B-9378-AE082E289619</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -2327,7 +2327,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>C86B2AAB-9D9F-4FD6-B19C-D4E5F07CB5F0.xcactivitylog</string>
+			<string>F49B4257-183E-499B-9378-AE082E289619.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2344,15 +2344,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596884121.48036504</real>
+			<real>597446726.54565406</real>
 			<key>timeStoppedRecording</key>
-			<real>596884660.02044296</real>
+			<real>597446847.67133296</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>C86B2AAB-9D9F-4FD6-B19C-D4E5F07CB5F0</string>
+			<string>F49B4257-183E-499B-9378-AE082E289619</string>
 		</dict>
-		<key>CB9265EA-2DD2-4801-A5CF-D259091597E0</key>
+		<key>FBCF410A-C01D-485F-858F-792EDE0398D8</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -2361,7 +2361,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>CB9265EA-2DD2-4801-A5CF-D259091597E0.xcactivitylog</string>
+			<string>FBCF410A-C01D-485F-858F-792EDE0398D8.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2378,15 +2378,15 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596244048.346246</real>
+			<real>597353382.52057397</real>
 			<key>timeStoppedRecording</key>
-			<real>596244153.82253098</real>
+			<real>597353525.77447701</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>CB9265EA-2DD2-4801-A5CF-D259091597E0</string>
+			<string>FBCF410A-C01D-485F-858F-792EDE0398D8</string>
 		</dict>
-		<key>D29D11DF-DEE2-4575-9D9E-18517154468D</key>
+		<key>FCBDC86D-34CA-405C-8AEC-0D2ED6245317</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -2395,7 +2395,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>D29D11DF-DEE2-4575-9D9E-18517154468D.xcactivitylog</string>
+			<string>FCBDC86D-34CA-405C-8AEC-0D2ED6245317.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -2412,523 +2412,13 @@
 			<key>signature</key>
 			<string>Debug puzzle444</string>
 			<key>timeStartedRecording</key>
-			<real>596279965.05355406</real>
+			<real>597447127.57327402</real>
 			<key>timeStoppedRecording</key>
-			<real>596280274.03807294</real>
+			<real>597447616.73423696</real>
 			<key>title</key>
 			<string>Debug puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>D29D11DF-DEE2-4575-9D9E-18517154468D</string>
-		</dict>
-		<key>D335A85B-271E-4AB0-9AF5-B869381143D8</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>D335A85B-271E-4AB0-9AF5-B869381143D8.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>puzzle444 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>puzzle444</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug puzzle444</string>
-			<key>timeStartedRecording</key>
-			<real>596279310.19449699</real>
-			<key>timeStoppedRecording</key>
-			<real>596279684.33550203</real>
-			<key>title</key>
-			<string>Debug puzzle444</string>
-			<key>uniqueIdentifier</key>
-			<string>D335A85B-271E-4AB0-9AF5-B869381143D8</string>
-		</dict>
-		<key>D3623791-D535-47AE-9FB0-3E300B7CFE7A</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>D3623791-D535-47AE-9FB0-3E300B7CFE7A.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>puzzle444 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>puzzle444</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug puzzle444</string>
-			<key>timeStartedRecording</key>
-			<real>596287047.99446404</real>
-			<key>timeStoppedRecording</key>
-			<real>596287583.13470197</real>
-			<key>title</key>
-			<string>Debug puzzle444</string>
-			<key>uniqueIdentifier</key>
-			<string>D3623791-D535-47AE-9FB0-3E300B7CFE7A</string>
-		</dict>
-		<key>D52047DF-0453-4DA1-B093-7A50547A3C2F</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>D52047DF-0453-4DA1-B093-7A50547A3C2F.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>puzzle444 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>puzzle444</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug puzzle444</string>
-			<key>timeStartedRecording</key>
-			<real>596394741.01719797</real>
-			<key>timeStoppedRecording</key>
-			<real>596394802.98752701</real>
-			<key>title</key>
-			<string>Debug puzzle444</string>
-			<key>uniqueIdentifier</key>
-			<string>D52047DF-0453-4DA1-B093-7A50547A3C2F</string>
-		</dict>
-		<key>DD508392-308A-4D84-83DF-E912E0A563CB</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>DD508392-308A-4D84-83DF-E912E0A563CB.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>puzzle444 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>puzzle444</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug puzzle444</string>
-			<key>timeStartedRecording</key>
-			<real>596286634.23578095</real>
-			<key>timeStoppedRecording</key>
-			<real>596286891.78553498</real>
-			<key>title</key>
-			<string>Debug puzzle444</string>
-			<key>uniqueIdentifier</key>
-			<string>DD508392-308A-4D84-83DF-E912E0A563CB</string>
-		</dict>
-		<key>DF5FD43A-96A6-4EC4-9D03-02BA1C0987AA</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>DF5FD43A-96A6-4EC4-9D03-02BA1C0987AA.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>puzzle444 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>puzzle444</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug puzzle444</string>
-			<key>timeStartedRecording</key>
-			<real>596883897.23870301</real>
-			<key>timeStoppedRecording</key>
-			<real>596884098.59508705</real>
-			<key>title</key>
-			<string>Debug puzzle444</string>
-			<key>uniqueIdentifier</key>
-			<string>DF5FD43A-96A6-4EC4-9D03-02BA1C0987AA</string>
-		</dict>
-		<key>E015E791-04DB-4498-9005-88DA6FF5EAFF</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>E015E791-04DB-4498-9005-88DA6FF5EAFF.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>puzzle444 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>puzzle444</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug puzzle444</string>
-			<key>timeStartedRecording</key>
-			<real>596188313.49957001</real>
-			<key>timeStoppedRecording</key>
-			<real>596191509.75056303</real>
-			<key>title</key>
-			<string>Debug puzzle444</string>
-			<key>uniqueIdentifier</key>
-			<string>E015E791-04DB-4498-9005-88DA6FF5EAFF</string>
-		</dict>
-		<key>E61EBDB6-C8A0-4E69-B03F-B62D99073945</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>E61EBDB6-C8A0-4E69-B03F-B62D99073945.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>puzzle444 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>puzzle444</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug puzzle444</string>
-			<key>timeStartedRecording</key>
-			<real>596279293.413396</real>
-			<key>timeStoppedRecording</key>
-			<real>596279308.55818999</real>
-			<key>title</key>
-			<string>Debug puzzle444</string>
-			<key>uniqueIdentifier</key>
-			<string>E61EBDB6-C8A0-4E69-B03F-B62D99073945</string>
-		</dict>
-		<key>E6DAA92E-DDA8-41FA-930E-F06272954A19</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>E6DAA92E-DDA8-41FA-930E-F06272954A19.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>puzzle444 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>puzzle444</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug puzzle444</string>
-			<key>timeStartedRecording</key>
-			<real>596278277.29470301</real>
-			<key>timeStoppedRecording</key>
-			<real>596278526.39887297</real>
-			<key>title</key>
-			<string>Debug puzzle444</string>
-			<key>uniqueIdentifier</key>
-			<string>E6DAA92E-DDA8-41FA-930E-F06272954A19</string>
-		</dict>
-		<key>E96324EC-EDEE-40DA-BF8D-1C54E415BC86</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>E96324EC-EDEE-40DA-BF8D-1C54E415BC86.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>puzzle444 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>puzzle444</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug puzzle444</string>
-			<key>timeStartedRecording</key>
-			<real>596390585.82019699</real>
-			<key>timeStoppedRecording</key>
-			<real>596393148.65744197</real>
-			<key>title</key>
-			<string>Debug puzzle444</string>
-			<key>uniqueIdentifier</key>
-			<string>E96324EC-EDEE-40DA-BF8D-1C54E415BC86</string>
-		</dict>
-		<key>EE2DD187-B682-4B64-8F0B-83BA071BE6A1</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>EE2DD187-B682-4B64-8F0B-83BA071BE6A1.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>puzzle444 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>puzzle444</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug puzzle444</string>
-			<key>timeStartedRecording</key>
-			<real>596897652.11103594</real>
-			<key>timeStoppedRecording</key>
-			<real>596897765.08454096</real>
-			<key>title</key>
-			<string>Debug puzzle444</string>
-			<key>uniqueIdentifier</key>
-			<string>EE2DD187-B682-4B64-8F0B-83BA071BE6A1</string>
-		</dict>
-		<key>EF181AD1-735F-4B65-B88B-C76AAFD47C31</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>EF181AD1-735F-4B65-B88B-C76AAFD47C31.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>puzzle444 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>puzzle444</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug puzzle444</string>
-			<key>timeStartedRecording</key>
-			<real>596246326.42493701</real>
-			<key>timeStoppedRecording</key>
-			<real>596246450.990062</real>
-			<key>title</key>
-			<string>Debug puzzle444</string>
-			<key>uniqueIdentifier</key>
-			<string>EF181AD1-735F-4B65-B88B-C76AAFD47C31</string>
-		</dict>
-		<key>EF2CD27E-3D7F-46EB-B5C8-7FC0CF60EC94</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>EF2CD27E-3D7F-46EB-B5C8-7FC0CF60EC94.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>puzzle444 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>puzzle444</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug puzzle444</string>
-			<key>timeStartedRecording</key>
-			<real>596277225.08103895</real>
-			<key>timeStoppedRecording</key>
-			<real>596278101.66918004</real>
-			<key>title</key>
-			<string>Debug puzzle444</string>
-			<key>uniqueIdentifier</key>
-			<string>EF2CD27E-3D7F-46EB-B5C8-7FC0CF60EC94</string>
-		</dict>
-		<key>F3A1A31D-40BF-4FE8-9C49-1A0841B1F9E5</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>F3A1A31D-40BF-4FE8-9C49-1A0841B1F9E5.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>puzzle444 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>puzzle444</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug puzzle444</string>
-			<key>timeStartedRecording</key>
-			<real>596244155.521855</real>
-			<key>timeStoppedRecording</key>
-			<real>596244187.24541903</real>
-			<key>title</key>
-			<string>Debug puzzle444</string>
-			<key>uniqueIdentifier</key>
-			<string>F3A1A31D-40BF-4FE8-9C49-1A0841B1F9E5</string>
-		</dict>
-		<key>FBC847CE-54A8-434D-A1A8-6F7295D2DAF4</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>FBC847CE-54A8-434D-A1A8-6F7295D2DAF4.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>puzzle444 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>puzzle444</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug puzzle444</string>
-			<key>timeStartedRecording</key>
-			<real>596278881.62316</real>
-			<key>timeStoppedRecording</key>
-			<real>596278999.48841703</real>
-			<key>title</key>
-			<string>Debug puzzle444</string>
-			<key>uniqueIdentifier</key>
-			<string>FBC847CE-54A8-434D-A1A8-6F7295D2DAF4</string>
-		</dict>
-		<key>FECE5578-7996-42D5-B0AA-78A97939BEBF</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>FECE5578-7996-42D5-B0AA-78A97939BEBF.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>puzzle444 project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>puzzle444</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug puzzle444</string>
-			<key>timeStartedRecording</key>
-			<real>596244010.82360005</real>
-			<key>timeStoppedRecording</key>
-			<real>596244046.86524904</real>
-			<key>title</key>
-			<string>Debug puzzle444</string>
-			<key>uniqueIdentifier</key>
-			<string>FECE5578-7996-42D5-B0AA-78A97939BEBF</string>
+			<string>FCBDC86D-34CA-405C-8AEC-0D2ED6245317</string>
 		</dict>
 	</dict>
 </dict>

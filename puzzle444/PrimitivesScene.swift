@@ -14,7 +14,7 @@ class PrimitivesScene: SCNScene {
     
     override init() {
         super.init()
-        cameraNode?.position = SCNVector3(x: 7, y: 7, z: 7)
+        cameraNode?.position = SCNVector3(x: 0, y: 2, z: 0)
         for x in 0...3 {
             for y in 0...3 {
                 for z in 0...3 {
@@ -22,7 +22,7 @@ class PrimitivesScene: SCNScene {
                     sphereGeometry.firstMaterial?.diffuse.contents = UIColor.gray
                     let sphereNode = SCNNode(geometry: sphereGeometry)
                     sphereNode.name = "\(x)\(y)\(z)"
-                    sphereNode.position = SCNVector3(x: Float(x) * 2.0, y: 7 + Float(y) * 2.0, z: Float(z) * 2.0)
+                    sphereNode.position = SCNVector3(x: Float(x) * 2.0, y: Float(y) * 2.0, z: Float(z) * 2.0)
                     self.rootNode.addChildNode(sphereNode)
                 }
             }

@@ -15,7 +15,7 @@ class WiFiGameViewController: UIViewController {
     let resetGameButton = UIButton()
     let scene = SCNView()
     
-    let dots = NSMutableArray()
+    let game = Game()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,6 @@ class WiFiGameViewController: UIViewController {
         
         scene.backgroundColor = .black
         scene.scene = PrimitivesScene()
-//        scene.scene.delegate = self
         scene.allowsCameraControl = true
         scene.autoenablesDefaultLighting = true
         let tapGesture = UITapGestureRecognizer( target: self, action: #selector(handleTap))
@@ -43,27 +42,20 @@ class WiFiGameViewController: UIViewController {
         placeButtons()
     }
     
+    func resetGame(){
+        game.reset()
+        for node in (scene.scene?.rootNode.childNodes)! {
+            node.geometry?.firstMaterial?.diffuse.contents = UIColor.gray
+        }
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         placeButtons()
     }
     
     @objc func handleTap(gestureRecognizer: UIGestureRecognizer){
-        
-        // check what nodes are tapped
-        let p = gestureRecognizer.location(in: scene)
-        let hitResults = scene.hitTest(p, options: [:])
-        // check that we clicked on at least one object
-        if hitResults.count > 0 {
-            // retrieved the first clicked object
-            let result: SCNHitTestResult = hitResults[0]
-            
-            print(result.node.name ?? "")
-            //   print(result.textureCoordinates(withMappingChannel: 0)) // This line is added here.
-            print("x: \(p.x) y: \(p.y)") // <--- THIS IS WHERE I PRINT THE COORDINATES
-            
-            
-        }
+     
     }
     
     func placeButtons(){
@@ -79,7 +71,9 @@ class WiFiGameViewController: UIViewController {
     }
     
     @objc func resetGamePressed(){
-        print("reset fired. user Alias is \(GKLocalPlayer().alias)")
+        print("reset fired.")
+        game.reset()
+        resetGame()
         
         
     }
