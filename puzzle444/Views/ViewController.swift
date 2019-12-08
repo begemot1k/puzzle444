@@ -7,18 +7,26 @@
 //
 
 import UIKit
-
+import AVFoundation
 
 class ViewController: UIViewController {
     
     var monoGameButton = UIButton()
     var wifiGameButton = UIButton()
-
+    var player = AVAudioPlayer()
+    
+    let soundTrackUrl = "http://157.245.165.84/Minecraft.mp3"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .darkGray
         placeButtons()
+        downloadSoundTrack(completion: { music, error in
+                DispatchQueue.main.async {
+                    self.playMusic(music: music!)
+                }
+            })
     }
     
     func placeButtons(){
@@ -40,6 +48,40 @@ class ViewController: UIViewController {
         
         wifiGameButton.frame = CGRect(x: 0, y: CGFloat(view.center.y + 50), width: buttonsWidth, height: buttonsHeight)
         wifiGameButton.center.x = view.center.x
+        
+    }
+    
+    func playMusic(music: Data){
+        do {
+            player = try AVAudioPlayer(data: music)
+            player.prepareToPlay()
+            player.play()
+            
+            let audioSession = AVAudioSession.sharedInstance()
+            do{
+                try audioSession.setCategory(.playback)
+            }catch{
+                print("в фоне музыки, наверное, не будет")
+            }
+        }catch {
+            print("музыки не будет")
+        }
+    }
+    
+    func downloadSoundTrack(completion: @escaping (Data?, Error?) -> Void) {
+        guard let url = URL(string: soundTrackUrl) else { return }
+
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            if let currentError = error {
+                completion(nil, currentError)
+                return
+            }
+
+            guard let soundTrack = data else { return }
+            completion(soundTrack, nil)
+        }
+
+        task.resume()
     }
     
     @objc func monoGamePressed(){
