@@ -13,6 +13,7 @@ class MPCHandler: NSObject, MCSessionDelegate {
     var session: MCSession!
     var browser: MCBrowserViewController!
     var advertiser: MCAdvertiserAssistant? = nil
+    var delegate: MoveProtocol!
     
     func setupPeer(displayName: String){
         peerID = MCPeerID(displayName: displayName)
@@ -57,6 +58,7 @@ class MPCHandler: NSObject, MCSessionDelegate {
                 object: nil,
                 userInfo: userInfo
             )
+            print("received data \(data)")
         }
 
     }

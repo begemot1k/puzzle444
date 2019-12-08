@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8939A935239D459500C87083 /* MoveProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8939A934239D459500C87083 /* MoveProtocol.swift */; };
 		896F72FF238577F800238FAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F72FE238577F800238FAF /* AppDelegate.swift */; };
 		896F7303238577F800238FAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F7302238577F800238FAF /* ViewController.swift */; };
 		896F7308238577F900238FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896F7307238577F900238FAF /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8939A934239D459500C87083 /* MoveProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveProtocol.swift; sourceTree = "<group>"; };
 		896F72FB238577F800238FAF /* puzzle444.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = puzzle444.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		896F72FE238577F800238FAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		896F7302238577F800238FAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 		89EB3EEC239D184100CA116D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8939A934239D459500C87083 /* MoveProtocol.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				896F7303238577F800238FAF /* ViewController.swift in Sources */,
+				8939A935239D459500C87083 /* MoveProtocol.swift in Sources */,
 				896F737B2393BBAD00238FAF /* Game.swift in Sources */,
 				896F7359238A9D6300238FAF /* PrimitivesScene.swift in Sources */,
 				896F72FF238577F800238FAF /* AppDelegate.swift in Sources */,

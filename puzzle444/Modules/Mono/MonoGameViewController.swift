@@ -15,11 +15,10 @@ class MonoGameViewController: UIViewController {
     let resetGameButton = UIButton()
     let scene = SCNView()
     let toolbar = UIToolbar()
-    let statusToolbar = UIToolbar()
-    
+    let labelGameStatus = UILabel()
+
     let itemText = UIBarButtonItem()
-    let itemHotSpot = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: nil)
-    let itemReset = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: nil)
+    let itemGameMenu = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(gameMenu))
     let divider = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
     let game = Game()
     
@@ -33,12 +32,10 @@ class MonoGameViewController: UIViewController {
         scene.frame = self.view.frame
         scene.allowsCameraControl = true
         scene.autoenablesDefaultLighting = true
-        let tapGesture = UITapGestureRecognizer( target: self, action: #selector(handleTap))
+        let tapGesture = UITapGestureRecognizer( target: self, action: #selector(handleTap(gestureRecognizer:)))
         scene.addGestureRecognizer(tapGesture)
         view.addSubview(scene)
         
-        navigationController?.setNavigationBarHidden(true, animated: true)
-        navigationController?.setToolbarHidden(true, animated: true)
         setupToolBar()
     }
     
@@ -46,19 +43,12 @@ class MonoGameViewController: UIViewController {
     func setupToolBar(){
         toolbar.autoresizesSubviews = true
         
-        itemText.tag = 0
-        itemText.title = game.status
-        itemText.setTitleTextAttributes(nil, for: .normal)
-        itemText.action = #selector(placeButtons(sender:))
-        itemHotSpot.tag = 1
-        itemHotSpot.action = #selector(placeButtons(sender:))
-        itemReset.tag = 2
-        itemReset.action = #selector(placeButtons(sender:))
+        labelGameStatus.text = game.status
         
-        toolbar.setItems([itemHotSpot, itemReset, divider ], animated: true)
-        statusToolbar.setItems([itemText ], animated: true)
+        toolbar.setItems([itemGameMenu, divider ], animated: true)
+        
         view.addSubview(toolbar)
-        view.addSubview(statusToolbar)
+        view.addSubview(labelGameStatus)
         
         
         toolbar.translatesAutoresizingMaskIntoConstraints = false
@@ -67,11 +57,11 @@ class MonoGameViewController: UIViewController {
         toolbar.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         toolbar.heightAnchor.constraint(equalToConstant: 44).isActive = true
         
-        statusToolbar.translatesAutoresizingMaskIntoConstraints = false
-        statusToolbar.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        statusToolbar.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        statusToolbar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-        statusToolbar.heightAnchor.constraint(equalToConstant: 44).isActive = true
+        labelGameStatus.translatesAutoresizingMaskIntoConstraints = false
+        labelGameStatus.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        labelGameStatus.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        labelGameStatus.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        labelGameStatus.heightAnchor.constraint(equalToConstant: 44).isActive = true
 
     }
     
@@ -107,7 +97,7 @@ class MonoGameViewController: UIViewController {
                 result.node.geometry?.firstMaterial?.diffuse.contents = color
                 game.move(dotName: name )
             }
-            itemText.title = game.status
+            labelGameStatus.text = game.status
         }
     }
     
@@ -124,7 +114,40 @@ class MonoGameViewController: UIViewController {
         }
     }
     
+    func undo(){
+        let color = UIColor.gray
+        game.undo()
+        for node in (scene.scene?.rootNode.childNodes)! {
+            if game.dots[game.coordToIndex(coord:  node.name! )] == .free {
+                node.geometry?.firstMaterial?.diffuse.contents = color
+            }
+        }        
+        labelGameStatus.text = game.status
+    }
     
+    @objc func gameMenu(){
+        let menu = UIAlertController(title: "Вы желаете", message: "выберите действие", preferredStyle: .actionSheet)
+        let actionUndo = UIAlertAction(title: "Отменить последний ход", style: .default, handler: { (UIAlertAction)->Void in
+            self.undo()
+        } )
+        menu.addAction(actionUndo)
+        let actionReset = UIAlertAction(title: "Сбросить игру", style: .default, handler: { (UIAlertAction)->Void in
+            self.resetGame()
+        } )
+        menu.addAction(actionReset)
+        let actionContinue = UIAlertAction(title: "Подолжить игру", style: .cancel, handler: { (UIAlertAction)->Void in
+            
+        } )
+        menu.addAction(actionContinue)
+        let actionExit = UIAlertAction(title: "Выход в меню", style: .destructive, handler: { (UIAlertAction)->Void in
+            self.navigationController?.popViewController(animated: true)
+        } )
+        menu.addAction(actionExit)
+        
+        self.present( menu, animated: true, completion: nil)
+        
+    }
+
     
     /*
      // MARK: - Navigation

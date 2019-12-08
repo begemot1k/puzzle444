@@ -23,9 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = UINavigationController()
         
         navigationController.viewControllers=[ViewController()]
-        navigationController.setNavigationBarHidden(false, animated: true)
-        navigationController.setToolbarHidden(false, animated: true)
-//        navigationController.toolbar.items?.append(<#T##newElement: UIBarButtonItem##UIBarButtonItem#>)
+        navigationController.setNavigationBarHidden(true, animated: true)
+        navigationController.setToolbarHidden(true, animated: true)
         
         let viewController = ViewController()
         viewController.view.backgroundColor = .white

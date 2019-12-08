@@ -7,31 +7,17 @@
 //
 
 import UIKit
-import MultipeerConnectivity    
 
-class ViewController: UIViewController, MCBrowserViewControllerDelegate {
+
+class ViewController: UIViewController {
     
     var monoGameButton = UIButton()
     var wifiGameButton = UIButton()
-    var appDelegate: AppDelegate!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
-        view.backgroundColor = .black
-        
-        appDelegate = (UIApplication.shared.delegate as! AppDelegate)
-        appDelegate.mpcHandler.setupPeer(displayName: UIDevice.current.name)
-        appDelegate.mpcHandler.setupSession()
-        appDelegate.mpcHandler.setupBrowser()
-        appDelegate.mpcHandler.advertiseSelf(advertise: true)
-        
-        placeButtons()
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+        view.backgroundColor = .darkGray
         placeButtons()
     }
     
@@ -50,18 +36,10 @@ class ViewController: UIViewController, MCBrowserViewControllerDelegate {
         let buttonsWidth = CGFloat(200)
         let buttonsHeight = CGFloat(50)
         monoGameButton.frame = CGRect(x: 0, y: CGFloat(view.center.y - 50), width: buttonsWidth, height: buttonsHeight)
-        monoGameButton.translatesAutoresizingMaskIntoConstraints = false
-        monoGameButton.heightAnchor.constraint(equalToConstant: buttonsHeight).isActive = true
-        monoGameButton.widthAnchor.constraint(equalToConstant: buttonsWidth).isActive = true
         monoGameButton.center.x = view.center.x
         
         wifiGameButton.frame = CGRect(x: 0, y: CGFloat(view.center.y + 50), width: buttonsWidth, height: buttonsHeight)
-        wifiGameButton.translatesAutoresizingMaskIntoConstraints = false
-        wifiGameButton.heightAnchor.constraint(equalToConstant: buttonsHeight).isActive = true
-        wifiGameButton.widthAnchor.constraint(equalToConstant: buttonsWidth).isActive = true
         wifiGameButton.center.x = view.center.x
-
-    
     }
     
     @objc func monoGamePressed(){
@@ -70,13 +48,5 @@ class ViewController: UIViewController, MCBrowserViewControllerDelegate {
 
     @objc func wifiGamePressed(){
         self.navigationController?.pushViewController(WiFiGameViewController(), animated: true)
-    }
-
-    func browserViewControllerDidFinish(_ browserViewController: MCBrowserViewController) {
-        appDelegate.mpcHandler.browser.dismiss(animated: true, completion: nil)
-    }
-    
-    func browserViewControllerWasCancelled(_ browserViewController: MCBrowserViewController) {
-        appDelegate.mpcHandler.browser.dismiss(animated: true, completion: nil)
     }
 }

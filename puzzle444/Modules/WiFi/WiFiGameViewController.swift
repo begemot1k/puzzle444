@@ -10,7 +10,8 @@ import UIKit
 import GameKit
 import MultipeerConnectivity
 
-class WiFiGameViewController: UIViewController, MCBrowserViewControllerDelegate {
+class WiFiGameViewController: UIViewController, MCBrowserViewControllerDelegate, MoveProtocol {
+    
     
     var appDelegate: AppDelegate!
     
@@ -24,6 +25,9 @@ class WiFiGameViewController: UIViewController, MCBrowserViewControllerDelegate 
     let itemSpace = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: self, action: nil)
     let itemNetworkStatus = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
     let game = Game()
+    
+    var opponentName: String = ""
+    var opponentPeerID: MCPeerID!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -108,41 +112,14 @@ class WiFiGameViewController: UIViewController, MCBrowserViewControllerDelegate 
         }
     }
     
-    /// Обработка нажатий на кнопки тулбаров
-    /// - Parameter sender: нажатая кнопка
-    @objc func placeButtons(sender: UIView){
-        print("test event fired with \(sender)")
-        // TODO: добавить запрос на выполнение действия
-        if sender.tag == 1 {
-            networkMenu()
-        }
-        if sender.tag == 2 {
-            resetGame()
-        }
-    }
-    
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
- 
     @objc func networkMenu(){
         let menu = UIAlertController(title: "Вы желаете", message: "выберите действие", preferredStyle: .actionSheet)
-        let actionExit = UIAlertAction(title: "Выход в меню", style: .destructive, handler: { (UIAlertAction)->Void in
-            self.navigationController?.popViewController(animated: true)
-        } )
-        menu.addAction(actionExit)
-        let actionConnect = UIAlertAction(title: "Найти оппонента", style: .default, handler: { (UIAlertAction)->Void in
-            self.findOpponent()
-        } )
-        menu.addAction(actionConnect)
+        if opponentPeerID == nil {
+            let actionConnect = UIAlertAction(title: "Найти оппонента", style: .default, handler: { (UIAlertAction)->Void in
+                self.findOpponent()
+            } )
+            menu.addAction(actionConnect)
+        }
         let actionReset = UIAlertAction(title: "Сбросить игру", style: .default, handler: { (UIAlertAction)->Void in
             self.resetGame()
         } )
@@ -151,11 +128,15 @@ class WiFiGameViewController: UIViewController, MCBrowserViewControllerDelegate 
             
         } )
         menu.addAction(actionContinue)
-
+        let actionExit = UIAlertAction(title: "Выход в меню", style: .destructive, handler: { (UIAlertAction)->Void in
+            self.navigationController?.popViewController(animated: true)
+        } )
+        menu.addAction(actionExit)
+        
         self.present( menu, animated: true, completion: nil)
         
     }
- 
+    
     func findOpponent(){
         guard appDelegate.mpcHandler.session != nil else { return }
         appDelegate.mpcHandler.setupBrowser()
@@ -171,4 +152,33 @@ class WiFiGameViewController: UIViewController, MCBrowserViewControllerDelegate 
     func browserViewControllerWasCancelled(_ browserViewController: MCBrowserViewController) {
         appDelegate.mpcHandler.browser.dismiss(animated: true, completion: nil)
     }
+    
+    func receiveMove(coord: String) {
+        print("received move \(coord)")
+    }
+    
+    func opponentFound(name: String, peer: MCPeerID) {
+        opponentName = name
+        opponentPeerID = peer
+    }
+    
+    func receiveDrawRequest() {
+        print("видимо соперник уже проигрывает")
+    }
+    
+    func connectionReset() {
+        print("какая печаль")
+    }
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
+

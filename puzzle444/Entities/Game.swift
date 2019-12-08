@@ -13,6 +13,7 @@ class Game: NSObject {
     var isGameOver: Bool!
     var dots: Array<Player>!
     var status: String!
+    var moves: Array<String>!
     
     override init(){
         super.init()
@@ -24,6 +25,7 @@ class Game: NSObject {
         activePlayer = .blue
         isGameOver = false
         dots = Array(repeating: Player.free, count: 64)
+        moves = Array()
         status = "Первый ход СИНИХ"
     }
     
@@ -40,7 +42,7 @@ class Game: NSObject {
     func move(dotName: String){
         guard isValidMove(dotName: dotName) else { return }
         dots[ coordToIndex( coord: dotName ) ] = activePlayer
-        
+        moves.append(dotName)
         // меняем текущего игрока, обновляем статус, проверяем выигрыш
         if activePlayer == .blue {
             activePlayer = .red
@@ -50,6 +52,22 @@ class Game: NSObject {
             status = "Ход СИНИХ"
         }
         checkGameOver()
+    }
+    
+    func undo(){
+        guard !isGameOver else {return}
+        guard moves.count>0 else {return}
+        let lastMove = moves.removeLast()
+        dots[ coordToIndex(coord: lastMove) ] = .free
+        // меняем текущего игрока, обновляем статус
+        if activePlayer == .blue {
+            activePlayer = .red
+            status = "Ход КРАСНЫХ"
+        } else {
+            activePlayer = .blue
+            status = "Ход СИНИХ"
+        }
+        isGameOver = false
     }
     
     /// Проверка на завершение игры по комбинациям и по заполнению всего игрового поля
