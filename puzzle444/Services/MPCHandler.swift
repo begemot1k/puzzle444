@@ -48,6 +48,15 @@ class MPCHandler: NSObject, MCSessionDelegate {
                 userInfo: userInfo
             )
         }
+        if state == .connected {
+            let displayName = peerID.displayName
+            delegate.opponentFound(name: displayName , peerID: peerID)
+            return
+        }
+        if state == .notConnected {
+            delegate.connectionReset()
+            return
+        }
     }
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
@@ -58,9 +67,9 @@ class MPCHandler: NSObject, MCSessionDelegate {
                 object: nil,
                 userInfo: userInfo
             )
-            print("received data \(data)")
         }
-
+        print("от \(peerID) пришло сообщение \(data)")
+        delegate.receiveMove(coord: String.init(data: data, encoding: .utf8)! )
     }
     
     func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {

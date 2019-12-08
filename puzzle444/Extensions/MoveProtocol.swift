@@ -13,7 +13,7 @@ protocol MoveProtocol {
 
     func receiveMove(coord: String)
     
-    func opponentFound(name: String, peer: MCPeerID)
+    func opponentFound(name: String, peerID: MCPeerID)
     
     func receiveDrawRequest()
     

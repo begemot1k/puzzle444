@@ -12,8 +12,7 @@ import MultipeerConnectivity
 
 class WiFiGameViewController: UIViewController, MCBrowserViewControllerDelegate, MoveProtocol {
     
-    
-    var appDelegate: AppDelegate!
+    var mpcHandler = MPCHandler()
     
     let mainMenuButton = UIButton()
     let resetGameButton = UIButton()
@@ -22,21 +21,28 @@ class WiFiGameViewController: UIViewController, MCBrowserViewControllerDelegate,
     
     let labelGameStatus = UILabel()
     var itemMenu = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(networkMenu))
+    
     let itemSpace = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: self, action: nil)
-    let itemNetworkStatus = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+    let itemNetworkStatus = UIBarButtonItem(title: "Статус соединения", style: .plain, target: self, action: nil)
     let game = Game()
     
     var opponentName: String = ""
     var opponentPeerID: MCPeerID!
+    var myFigure: Player = .free
+    var myValue: Double = 0.0
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        mpcHandler.advertiseSelf(advertise: false)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        appDelegate = UIApplication.shared.delegate as? AppDelegate
-        appDelegate.mpcHandler.setupPeer(displayName: UIDevice.current.name)
-        appDelegate.mpcHandler.setupSession()
-        appDelegate.mpcHandler.advertiseSelf(advertise: true)
+        
+        mpcHandler.setupPeer(displayName: UIDevice.current.name)
+        mpcHandler.setupSession()
+        mpcHandler.advertiseSelf(advertise: true)
         
         view.backgroundColor = .white
         scene.backgroundColor = .black
@@ -51,12 +57,14 @@ class WiFiGameViewController: UIViewController, MCBrowserViewControllerDelegate,
         navigationController?.setNavigationBarHidden(true, animated: true)
         navigationController?.setToolbarHidden(true, animated: true)
         setupToolBar()
+        
+        mpcHandler.delegate = self
     }
     
     /// Настройка HUD
     func setupToolBar(){
         toolbar.autoresizesSubviews = true
-        
+        labelGameStatus.textColor = .green
         labelGameStatus.text = game.status
         toolbar.setItems([itemMenu, itemSpace, itemNetworkStatus ], animated: true)
         view.addSubview(toolbar)
@@ -93,22 +101,46 @@ class WiFiGameViewController: UIViewController, MCBrowserViewControllerDelegate,
     /// Обработка нажатия на объекты сцены
     /// - Parameter gestureRecognizer: распознаватель жеста
     @objc func handleTap(gestureRecognizer: UIGestureRecognizer){
-        var color: UIColor
-        let p = gestureRecognizer.location(in: scene)
-        let hitResults = scene.hitTest(p, options: [:])
-        if hitResults.count > 0 {
-            let result: SCNHitTestResult = hitResults[0]
-            guard let name = result.node.name else { return }
-            if game.isValidMove(dotName: name ){
-                if game.activePlayer == .blue {
-                    color = UIColor.blue
-                } else {
-                    color = UIColor.red
+        if game.activePlayer == myFigure {
+            let p = gestureRecognizer.location(in: scene)
+            let hitResults = scene.hitTest(p, options: [:])
+            if hitResults.count > 0 {
+                let result: SCNHitTestResult = hitResults[0]
+                guard let name = result.node.name else { return }
+                performMove(coord: name)
+                do {
+                    try mpcHandler.session.send(name.data(using: .utf8, allowLossyConversion: false)!, toPeers: [opponentPeerID], with: .reliable)
+                } catch {
+                    print("ошибка отправки хода оппоненту")
                 }
-                result.node.geometry?.firstMaterial?.diffuse.contents = color
-                game.move(dotName: name )
             }
-            labelGameStatus.text = game.status
+        }
+    }
+    
+    func performMove(coord: String){
+        var color: UIColor
+        print("обработка хода в \(coord)")
+        if game.isValidMove(dotName: coord ){
+            print("move is valid")
+            if game.activePlayer == .blue {
+                color = UIColor.blue
+            } else {
+                color = UIColor.red
+            }
+            print("current color is \(color)")
+            DispatchQueue.main.async {
+                for node in (self.scene.scene?.rootNode.childNodes )! {
+                    if  node.name == coord {
+                        print("найдена ячейка \(String(describing: node.name)). покрасили")
+                        node.geometry?.firstMaterial?.diffuse.contents = color
+                    }
+                }
+            }
+            print("передали ход в модель игры")
+            game.move(dotName: coord)
+        }
+        DispatchQueue.main.async {
+            self.labelGameStatus.text = self.game.status
         }
     }
     
@@ -116,6 +148,8 @@ class WiFiGameViewController: UIViewController, MCBrowserViewControllerDelegate,
         let menu = UIAlertController(title: "Вы желаете", message: "выберите действие", preferredStyle: .actionSheet)
         if opponentPeerID == nil {
             let actionConnect = UIAlertAction(title: "Найти оппонента", style: .default, handler: { (UIAlertAction)->Void in
+                self.myFigure = .free
+                self.myValue = Double.random(in: 0 ..< 1)
                 self.findOpponent()
             } )
             menu.addAction(actionConnect)
@@ -138,28 +172,58 @@ class WiFiGameViewController: UIViewController, MCBrowserViewControllerDelegate,
     }
     
     func findOpponent(){
-        guard appDelegate.mpcHandler.session != nil else { return }
-        appDelegate.mpcHandler.setupBrowser()
-        appDelegate.mpcHandler.browser.delegate = self
-        present(appDelegate.mpcHandler.browser, animated: true, completion: nil)
-        
+        guard mpcHandler.session != nil else { return }
+        mpcHandler.setupBrowser()
+        mpcHandler.browser.delegate = self
+        present(mpcHandler.browser, animated: true, completion: nil)
     }
     
     func browserViewControllerDidFinish(_ browserViewController: MCBrowserViewController) {
-        appDelegate.mpcHandler.browser.dismiss(animated: true, completion: nil)
+        mpcHandler.browser.dismiss(animated: true, completion: nil)
     }
     
     func browserViewControllerWasCancelled(_ browserViewController: MCBrowserViewController) {
-        appDelegate.mpcHandler.browser.dismiss(animated: true, completion: nil)
+        mpcHandler.browser.dismiss(animated: true, completion: nil)
     }
     
     func receiveMove(coord: String) {
-        print("received move \(coord)")
+        print("пришли данные \(coord)")
+        if myFigure == .free {
+            print("я вне игры, необходимо определиться кто за кого")
+            guard let opponentValue = Double(coord) else {return}
+            if myValue > opponentValue {
+                myFigure = .blue
+                itemNetworkStatus.title = "Соединено, мой цвет СИНИЙ"
+            }
+            else {
+                myFigure = .red
+                itemNetworkStatus.title = "Соединено, мой цвет КРАСНЫЙ"
+            }
+            print("всё очень просто. моё значение \(myValue), у соперника \(opponentValue), значит у меня \(myFigure)")
+            return
+        }
+        performMove(coord: coord)
     }
     
-    func opponentFound(name: String, peer: MCPeerID) {
+    func opponentFound(name: String, peerID: MCPeerID) {
+        print("ВНИМАНИЕ! ПРИСОЕДИНИЛСЯ ИГРОК \(name)")
         opponentName = name
-        opponentPeerID = peer
+        opponentPeerID = peerID
+        myFigure = .free
+        myValue = Double.random(in: 0 ..< 1)
+        print("загадали наше значение, немного подождем, чтобы оппонент тоже его загадал")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2){
+            print("ну вот, отправляем наше значение")
+            do {
+                if self.opponentPeerID != nil {
+                    try self.mpcHandler.session.send("\(self.myValue)".data(using: .utf8, allowLossyConversion: false )!, toPeers: [self.opponentPeerID], with: .reliable)
+                } else {
+                    print("а откуда у нас оппонент???")
+                }
+            } catch {
+                print("error")
+            }
+        }
     }
     
     func receiveDrawRequest() {
@@ -167,7 +231,18 @@ class WiFiGameViewController: UIViewController, MCBrowserViewControllerDelegate,
     }
     
     func connectionReset() {
-        print("какая печаль")
+        print("Оппонент покинул игру")
+        DispatchQueue.main.async {
+            self.labelGameStatus.text = "Начните игру или ожидайте приглашения"
+            self.itemNetworkStatus.title = "Соединение разорвано"
+            self.myFigure = .free
+            self.myValue = 0.0
+            self.stopGame()
+        }
+    }
+    
+    func stopGame(){
+        game.isGameOver = true
     }
     
     /*
