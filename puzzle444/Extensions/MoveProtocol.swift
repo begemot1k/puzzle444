@@ -17,6 +17,10 @@ protocol MoveProtocol {
     
     func receiveDrawRequest()
     
+    func newGame()
+    
+    func drawConfirmed()
+    
     func connectionReset()
     
 }

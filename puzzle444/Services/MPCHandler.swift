@@ -69,6 +69,22 @@ class MPCHandler: NSObject, MCSessionDelegate {
             )
         }
         print("от \(peerID) пришло сообщение \(data)")
+        
+        if String.init(data: data, encoding: .utf8 ) == "draw" {
+            delegate.receiveDrawRequest()
+            return
+        }
+        
+        if String.init(data: data, encoding: .utf8 ) == "drawConfirmed" {
+            delegate.drawConfirmed()
+            return
+        }
+        
+        if String.init(data: data, encoding: .utf8 ) == "newGame" {
+            delegate.newGame()
+            return
+        }
+        
         delegate.receiveMove(coord: String.init(data: data, encoding: .utf8)! )
     }
     
