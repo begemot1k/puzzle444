@@ -10,7 +10,7 @@ import UIKit
 import MultipeerConnectivity
 
 protocol MoveProtocol {
-
+    
     func receiveMove(coord: String)
     
     func opponentFound(name: String, peerID: MCPeerID)

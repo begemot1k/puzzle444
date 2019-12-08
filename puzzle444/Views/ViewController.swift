@@ -23,10 +23,10 @@ class ViewController: UIViewController {
         view.backgroundColor = .darkGray
         placeButtons()
         downloadSoundTrack(completion: { music, error in
-                DispatchQueue.main.async {
-                    self.playMusic(music: music!)
-                }
-            })
+            DispatchQueue.main.async {
+                self.playMusic(music: music!)
+            }
+        })
     }
     
     func placeButtons(){
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         wifiGameButton.setTitleColor(.green, for: .normal)
         wifiGameButton.addTarget(self, action: #selector(wifiGamePressed), for: .touchUpInside)
         view.addSubview(wifiGameButton)
-
+        
         
         let buttonsWidth = CGFloat(200)
         let buttonsHeight = CGFloat(50)
@@ -55,6 +55,7 @@ class ViewController: UIViewController {
         do {
             player = try AVAudioPlayer(data: music)
             player.prepareToPlay()
+            player.numberOfLoops = -1
             player.play()
             
             let audioSession = AVAudioSession.sharedInstance()
@@ -70,24 +71,22 @@ class ViewController: UIViewController {
     
     func downloadSoundTrack(completion: @escaping (Data?, Error?) -> Void) {
         guard let url = URL(string: soundTrackUrl) else { return }
-
+        
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let currentError = error {
                 completion(nil, currentError)
                 return
             }
-
             guard let soundTrack = data else { return }
             completion(soundTrack, nil)
         }
-
         task.resume()
     }
     
     @objc func monoGamePressed(){
         self.navigationController?.pushViewController(MonoGameViewController(), animated: true)
     }
-
+    
     @objc func wifiGamePressed(){
         self.navigationController?.pushViewController(WiFiGameViewController(), animated: true)
     }

@@ -99,6 +99,4 @@ class MPCHandler: NSObject, MCSessionDelegate {
     func session(_ session: MCSession, didFinishReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, at localURL: URL?, withError error: Error?) {
         
     }
-    
-
 }

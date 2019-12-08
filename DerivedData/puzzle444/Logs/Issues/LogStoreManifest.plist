@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>2C22259A-CB48-477D-99DB-0D2757493C56</key>
+		<key>3EF1D39D-45AF-4A8C-92C8-FECFE7510719</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,24 +15,24 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>2C22259A-CB48-477D-99DB-0D2757493C56.xcactivitylog</string>
+			<string>3EF1D39D-45AF-4A8C-92C8-FECFE7510719.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>S</string>
 			</dict>
 			<key>signature</key>
 			<string>puzzle444-dnrttjzpcaocbkctraghszpzzpeo</string>
 			<key>timeStartedRecording</key>
-			<real>597534867.32063496</real>
+			<real>597535387.03905904</real>
 			<key>timeStoppedRecording</key>
-			<real>597534870.84485304</real>
+			<real>597535389.977422</real>
 			<key>title</key>
 			<string>Build target puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>2C22259A-CB48-477D-99DB-0D2757493C56</string>
+			<string>3EF1D39D-45AF-4A8C-92C8-FECFE7510719</string>
 		</dict>
 		<key>CCA85B72-C8A8-49A5-AD57-71F23F6E72CE</key>
 		<dict>

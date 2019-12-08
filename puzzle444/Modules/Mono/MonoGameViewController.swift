@@ -16,7 +16,7 @@ class MonoGameViewController: UIViewController {
     let scene = SCNView()
     let toolbar = UIToolbar()
     let labelGameStatus = UILabel()
-
+    
     let itemText = UIBarButtonItem()
     let itemGameMenu = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(gameMenu))
     let divider = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
@@ -62,7 +62,7 @@ class MonoGameViewController: UIViewController {
         labelGameStatus.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         labelGameStatus.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         labelGameStatus.heightAnchor.constraint(equalToConstant: 44).isActive = true
-
+        
     }
     
     /// Сбос игры
@@ -147,7 +147,7 @@ class MonoGameViewController: UIViewController {
         self.present( menu, animated: true, completion: nil)
         
     }
-
+    
     
     /*
      // MARK: - Navigation
