@@ -95,14 +95,14 @@ class WiFiGameViewController: UIViewController, MCBrowserViewControllerDelegate,
             }
             self.labelGameStatus.text = self.game.status
         }
-
+        
     }
     
     /// Сбос игры
     func sendDrawRequest(){
         do {
             drawSent = true
-        try mpcHandler.session.send("draw".data(using: .utf8, allowLossyConversion: false)!, toPeers: [opponentPeerID], with: .reliable)
+            try mpcHandler.session.send("draw".data(using: .utf8, allowLossyConversion: false)!, toPeers: [opponentPeerID], with: .reliable)
         } catch {
             print("ошибка отправки предложения о ничьей")
         }
@@ -216,7 +216,7 @@ class WiFiGameViewController: UIViewController, MCBrowserViewControllerDelegate,
         } catch {
             print("error")
         }
-
+        
     }
     
     func findOpponent(){
@@ -285,33 +285,33 @@ class WiFiGameViewController: UIViewController, MCBrowserViewControllerDelegate,
                 print("error")
             }
         }
-
+        
     }
     
     func receiveDrawRequest() {
         DispatchQueue.main.async {
-        print("видимо соперник уже проигрывает")
-        let alert = UIAlertController.init(title: "Ничья", message: "Оппонент предлагает ничью, согласны?", preferredStyle: .alert)
-        let actionDraw = UIAlertAction(title: "Согласен", style: .default) { (UIAlertAction) in
-            print("принимаем ничью")
-            do {
-                try self.mpcHandler.session.send("drawConfirmed".data(using: .utf8, allowLossyConversion: false)!, toPeers: [self.opponentPeerID], with: .reliable)
-                DispatchQueue.main.async {
-                    self.game.isGameOver = true
-                    self.labelGameStatus.text = "Ничья. Начните новую игру"
-                    self.itemNetworkStatus.title = "Соединено."
+            print("видимо соперник уже проигрывает")
+            let alert = UIAlertController.init(title: "Ничья", message: "Оппонент предлагает ничью, согласны?", preferredStyle: .alert)
+            let actionDraw = UIAlertAction(title: "Согласен", style: .default) { (UIAlertAction) in
+                print("принимаем ничью")
+                do {
+                    try self.mpcHandler.session.send("drawConfirmed".data(using: .utf8, allowLossyConversion: false)!, toPeers: [self.opponentPeerID], with: .reliable)
+                    DispatchQueue.main.async {
+                        self.game.isGameOver = true
+                        self.labelGameStatus.text = "Ничья. Начните новую игру"
+                        self.itemNetworkStatus.title = "Соединено."
+                    }
+                }catch {
+                    
                 }
-            }catch {
+            }
+            let actionDeny = UIAlertAction(title: "Отвергнуть", style: .destructive) { (UIAlertAction) in
+                print("со злорадством отвергаем ничью. враг слаб. добьём его!")
                 
             }
-        }
-        let actionDeny = UIAlertAction(title: "Отвергнуть", style: .destructive) { (UIAlertAction) in
-            print("со злорадством отвергаем ничью. враг слаб. добьём его!")
-            
-        }
-        alert.addAction(actionDraw)
-        alert.addAction(actionDeny)
-        self.present(alert, animated: true, completion: nil)
+            alert.addAction(actionDraw)
+            alert.addAction(actionDeny)
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
@@ -332,7 +332,7 @@ class WiFiGameViewController: UIViewController, MCBrowserViewControllerDelegate,
         opponentPeerID = nil
         opponentName = ""
         DispatchQueue.main.async {
-            self.labelGameStatus.text = "Начните игру или ожидайте приглашения"
+            self.labelGameStatus.text = "Найдите оппонента или ожидайте приглашения"
             self.itemNetworkStatus.title = "Соединение разорвано"
             self.myFigure = .free
             self.myValue = 0.0
@@ -357,17 +357,22 @@ class WiFiGameViewController: UIViewController, MCBrowserViewControllerDelegate,
     
     func closeGame(){
         if game.isGameOver {
+            print("Игра окончена, покидаем эран спокойно")
             self.navigationController?.popViewController(animated: true)
         } else {
-        let alert = UIAlertController(title: "Подтверждение", message: "Выйти из сетевой игры?", preferredStyle: .alert)
-        let actionExit = UIAlertAction(title: "Выйти", style: .destructive, handler: { (UIAlertAction) -> Void in
-            self.navigationController?.popViewController(animated: true)
-        })
-        let actionCancel = UIAlertAction(title: "Раздумал", style: .cancel, handler: nil)
-        
-        alert.addAction(actionExit)
-        alert.addAction(actionCancel)
-        self.present(alert, animated: true, completion: nil)
+            let alert = UIAlertController(title: "Подтверждение", message: "Выйти из сетевой игры?", preferredStyle: .alert)
+            let actionExit = UIAlertAction(title: "Выйти", style: .destructive, handler: { (UIAlertAction) -> Void in
+                print("покидаем эран")
+                self.navigationController?.popViewController(animated: true)
+            })
+            let actionCancel = UIAlertAction(title: "Раздумал", style: .cancel, handler: {(UIAleerAction)->Void in
+                print("передумали. остаёмся в игре")
+            })
+            
+            alert.addAction(actionExit)
+            alert.addAction(actionCancel)
+            print("Хотим покинуть игру?")
+            self.present(alert, animated: true, completion: nil)
         }
     }
     

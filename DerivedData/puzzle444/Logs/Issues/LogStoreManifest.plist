@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>3536FC4D-6360-4DFC-8916-556A03E1B41E</key>
+		<key>610679BB-34E9-48E2-8017-4866697B6193</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>3536FC4D-6360-4DFC-8916-556A03E1B41E.xcactivitylog</string>
+			<string>610679BB-34E9-48E2-8017-4866697B6193.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -26,13 +26,41 @@
 			<key>signature</key>
 			<string>puzzle444-dnrttjzpcaocbkctraghszpzzpeo</string>
 			<key>timeStartedRecording</key>
-			<real>597528885.37766004</real>
+			<real>597531810.73432004</real>
 			<key>timeStoppedRecording</key>
-			<real>597528893.90082002</real>
+			<real>597531811.02495098</real>
 			<key>title</key>
 			<string>Build target puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>3536FC4D-6360-4DFC-8916-556A03E1B41E</string>
+			<string>610679BB-34E9-48E2-8017-4866697B6193</string>
+		</dict>
+		<key>CCA85B72-C8A8-49A5-AD57-71F23F6E72CE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.bundle</string>
+			<key>fileName</key>
+			<string>CCA85B72-C8A8-49A5-AD57-71F23F6E72CE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>puzzle444Tests-dnrttjzpcaocbkctraghszpzzpeo</string>
+			<key>timeStartedRecording</key>
+			<real>597531825.82315505</real>
+			<key>timeStoppedRecording</key>
+			<real>597531827.19869995</real>
+			<key>title</key>
+			<string>Build target puzzle444Tests</string>
+			<key>uniqueIdentifier</key>
+			<string>CCA85B72-C8A8-49A5-AD57-71F23F6E72CE</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
