@@ -91,18 +91,16 @@
 		896F72FD238577F800238FAF /* puzzle444 */ = {
 			isa = PBXGroup;
 			children = (
-				896F737E239A84DA00238FAF /* MPCHandler.swift */,
-				896F7319238579B500238FAF /* puzzle444.entitlements */,
 				896F72FE238577F800238FAF /* AppDelegate.swift */,
-				896F7302238577F800238FAF /* ViewController.swift */,
+				89EB3EE9239D182400CA116D /* Modules */,
+				89EB3EEC239D184100CA116D /* Extensions */,
+				89EB3EEB239D183600CA116D /* Views */,
+				89EB3EEA239D182D00CA116D /* Entities */,
+				89EB3EE8239D181100CA116D /* Services */,
+				896F7319238579B500238FAF /* puzzle444.entitlements */,
 				896F7307238577F900238FAF /* Assets.xcassets */,
 				896F7309238577F900238FAF /* LaunchScreen.storyboard */,
 				896F730C238577F900238FAF /* Info.plist */,
-				896F7358238A9D6300238FAF /* PrimitivesScene.swift */,
-				896F73562389EFA700238FAF /* MonoGameViewController.swift */,
-				896F737823932D6400238FAF /* WiFiGameViewController.swift */,
-				896F737A2393BBAD00238FAF /* Game.swift */,
-				89EB3EDF239C4A5300CA116D /* Player.swift */,
 			);
 			path = puzzle444;
 			sourceTree = "<group>";
@@ -114,6 +112,72 @@
 				896F7372238C460A00238FAF /* Info.plist */,
 			);
 			path = puzzle444Tests;
+			sourceTree = "<group>";
+		};
+		89EB3EE8239D181100CA116D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				896F737E239A84DA00238FAF /* MPCHandler.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		89EB3EE9239D182400CA116D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				89EB3EEF239D251E00CA116D /* Main */,
+				89EB3EED239D187100CA116D /* Mono */,
+				89EB3EEE239D187A00CA116D /* WiFi */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		89EB3EEA239D182D00CA116D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				89EB3EDF239C4A5300CA116D /* Player.swift */,
+				896F737A2393BBAD00238FAF /* Game.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		89EB3EEB239D183600CA116D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				896F7302238577F800238FAF /* ViewController.swift */,
+				896F7358238A9D6300238FAF /* PrimitivesScene.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		89EB3EEC239D184100CA116D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		89EB3EED239D187100CA116D /* Mono */ = {
+			isa = PBXGroup;
+			children = (
+				896F73562389EFA700238FAF /* MonoGameViewController.swift */,
+			);
+			path = Mono;
+			sourceTree = "<group>";
+		};
+		89EB3EEE239D187A00CA116D /* WiFi */ = {
+			isa = PBXGroup;
+			children = (
+				896F737823932D6400238FAF /* WiFiGameViewController.swift */,
+			);
+			path = WiFi;
+			sourceTree = "<group>";
+		};
+		89EB3EEF239D251E00CA116D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
