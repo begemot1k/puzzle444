@@ -118,7 +118,7 @@ class MonoGameViewController: UIViewController {
         let color = UIColor.gray
         game.undo()
         for node in (scene.scene?.rootNode.childNodes)! {
-            if game.dots[game.coordToIndex(coord:  node.name! )] == .free {
+            if game.dots[Game.coordToIndex(coord:  node.name! )] == .free {
                 node.geometry?.firstMaterial?.diffuse.contents = color
             }
         }        

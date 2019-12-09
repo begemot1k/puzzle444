@@ -8,7 +8,7 @@
 import UIKit
 import MultipeerConnectivity
 
-class MPCHandler: NSObject, MCSessionDelegate {
+class MPCHandler: NSObject, MCSessionDelegate, MCBrowserViewControllerDelegate {
     var peerID: MCPeerID!
     var session: MCSession!
     var browser: MCBrowserViewController!
@@ -26,6 +26,7 @@ class MPCHandler: NSObject, MCSessionDelegate {
     
     func setupBrowser(){
         browser = MCBrowserViewController(serviceType: "vkh-puzzle444", session: session)
+        browser.delegate = self
     }
     
     func advertiseSelf(advertise: Bool){
@@ -38,16 +39,7 @@ class MPCHandler: NSObject, MCSessionDelegate {
         }
     }
     
-    
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
-        let userInfo = ["peerID": peerID, "state": state.rawValue] as [String : Any]
-        DispatchQueue.main.async {
-            NotificationCenter.default.post(
-                name: Notification.Name(rawValue: "MPC_DidChangeStateNotification"),
-                object: nil,
-                userInfo: userInfo
-            )
-        }
         if state == .connected {
             let displayName = peerID.displayName
             delegate.opponentFound(name: displayName , peerID: peerID)
@@ -60,14 +52,6 @@ class MPCHandler: NSObject, MCSessionDelegate {
     }
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
-        let userInfo = ["peerID": peerID, "data": data] as [String : Any]
-        DispatchQueue.main.async {
-            NotificationCenter.default.post(
-                name: Notification.Name(rawValue: "MPC_DidReceiveDataNotification"),
-                object: nil,
-                userInfo: userInfo
-            )
-        }
         print("от \(peerID) пришло сообщение \(data)")
         
         if String.init(data: data, encoding: .utf8 ) == "draw" {
@@ -99,4 +83,14 @@ class MPCHandler: NSObject, MCSessionDelegate {
     func session(_ session: MCSession, didFinishReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, at localURL: URL?, withError error: Error?) {
         
     }
+    
+    func browserViewControllerDidFinish(_ browserViewController: MCBrowserViewController) {
+        browser.dismiss(animated: true, completion: nil)
+    }
+    
+    func browserViewControllerWasCancelled(_ browserViewController: MCBrowserViewController) {
+        browser.dismiss(animated: true, completion: nil)
+    }
+
+
 }

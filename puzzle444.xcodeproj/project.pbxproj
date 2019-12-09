@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8939A935239D459500C87083 /* MoveProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8939A934239D459500C87083 /* MoveProtocol.swift */; };
+		89529756239ED7AA00801585 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89529755239ED7AA00801585 /* Presenter.swift */; };
+		89529758239ED7B900801585 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89529757239ED7B900801585 /* Interactor.swift */; };
+		8952975A239ED7C600801585 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89529759239ED7C600801585 /* Router.swift */; };
+		8952975C239ED80600801585 /* MPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8952975B239ED80600801585 /* MPCService.swift */; };
+		8952975E239ED83500801585 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8952975D239ED83500801585 /* Configurator.swift */; };
+		89529760239ED85500801585 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8952975F239ED85500801585 /* Protocols.swift */; };
 		896F72FF238577F800238FAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F72FE238577F800238FAF /* AppDelegate.swift */; };
 		896F7303238577F800238FAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F7302238577F800238FAF /* ViewController.swift */; };
 		896F7308238577F900238FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896F7307238577F900238FAF /* Assets.xcassets */; };
@@ -34,9 +40,15 @@
 
 /* Begin PBXFileReference section */
 		8939A934239D459500C87083 /* MoveProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveProtocol.swift; sourceTree = "<group>"; };
+		89529755239ED7AA00801585 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		89529757239ED7B900801585 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		89529759239ED7C600801585 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		8952975B239ED80600801585 /* MPCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCService.swift; sourceTree = "<group>"; };
+		8952975D239ED83500801585 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
+		8952975F239ED85500801585 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		896F72FB238577F800238FAF /* puzzle444.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = puzzle444.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		896F72FE238577F800238FAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		896F7302238577F800238FAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		896F7302238577F800238FAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		896F7307238577F900238FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		896F730A238577F900238FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		896F730C238577F900238FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -146,7 +158,6 @@
 		89EB3EEB239D183600CA116D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				896F7302238577F800238FAF /* ViewController.swift */,
 				896F7358238A9D6300238FAF /* PrimitivesScene.swift */,
 			);
 			path = Views;
@@ -172,6 +183,12 @@
 			isa = PBXGroup;
 			children = (
 				896F737823932D6400238FAF /* WiFiGameViewController.swift */,
+				89529755239ED7AA00801585 /* Presenter.swift */,
+				89529757239ED7B900801585 /* Interactor.swift */,
+				89529759239ED7C600801585 /* Router.swift */,
+				8952975B239ED80600801585 /* MPCService.swift */,
+				8952975D239ED83500801585 /* Configurator.swift */,
+				8952975F239ED85500801585 /* Protocols.swift */,
 			);
 			path = WiFi;
 			sourceTree = "<group>";
@@ -179,6 +196,7 @@
 		89EB3EEF239D251E00CA116D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				896F7302238577F800238FAF /* ViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -284,10 +302,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89529760239ED85500801585 /* Protocols.swift in Sources */,
 				896F7303238577F800238FAF /* ViewController.swift in Sources */,
 				8939A935239D459500C87083 /* MoveProtocol.swift in Sources */,
+				89529758239ED7B900801585 /* Interactor.swift in Sources */,
 				896F737B2393BBAD00238FAF /* Game.swift in Sources */,
+				8952975E239ED83500801585 /* Configurator.swift in Sources */,
+				8952975C239ED80600801585 /* MPCService.swift in Sources */,
+				8952975A239ED7C600801585 /* Router.swift in Sources */,
 				896F7359238A9D6300238FAF /* PrimitivesScene.swift in Sources */,
+				89529756239ED7AA00801585 /* Presenter.swift in Sources */,
 				896F72FF238577F800238FAF /* AppDelegate.swift in Sources */,
 				89EB3EE0239C4A5300CA116D /* Player.swift in Sources */,
 				896F737923932D6400238FAF /* WiFiGameViewController.swift in Sources */,

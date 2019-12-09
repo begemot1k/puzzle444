@@ -14,7 +14,7 @@ class PrimitivesScene: SCNScene {
     
     override init() {
         super.init()
-        cameraNode?.position = SCNVector3(x: 0, y: 2, z: 0)
+        cameraNode?.position = SCNVector3(x: 0, y: 2, z: -2)
         for x in 0...3 {
             for y in 0...3 {
                 for z in 0...3 {

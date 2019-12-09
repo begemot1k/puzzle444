@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     var monoGameButton = UIButton()
     var wifiGameButton = UIButton()
-    var player = AVAudioPlayer()
+    var player: AVAudioPlayer!
     
     let soundTrackUrl = "http://157.245.165.84/Minecraft.mp3"
     
@@ -22,9 +22,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.backgroundColor = .darkGray
         placeButtons()
-        downloadSoundTrack(completion: { music, error in
+        downloadSoundTrack(completion: { data, error in
+            if let error = error {
+                print("вернулась ошибка \(error)")
+                return
+            }
             DispatchQueue.main.async {
-                self.playMusic(music: music!)
+                self.playMusic(music: data!)
             }
         })
     }
@@ -52,20 +56,23 @@ class ViewController: UIViewController {
     }
     
     func playMusic(music: Data){
-        do {
-            player = try AVAudioPlayer(data: music)
-            player.prepareToPlay()
-            player.numberOfLoops = -1
-            player.play()
-            
-            let audioSession = AVAudioSession.sharedInstance()
-            do{
-                try audioSession.setCategory(.playback)
-            }catch{
-                print("в фоне музыки, наверное, не будет")
+        DispatchQueue.main.async {
+            do {
+                print("музыка \(music.count) bytes")
+                self.player = try AVAudioPlayer(data: music)
+                self.player.prepareToPlay()
+                self.player.numberOfLoops = -1
+                self.player.play()
+                
+                let audioSession = AVAudioSession.sharedInstance()
+                do{
+                    try audioSession.setCategory(.playback)
+                }catch{
+                    print("в фоне музыки, наверное, не будет")
+                }
+            }catch {
+                print("музыки не будет")
             }
-        }catch {
-            print("музыки не будет")
         }
     }
     

@@ -8,15 +8,25 @@
 
 import UIKit
 
-class Game: NSObject {
+protocol GameProtocol: class {
+    var dots: Array<Player>! {set get}
+    var isGameOver: Bool! { set get }
+    var status: String! { set get }
+    var moves: Array<String>! {set get}
+    var activePlayer: Player! { set get }
+    func reset()
+    func isValidMove(dotName: String)->Bool
+    func move(dotName: String)
+}
+
+class Game: GameProtocol {
     var activePlayer: Player!
     var isGameOver: Bool!
     var dots: Array<Player>!
     var status: String!
     var moves: Array<String>!
     
-    override init(){
-        super.init()
+    init(){
         self.reset()
     }
     
@@ -33,15 +43,15 @@ class Game: NSObject {
     /// - Parameter dotName: координата ячейки в формате xyz
     func isValidMove(dotName: String)->Bool{
         guard !isGameOver else { return false }
-        guard coordToIndex(coord: dotName)>=0 else { return false }
-        return dots[ coordToIndex( coord: dotName ) ] == .free
+        guard Game.coordToIndex(coord: dotName)>=0 else { return false }
+        return dots[ Game.coordToIndex( coord: dotName ) ] == .free
     }
     
     /// Совершаем ход в ячейку
     /// - Parameter dotName: координата ячейки в которую совершается ход
     func move(dotName: String){
         guard isValidMove(dotName: dotName) else { return }
-        dots[ coordToIndex( coord: dotName ) ] = activePlayer
+        dots[ Game.coordToIndex( coord: dotName ) ] = activePlayer
         moves.append(dotName)
         // меняем текущего игрока, обновляем статус, проверяем выигрыш
         if activePlayer == .blue {
@@ -58,7 +68,7 @@ class Game: NSObject {
         guard !isGameOver else {return}
         guard moves.count>0 else {return}
         let lastMove = moves.removeLast()
-        dots[ coordToIndex(coord: lastMove) ] = .free
+        dots[ Game.coordToIndex(coord: lastMove) ] = .free
         // меняем текущего игрока, обновляем статус
         if activePlayer == .blue {
             activePlayer = .red
@@ -171,7 +181,7 @@ class Game: NSObject {
     
     /// Возвращает индекс в массиве по координатам точки
     /// - Parameter coord: координаты ячейки в формате xyz
-    func coordToIndex(coord: String)->Int{
+    static func coordToIndex(coord: String)->Int{
         if coord.count != 3 { return -1 }
         let array = coord.map { $0 }
         guard let x = array[0].wholeNumberValue else { return -1 }
