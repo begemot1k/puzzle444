@@ -788,6 +788,40 @@
 			<key>uniqueIdentifier</key>
 			<string>32D94C54-4937-4C6A-B87D-70B81E7B6B0C</string>
 		</dict>
+		<key>3871D7DA-89E6-49C0-8E79-B8D9E658CE8C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3871D7DA-89E6-49C0-8E79-B8D9E658CE8C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>puzzle444 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>puzzle444</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build puzzle444</string>
+			<key>timeStartedRecording</key>
+			<real>597694711.29742205</real>
+			<key>timeStoppedRecording</key>
+			<real>597694712.93760395</real>
+			<key>title</key>
+			<string>Build puzzle444</string>
+			<key>uniqueIdentifier</key>
+			<string>3871D7DA-89E6-49C0-8E79-B8D9E658CE8C</string>
+		</dict>
 		<key>3A38FC00-7B8D-4377-8E6F-7EFBF69ACD83</key>
 		<dict>
 			<key>className</key>
@@ -1026,6 +1060,40 @@
 			<key>uniqueIdentifier</key>
 			<string>4B778717-5415-44CD-9596-F16D211F6F2B</string>
 		</dict>
+		<key>4CAE381A-DE42-4D19-BA6B-7FC73F18EACA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4CAE381A-DE42-4D19-BA6B-7FC73F18EACA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>puzzle444 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>puzzle444</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build puzzle444</string>
+			<key>timeStartedRecording</key>
+			<real>597694727.29839802</real>
+			<key>timeStoppedRecording</key>
+			<real>597694728.92667305</real>
+			<key>title</key>
+			<string>Build puzzle444</string>
+			<key>uniqueIdentifier</key>
+			<string>4CAE381A-DE42-4D19-BA6B-7FC73F18EACA</string>
+		</dict>
 		<key>50661072-1B41-4C54-A640-8EDBDA84B541</key>
 		<dict>
 			<key>className</key>
@@ -1093,6 +1161,40 @@
 			<string>Build puzzle444</string>
 			<key>uniqueIdentifier</key>
 			<string>50FF8088-2A0A-471E-BBAF-EF9663DD754E</string>
+		</dict>
+		<key>51113A44-ACD9-48B7-B405-2975127ADE45</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>51113A44-ACD9-48B7-B405-2975127ADE45.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>puzzle444 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>puzzle444</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build puzzle444</string>
+			<key>timeStartedRecording</key>
+			<real>597694964.82381701</real>
+			<key>timeStoppedRecording</key>
+			<real>597694968.57829702</real>
+			<key>title</key>
+			<string>Build puzzle444</string>
+			<key>uniqueIdentifier</key>
+			<string>51113A44-ACD9-48B7-B405-2975127ADE45</string>
 		</dict>
 		<key>511FD759-299E-4451-88CC-642DAEF526EE</key>
 		<dict>
@@ -1536,6 +1638,40 @@
 			<key>uniqueIdentifier</key>
 			<string>73EE15A9-B8DB-470A-ABF0-C08A9E856399</string>
 		</dict>
+		<key>75EFD9F3-5FA7-49DD-AF19-85ABC1B62627</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>75EFD9F3-5FA7-49DD-AF19-85ABC1B62627.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>puzzle444 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>puzzle444</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build puzzle444</string>
+			<key>timeStartedRecording</key>
+			<real>597694696.72843504</real>
+			<key>timeStoppedRecording</key>
+			<real>597694698.44211698</real>
+			<key>title</key>
+			<string>Build puzzle444</string>
+			<key>uniqueIdentifier</key>
+			<string>75EFD9F3-5FA7-49DD-AF19-85ABC1B62627</string>
+		</dict>
 		<key>769D53DB-CE08-414A-BAFF-FFE286DB9FA7</key>
 		<dict>
 			<key>className</key>
@@ -1603,6 +1739,40 @@
 			<string>Build puzzle444</string>
 			<key>uniqueIdentifier</key>
 			<string>793ED378-8DCE-4514-8E15-801866436284</string>
+		</dict>
+		<key>81455A39-D1F0-4D12-9E9F-1E09894E2448</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>81455A39-D1F0-4D12-9E9F-1E09894E2448.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>puzzle444 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>puzzle444</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build puzzle444</string>
+			<key>timeStartedRecording</key>
+			<real>597694578.25665903</real>
+			<key>timeStoppedRecording</key>
+			<real>597694583.201388</real>
+			<key>title</key>
+			<string>Build puzzle444</string>
+			<key>uniqueIdentifier</key>
+			<string>81455A39-D1F0-4D12-9E9F-1E09894E2448</string>
 		</dict>
 		<key>89BA633A-4725-48C3-88E2-E580D362FA7D</key>
 		<dict>
@@ -2590,6 +2760,40 @@
 			<key>uniqueIdentifier</key>
 			<string>D9A729AE-A7DE-484A-BBE1-1A8C719B04BD</string>
 		</dict>
+		<key>DBABCC3A-3C3D-4C76-BDA6-C6B63ACC4226</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DBABCC3A-3C3D-4C76-BDA6-C6B63ACC4226.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>puzzle444 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>puzzle444</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build puzzle444</string>
+			<key>timeStartedRecording</key>
+			<real>597695040.90171599</real>
+			<key>timeStoppedRecording</key>
+			<real>597695042.74633896</real>
+			<key>title</key>
+			<string>Build puzzle444</string>
+			<key>uniqueIdentifier</key>
+			<string>DBABCC3A-3C3D-4C76-BDA6-C6B63ACC4226</string>
+		</dict>
 		<key>E5A66BA8-0ABC-4440-8585-A02E30F05FAC</key>
 		<dict>
 			<key>className</key>
@@ -2623,6 +2827,40 @@
 			<string>Build puzzle444</string>
 			<key>uniqueIdentifier</key>
 			<string>E5A66BA8-0ABC-4440-8585-A02E30F05FAC</string>
+		</dict>
+		<key>E7C7505A-CA33-44EA-90E6-760FE9F44172</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E7C7505A-CA33-44EA-90E6-760FE9F44172.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>puzzle444 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>puzzle444</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build puzzle444</string>
+			<key>timeStartedRecording</key>
+			<real>597694664.19609904</real>
+			<key>timeStoppedRecording</key>
+			<real>597694666.33896899</real>
+			<key>title</key>
+			<string>Build puzzle444</string>
+			<key>uniqueIdentifier</key>
+			<string>E7C7505A-CA33-44EA-90E6-760FE9F44172</string>
 		</dict>
 		<key>E9E5458F-BF58-4D0B-B100-9B060468CBB5</key>
 		<dict>

@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationController.setNavigationBarHidden(true, animated: true)
         navigationController.setToolbarHidden(true, animated: true)
         
-        viewController.view.backgroundColor = .white
+        viewController.view.backgroundColor = UIColor(red: 46/255, green: 22/255, blue: 117/255, alpha: 1)
         
         window?.rootViewController = navigationController
         
