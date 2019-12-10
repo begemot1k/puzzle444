@@ -16,6 +16,6 @@ class Router: RouterProtocol {
     }
 
     func exitToMenu(){
-        
+        viewController.navigationController?.popViewController(animated: true)
     }
 }

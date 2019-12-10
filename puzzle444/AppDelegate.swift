@@ -20,12 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         let navigationController = UINavigationController()
-        
-        navigationController.viewControllers=[ViewController()]
+        let viewController = ViewController()
+
+        navigationController.viewControllers=[viewController]
         navigationController.setNavigationBarHidden(true, animated: true)
         navigationController.setToolbarHidden(true, animated: true)
         
-        let viewController = ViewController()
         viewController.view.backgroundColor = .white
         
         window?.rootViewController = navigationController

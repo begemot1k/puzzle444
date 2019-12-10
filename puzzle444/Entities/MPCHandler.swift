@@ -8,12 +8,18 @@
 import UIKit
 import MultipeerConnectivity
 
+protocol MPCHandlerDelegate {
+    func receive(message: String)
+    func connected(name: String , peerID: MCPeerID)
+    func connectionReset()
+}
+
 class MPCHandler: NSObject, MCSessionDelegate, MCBrowserViewControllerDelegate {
     var peerID: MCPeerID!
     var session: MCSession!
     var browser: MCBrowserViewController!
     var advertiser: MCAdvertiserAssistant? = nil
-    var delegate: MoveProtocol!
+    var delegate: MPCHandlerDelegate!
     
     func setupPeer(displayName: String){
         peerID = MCPeerID(displayName: displayName)
@@ -40,36 +46,20 @@ class MPCHandler: NSObject, MCSessionDelegate, MCBrowserViewControllerDelegate {
     }
     
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
-        if state == .connected {
+        switch state {
+        case .connected:
             let displayName = peerID.displayName
-            delegate.opponentFound(name: displayName , peerID: peerID)
+            delegate.connected(name: displayName , peerID: peerID)
             return
-        }
-        if state == .notConnected {
+        case .notConnected:
             delegate.connectionReset()
             return
+        default: break
         }
     }
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
-        print("от \(peerID) пришло сообщение \(data)")
-        
-        if String.init(data: data, encoding: .utf8 ) == "draw" {
-            delegate.receiveDrawRequest()
-            return
-        }
-        
-        if String.init(data: data, encoding: .utf8 ) == "drawConfirmed" {
-            delegate.drawConfirmed()
-            return
-        }
-        
-        if String.init(data: data, encoding: .utf8 ) == "newGame" {
-            delegate.newGame()
-            return
-        }
-        
-        delegate.receiveMove(coord: String.init(data: data, encoding: .utf8)! )
+        delegate.receive(message: String.init(data: data, encoding: .utf8)! )
     }
     
     func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {
@@ -91,6 +81,6 @@ class MPCHandler: NSObject, MCSessionDelegate, MCBrowserViewControllerDelegate {
     func browserViewControllerWasCancelled(_ browserViewController: MCBrowserViewController) {
         browser.dismiss(animated: true, completion: nil)
     }
-
-
+    
+    
 }

@@ -9,18 +9,11 @@
 import UIKit
 import SceneKit
 
-protocol ViewProtocol: class {
-    func setGameStatusText(status: String)
-    func setNetworkStatusText(status: String)
-    func updateDots(dots: Array<Player>)
-    func exitToMenu()
-}
-
 class WiFiGameViewController: UIViewController, ViewProtocol {
     
     var presenter: PresenterProtocol!
     var configurator: ConfiguratorProtocol = Configurator()
-
+    
     let mainMenuButton = UIButton()
     let resetGameButton = UIButton()
     let scene = SCNView()
@@ -31,49 +24,38 @@ class WiFiGameViewController: UIViewController, ViewProtocol {
     
     let itemSpace = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: self, action: nil)
     let itemNetworkStatus = UIBarButtonItem(title: "Статус соединения", style: .plain, target: self, action: nil)
-    
-
-    override func viewWillDisappear(_ animated: Bool) {
-        presenter.disconnect()
-    }
-    
-    func exitToMenu(){
-        self.navigationController?.popViewController(animated: true)
-    }
+    let itemFlexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        setupHUD()
+        configurator.configure(with: self)
+        presenter.configureView()
         
+    }
+    
+    /// Настройка HUD
+    func setupHUD(){
         view.backgroundColor = .white
         scene.backgroundColor = .black
         scene.scene = PrimitivesScene()
-        scene.frame = self.view.frame
+        scene.frame = view.frame
         scene.allowsCameraControl = true
         scene.autoenablesDefaultLighting = true
         let tapGesture = UITapGestureRecognizer( target: self, action: #selector(handleTap))
         scene.addGestureRecognizer(tapGesture)
         view.addSubview(scene)
         
-        setupHUD()
-        configurator.configure(with: self)
-        presenter.configureView()
-
-    }
-    
-    /// Настройка HUD
-    func setupHUD(){
         navigationController?.setNavigationBarHidden(true, animated: true)
         navigationController?.setToolbarHidden(true, animated: true)
-
+        
         toolbar.autoresizesSubviews = true
         labelGameStatus.textColor = .green
-        labelGameStatus.text = "Найдите оппонента для игры"
-        toolbar.setItems([itemMenu, itemSpace, itemNetworkStatus ], animated: true)
+        toolbar.setItems([itemMenu, itemSpace, itemNetworkStatus, itemFlexibleSpace], animated: true)
         view.addSubview(toolbar)
         view.addSubview(labelGameStatus)
-        
         
         toolbar.translatesAutoresizingMaskIntoConstraints = false
         toolbar.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
@@ -88,6 +70,8 @@ class WiFiGameViewController: UIViewController, ViewProtocol {
         labelGameStatus.heightAnchor.constraint(equalToConstant: 44).isActive = true
     }
     
+    /// Красит точки в цвета в соответствии с моделью
+    /// - Parameter dots: массив точек модели
     func updateDots(dots: Array<Player>) {
         DispatchQueue.main.async {
             for node in (self.scene.scene?.rootNode.childNodes)! {
@@ -98,24 +82,36 @@ class WiFiGameViewController: UIViewController, ViewProtocol {
         }
     }
     
+    /// Устанавливает статус состояния игы в лейбле
+    /// - Parameter status: текст для отображения
     func setGameStatusText(status: String){
         DispatchQueue.main.async {
             self.labelGameStatus.text = status
         }
     }
     
+    /// Устанавливает статус состояния сети в тулбаре
+    /// - Parameter status: текст для отображения
     func setNetworkStatusText(status: String){
         DispatchQueue.main.async {
             self.itemNetworkStatus.title = status
         }
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
+    /// Устанавливает цвет для строки статуса  сети в тулбаре
+    /// - Parameter color: цвет строки
+    func setNetworkStatusColor(color: UIColor){
+        DispatchQueue.main.async {
+            self.itemNetworkStatus.tintColor = color
+        }
     }
     
-    /// Обработка нажатия на объекты сцены
+    /// Обработка нажатия кнопки меню в тулбаре, вызов меню для поиска оппонента, старта игры, ничьей и выхода
+    @objc func networkMenuClicked(){
+        presenter.networkMenuClicked()
+    }
+    
+    /// Обработка нажатия на объекты сцены. Если пользователь нажал на точку, передаем её имя презентеру
     /// - Parameter gestureRecognizer: распознаватель жеста
     @objc func handleTap(gestureRecognizer: UIGestureRecognizer){
         let p = gestureRecognizer.location(in: scene)
@@ -128,12 +124,10 @@ class WiFiGameViewController: UIViewController, ViewProtocol {
         
     }
     
-    @objc func networkMenuClicked(){
-        presenter.networkMenuClicked()
+    override func viewWillDisappear(_ animated: Bool) {
+        presenter.disconnect()
     }
     
-    
-        
     
     /*
      // MARK: - Navigation

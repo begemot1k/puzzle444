@@ -7,13 +7,12 @@
 //
 
 import UIKit
-import MultipeerConnectivity
 
 protocol MoveProtocol {
     
     func receiveMove(coord: String)
-    
-    func opponentFound(name: String, peerID: MCPeerID)
+
+    func foundOpponent(name: String)
     
     func receiveDrawRequest()
     
@@ -24,3 +23,5 @@ protocol MoveProtocol {
     func connectionReset()
     
 }
+
+

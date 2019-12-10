@@ -8,18 +8,6 @@
 
 import UIKit
 
-protocol PresenterProtocol: class {
-    var router: RouterProtocol! { set get }
-    func configureView()
-
-    func dotClicked(dotName: String)
-    func disconnect()
-    func exitToMenu()
-    func networkMenuClicked()
-    func updateDots(dots: Array<Player>)
-    func setGameStatusText(status: String)
-    func setNetworkStatusText(status: String)
-}
 
 class Presenter: PresenterProtocol {
 
@@ -27,19 +15,21 @@ class Presenter: PresenterProtocol {
     var interactor: InteractorProtocol!
     var router: RouterProtocol!
     
-    
     required init(view: ViewProtocol) {
         self.view = view
     }
 
     func setGameStatusText(status: String) {
-        view.setGameStatusText(status: status)
+        view?.setGameStatusText(status: status)
     }
 
     func setNetworkStatusText(status: String) {
-        view.setNetworkStatusText(status: status)
+        view?.setNetworkStatusText(status: status)
     }
     
+    func setNetworkStatusColor(color: UIColor) {
+        view?.setNetworkStatusColor(color: color)
+    }
     func configureView() {
         view?.setGameStatusText(status: "Начните игру или ждите приглашения")
         view?.setNetworkStatusText(status: "Нет соединения")
@@ -55,7 +45,7 @@ class Presenter: PresenterProtocol {
     }
     
     func updateDots(dots: Array<Player>) {
-        view.updateDots(dots: dots)
+        view?.updateDots(dots: dots)
     }
     
     func disconnect(){
@@ -63,6 +53,6 @@ class Presenter: PresenterProtocol {
     }
     
     func exitToMenu(){
-        view?.exitToMenu()
+        router.exitToMenu()
     }
 }
