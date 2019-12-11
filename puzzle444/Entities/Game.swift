@@ -64,6 +64,7 @@ class Game: GameProtocol {
         checkGameOver()
     }
     
+    /// Отмена последнего хода
     func undo(){
         guard !isGameOver else {return}
         guard moves.count>0 else {return}
@@ -177,6 +178,7 @@ class Game: GameProtocol {
             isGameOver=true
             status = "Игра окончена, НИЧЬЯ"
         }
+        // TODO: проверить на возможность выигрышного хода. если такой возможности нет, то ничья
     }
     
     /// Возвращает индекс в массиве по координатам точки

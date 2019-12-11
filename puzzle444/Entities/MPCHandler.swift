@@ -27,11 +27,13 @@ class MPCHandler: NSObject, MCSessionDelegate, MCBrowserViewControllerDelegate {
     
     func setupSession(){
         session = MCSession(peer: peerID)
+        
         session.delegate = self
     }
     
     func setupBrowser(){
         browser = MCBrowserViewController(serviceType: "vkh-puzzle444", session: session)
+        
         browser.delegate = self
     }
     
@@ -45,6 +47,13 @@ class MPCHandler: NSObject, MCSessionDelegate, MCBrowserViewControllerDelegate {
         }
     }
     
+// MARK: MCSessionDelegate methods
+    
+    /// Изменение статуса соединения
+    /// - Parameters:
+    ///   - session: сессия в рамках которой произошло изменение
+    ///   - peerID: peerID для которого произошло изменение
+    ///   - state: новое значение состояния
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
         switch state {
         case .connected:
@@ -58,26 +67,34 @@ class MPCHandler: NSObject, MCSessionDelegate, MCBrowserViewControllerDelegate {
         }
     }
     
+    /// Приняты данные
+    /// - Parameters:
+    ///   - session: сессия в рамках которой произошло изменение
+    ///   - data: полученные данные
+    ///   - peerID: peerID для которого произошло изменение
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
         delegate.receive(message: String.init(data: data, encoding: .utf8)! )
     }
     
     func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {
-        
     }
     
     func session(_ session: MCSession, didStartReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, with progress: Progress) {
-        
     }
     
     func session(_ session: MCSession, didFinishReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, at localURL: URL?, withError error: Error?) {
-        
     }
     
+    // MARK: MCBrowserViewControllerDelegate methods
+    
+    /// в обозревателе для сетевой игры нажали кнопку Done
+    /// - Parameter browserViewController: контроллер представления обозревателя
     func browserViewControllerDidFinish(_ browserViewController: MCBrowserViewController) {
         browser.dismiss(animated: true, completion: nil)
     }
     
+    /// в обозревателе для сетевой игры нажали кнопку Cancel
+    /// - Parameter browserViewController: контроллер представления обозревателя
     func browserViewControllerWasCancelled(_ browserViewController: MCBrowserViewController) {
         browser.dismiss(animated: true, completion: nil)
     }

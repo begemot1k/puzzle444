@@ -33,12 +33,13 @@ class WiFiGameViewController: UIViewController, ViewProtocol {
         setupHUD()
         configurator.configure(with: self)
         presenter.configureView()
-        
     }
+    
+    // MARK: Настройка представления
     
     /// Настройка HUD
     func setupHUD(){
-        view.backgroundColor = .white
+        view.backgroundColor = .black
         scene.backgroundColor = .black
         scene.scene = PrimitivesScene()
         scene.frame = view.frame
@@ -57,6 +58,12 @@ class WiFiGameViewController: UIViewController, ViewProtocol {
         view.addSubview(toolbar)
         view.addSubview(labelGameStatus)
         
+        scene.translatesAutoresizingMaskIntoConstraints = false
+        scene.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        scene.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+        scene.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        scene.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        
         toolbar.translatesAutoresizingMaskIntoConstraints = false
         toolbar.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         toolbar.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
@@ -64,11 +71,13 @@ class WiFiGameViewController: UIViewController, ViewProtocol {
         toolbar.heightAnchor.constraint(equalToConstant: 44).isActive = true
         
         labelGameStatus.translatesAutoresizingMaskIntoConstraints = false
-        labelGameStatus.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        labelGameStatus.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
         labelGameStatus.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         labelGameStatus.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         labelGameStatus.heightAnchor.constraint(equalToConstant: 44).isActive = true
     }
+    
+    // MARK: методы протокола ViewProtocol
     
     /// Красит точки в цвета в соответствии с моделью
     /// - Parameter dots: массив точек модели
@@ -105,6 +114,8 @@ class WiFiGameViewController: UIViewController, ViewProtocol {
             self.itemNetworkStatus.tintColor = color
         }
     }
+    
+    // MARK: Обработка элементов управления
     
     /// Обработка нажатия кнопки меню в тулбаре, вызов меню для поиска оппонента, старта игры, ничьей и выхода
     @objc func networkMenuClicked(){

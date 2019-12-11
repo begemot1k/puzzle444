@@ -36,43 +36,80 @@ class MPCService: MPCServiceProtocol, MPCHandlerDelegate {
         mpcHandler.advertiseSelf(advertise: true)
     }
     
+    // MARK: MPCHandlerDelegate methods
+    
+    /// Обработка события присоединения оппонента по сети
+    /// - Parameters:
+    ///   - name: имя устройства оппонента
+    ///   - peerID: peerID соединения
     func connected(name: String, peerID: MCPeerID) {
         opponentName = name
         opponentPeerID = peerID
         delegate.foundOpponent(name: name)
     }
     
+    /// Обработка события разрыва соединения.
     func connectionReset() {
         delegate.connectionReset()
     }
     
-    func sendMove(coord: String) {
-        sendToOpponent(coord)
+    /// Получение сообщения от оппонента
+    /// - Parameter message: полученное сообщение
+    func receive(message: String){
+        switch message {
+        case "draw":
+            delegate.receiveDrawRequest()
+            break
+        case "drawConfirmed":
+            delegate.drawConfirmed()
+            break
+        case "newGame":
+            delegate.newGame()
+            break
+        default:
+            delegate.receiveMove(coord: message)
+        }
     }
     
-    func newGame() {
-        sendToOpponent("newGame")
-    }
+    // MARK: MPCServiceProtocol methods
     
+    /// Разъединяемся (перед выходом из игры)
     func disconnect(){
         mpcHandler.advertiseSelf(advertise: false)
         mpcHandler.session.disconnect()
     }
     
+    /// Отправляем наш ход
+    /// - Parameter coord: координата точки хода
+    func sendMove(coord: String) {
+        sendToOpponent(coord)
+    }
+    
+    /// Отправляем запрос на новую игру
+    func newGame() {
+        sendToOpponent("newGame")
+    }
+    
+    /// Ищем оппонента
     func findOpponent() {
         mpcHandler.setupBrowser()
         UIApplication.shared.delegate?.window?!.rootViewController!.present(mpcHandler.browser, animated: true, completion: nil)
     }
     
-    
+    /// Отправляем предложение о ничьей
     func sendDrawRequest() {
         sendToOpponent("draw")
     }
     
+    /// Отправляем подтверждение ничьей
     func confirmDraw() {
         sendToOpponent("drawConfirmed")
     }
     
+    // MARK: приватные методы
+    
+    /// Внутренняя функция отправки сообщений оппоненту
+    /// - Parameter message: сообщения для отправки
     private func sendToOpponent(_ message: String){
         guard self.opponentPeerID != nil else { return }
         do {
@@ -80,24 +117,6 @@ class MPCService: MPCServiceProtocol, MPCHandlerDelegate {
         } catch {
             print("ошибка отправки сообщения")
         }
-    }
-    
-    func receive(message: String){
-        if message == "draw" {
-            delegate.receiveDrawRequest()
-            return
-        }
-        
-        if message == "drawConfirmed" {
-            delegate.drawConfirmed()
-            return
-        }
-        
-        if message == "newGame" {
-            delegate.newGame()
-            return
-        }
-        delegate.receiveMove(coord: message)
     }
     
 }

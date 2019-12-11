@@ -26,7 +26,12 @@ class MonoGameViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        view.backgroundColor = .white
+        setupView()
+    }
+    
+    /// Настройка представления
+    func setupView(){
+        view.backgroundColor = .black
         scene.backgroundColor = .black
         scene.scene = PrimitivesScene()
         scene.frame = self.view.frame
@@ -35,22 +40,21 @@ class MonoGameViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer( target: self, action: #selector(handleTap(gestureRecognizer:)))
         scene.addGestureRecognizer(tapGesture)
         view.addSubview(scene)
-        
-        setupToolBar()
-    }
-    
-    /// Настройка тулбаров. да, их два
-    func setupToolBar(){
+
         toolbar.autoresizesSubviews = true
-        
         labelGameStatus.text = game.status
         
-        toolbar.setItems([itemGameMenu, divider ], animated: true)
+        toolbar.setItems([itemGameMenu, divider], animated: true)
         
         view.addSubview(toolbar)
         view.addSubview(labelGameStatus)
         
-        
+        scene.translatesAutoresizingMaskIntoConstraints = false
+        scene.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        scene.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+        scene.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        scene.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+
         toolbar.translatesAutoresizingMaskIntoConstraints = false
         toolbar.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         toolbar.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
@@ -62,16 +66,6 @@ class MonoGameViewController: UIViewController {
         labelGameStatus.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         labelGameStatus.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         labelGameStatus.heightAnchor.constraint(equalToConstant: 44).isActive = true
-        
-    }
-    
-    /// Сбос игры
-    func resetGame(){
-        game.reset()
-        for node in (scene.scene?.rootNode.childNodes)! {
-            node.geometry?.firstMaterial?.diffuse.contents = UIColor.gray
-        }
-        itemText.title = game.status
     }
     
     override func viewDidLayoutSubviews() {
@@ -101,7 +95,7 @@ class MonoGameViewController: UIViewController {
         }
     }
     
-    /// Обработка нажатий на кнопки тулбаров
+    /// Обработка нажатий на кнопки тулбара
     /// - Parameter sender: нажатая кнопка
     @objc func placeButtons(sender: UIBarButtonItem){
         print("test event fired with \(sender)")
@@ -114,6 +108,7 @@ class MonoGameViewController: UIViewController {
         }
     }
     
+    /// Отмена последнего хода
     func undo(){
         let color = UIColor.gray
         game.undo()
@@ -125,8 +120,9 @@ class MonoGameViewController: UIViewController {
         labelGameStatus.text = game.status
     }
     
+    /// Игровое меню
     @objc func gameMenu(){
-        let menu = UIAlertController(title: "Вы желаете", message: "выберите действие", preferredStyle: .actionSheet)
+        let menu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         let actionUndo = UIAlertAction(title: "Отменить последний ход", style: .default, handler: { (UIAlertAction)->Void in
             self.undo()
         } )
@@ -135,7 +131,7 @@ class MonoGameViewController: UIViewController {
             self.resetGame()
         } )
         menu.addAction(actionReset)
-        let actionContinue = UIAlertAction(title: "Подолжить игру", style: .cancel, handler: { (UIAlertAction)->Void in
+        let actionContinue = UIAlertAction(title: "Продолжить игру", style: .cancel, handler: { (UIAlertAction)->Void in
             
         } )
         menu.addAction(actionContinue)
@@ -148,7 +144,16 @@ class MonoGameViewController: UIViewController {
         
     }
     
+    /// Сбос игры
+    func resetGame(){
+        game.reset()
+        for node in (scene.scene?.rootNode.childNodes)! {
+            node.geometry?.firstMaterial?.diffuse.contents = UIColor.gray
+        }
+        itemText.title = game.status
+    }
     
+
     /*
      // MARK: - Navigation
      

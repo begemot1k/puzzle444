@@ -27,37 +27,19 @@ class Interactor: InteractorProtocol, MoveProtocol {
         mpcService.delegate = self
         game.isGameOver = true
     }
-        
+    
+    // MARK: MoveProtocol methods
+    
+    /// Найден оппонент по игре
+    /// - Parameter name: имя игрока (название телефона)
     func foundOpponent(name: String) {
         opponentsName = name
         presenter?.setGameStatusText(status: "Начните новую игру или ждите приглашения")
+        presenter?.setNetworkStatusColor(color: .green)
         presenter?.setNetworkStatusText(status: "Присоединился \(name)")
         game.isGameOver = true
-}
-        
-    func disconnect(){
-        opponentsName = ""
-        mpcService.disconnect()
     }
     
-    func resetGame() {
-        
-    }
-    
-    func sendDrawRequest(){
-        drawSent = true
-        mpcService.sendDrawRequest()
-    }
-    
-    /// обработка нажатия точки игроком
-    /// - Parameter dotName: координаты точки
-    func dotClicked(dotName: String){
-        guard !game.isGameOver else { return }
-        guard myFigure == game.activePlayer else { return }
-        performMove(coord: dotName)
-        mpcService.sendMove(coord: dotName)
-    }
-
     /// Обработка пришедшего хода соперника
     /// - Parameter coord: координаты точки
     func receiveMove(coord: String) {
@@ -89,6 +71,91 @@ class Interactor: InteractorProtocol, MoveProtocol {
         }
         print("делаем ход")
         performMove(coord: coord)
+    }
+    
+    /// Сетевое соединение разорвано. Обновляем состояния и говорим презентеру обновить представление
+    func connectionReset() {
+        print("Оппонент покинул игру")
+        opponentsName = ""
+        myValue = 0.0
+        stopGame()
+        presenter?.setGameStatusText(status: "Найдите оппонента или ожидайте приглашения")
+        presenter?.setNetworkStatusColor(color: .green)
+        presenter?.setNetworkStatusText(status: "Соединение разорвано")
+    }
+    
+    /// Оппонент подтвердил наш запрос на ничью
+    func drawConfirmed() {
+        print("ничья подтверждена")
+        if drawSent {
+            game.isGameOver = true
+            drawSent = false
+            myFigure = .free
+            presenter?.setGameStatusText(status: "Ничья. Начните новую игру")
+            presenter?.setNetworkStatusColor(color: .green)
+            presenter?.setNetworkStatusText(status: "Соединено.")
+        }
+    }
+    
+    /// Оппонент предлагает новую игру.
+    func newGame(){
+        print("поступило интересное предложение начать новую игру")
+        print("загадали наше значение, немного подождем, чтобы оппонент тоже его загадал")
+        myFigure = .free
+        myValue = Double.random(in: 0 ..< 1)
+        mpcService.sendMove(coord: "\(myValue)")
+        presenter?.updateDots(dots: game.dots)
+    }
+    
+    /// Поступило предложение о ничьей
+    func receiveDrawRequest() {
+        DispatchQueue.main.async {
+            print("видимо соперник уже проигрывает")
+            let alert = UIAlertController.init(title: "Ничья", message: "Оппонент предлагает ничью, согласны?", preferredStyle: .alert)
+            let actionDraw = UIAlertAction(title: "Согласен", style: .default) { (UIAlertAction) in
+                print("принимаем ничью")
+                self.mpcService.confirmDraw()
+                self.game.isGameOver = true
+                self.presenter.setGameStatusText(status: "Ничья. Начните новую игру")
+                self.presenter.setNetworkStatusText(status: "Соединено.")
+            }
+            let actionDeny = UIAlertAction(title: "Отвергнуть", style: .destructive) { (UIAlertAction) in
+                print("со злорадством отвергаем ничью. враг слаб. добьём его!")
+                
+            }
+            alert.addAction(actionDraw)
+            alert.addAction(actionDeny)
+            UIApplication.shared.delegate?.window?!.rootViewController!.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+
+    // MARK: InteractorProtocol methods
+    
+    /// Отключение от сети (выход в главное меню)
+    func disconnect(){
+        opponentsName = ""
+        mpcService.disconnect()
+    }
+    
+    /// Сброс игры
+    func resetGame() {
+        game.reset()
+    }
+    
+    /// Отправляем запрос на ничью
+    func sendDrawRequest(){
+        drawSent = true
+        mpcService.sendDrawRequest()
+    }
+    
+    /// обработка нажатия точки игроком
+    /// - Parameter dotName: координаты точки
+    func dotClicked(dotName: String){
+        guard !game.isGameOver else { return }
+        guard myFigure == game.activePlayer else { return }
+        performMove(coord: dotName)
+        mpcService.sendMove(coord: dotName)
     }
     
     func performMove(coord: String){
@@ -135,63 +202,9 @@ class Interactor: InteractorProtocol, MoveProtocol {
         newGame()
     }
     
-    func connectionReset() {
-        print("Оппонент покинул игру")
-        opponentsName = ""
-        myFigure = .free
-        myValue = 0.0
-        stopGame()
-        
-        presenter?.setGameStatusText(status: "Найдите оппонента или ожидайте приглашения")
-        presenter?.setNetworkStatusText(status: "Соединение разорвано")
-    }
-    
     func stopGame(){
         game.isGameOver = true
         myFigure = .free
-    }
-    
-    func receiveDrawRequest() {
-        DispatchQueue.main.async {
-            print("видимо соперник уже проигрывает")
-            let alert = UIAlertController.init(title: "Ничья", message: "Оппонент предлагает ничью, согласны?", preferredStyle: .alert)
-            let actionDraw = UIAlertAction(title: "Согласен", style: .default) { (UIAlertAction) in
-                print("принимаем ничью")
-                self.mpcService.confirmDraw()
-                self.game.isGameOver = true
-                self.presenter.setGameStatusText(status: "Ничья. Начните новую игру")
-                self.presenter.setNetworkStatusText(status: "Соединено.")
-            }
-            let actionDeny = UIAlertAction(title: "Отвергнуть", style: .destructive) { (UIAlertAction) in
-                print("со злорадством отвергаем ничью. враг слаб. добьём его!")
-                
-            }
-            alert.addAction(actionDraw)
-            alert.addAction(actionDeny)
-            UIApplication.shared.delegate?.window?!.rootViewController!.present(alert, animated: true, completion: nil)
-        }
-    }
-    
-    func drawConfirmed() {
-        print("ничья подтверждена")
-        if drawSent {
-            game.isGameOver = true
-            myFigure = .free
-            presenter.setGameStatusText(status: "Ничья. Начните новую игру")
-            presenter?.setNetworkStatusColor(color: .green)
-            presenter.setNetworkStatusText(status: "Соединено.")
-        }
-    }
-    
-    
-    func newGame(){
-        print("поступило интересное предложение начать новую игру")
-        print("загадали наше значение, немного подождем, чтобы оппонент тоже его загадал")
-        myFigure = .free
-        myValue = Double.random(in: 0 ..< 1)
-        mpcService.sendMove(coord: "\(myValue)")
-        presenter?.updateDots(dots: game.dots)
-        
     }
     
     func findOpponent(){
@@ -239,5 +252,5 @@ class Interactor: InteractorProtocol, MoveProtocol {
         menu.addAction(actionExit)
         UIApplication.shared.delegate?.window?!.rootViewController!.present( menu, animated: true, completion: nil)
     }
-
+    
 }

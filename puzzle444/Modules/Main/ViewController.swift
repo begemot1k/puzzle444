@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        placeButtons()
+        setupButtons()
         downloadSoundTrack(completion: { data, error in
             if let error = error {
                 print("вернулась ошибка \(error)")
@@ -33,7 +33,8 @@ class ViewController: UIViewController {
         })
     }
     
-    func placeButtons(){
+    /// Настройка кнопок
+    func setupButtons(){
         monoGameButton.setTitle("Игра на устройстве", for: .normal)
         monoGameButton.setTitleColor(.green, for: .normal)
         monoGameButton.addTarget(self, action: #selector(monoGamePressed), for: .touchUpInside)
@@ -55,6 +56,8 @@ class ViewController: UIViewController {
         
     }
     
+    /// Воспроизводит музыку в бесконечном цикле
+    /// - Parameter music: музыка в формате Data
     func playMusic(music: Data){
         DispatchQueue.main.async {
             do {
@@ -63,7 +66,7 @@ class ViewController: UIViewController {
                 self.player.prepareToPlay()
                 self.player.numberOfLoops = -1
                 self.player.play()
-                
+                // создаём сессию для продолжения музыки в фоне
                 let audioSession = AVAudioSession.sharedInstance()
                 do{
                     try audioSession.setCategory(.playback)
@@ -76,6 +79,8 @@ class ViewController: UIViewController {
         }
     }
     
+    /// загружает сайндтрек из интернета
+    /// - Parameter completion: кложа для выполнения по завершению загрузки
     func downloadSoundTrack(completion: @escaping (Data?, Error?) -> Void) {
         guard let url = URL(string: soundTrackUrl) else { return }
         
@@ -90,10 +95,12 @@ class ViewController: UIViewController {
         task.resume()
     }
     
+    /// обработка нажатия кнопки одиночной игры
     @objc func monoGamePressed(){
         self.navigationController?.pushViewController(MonoGameViewController(), animated: true)
     }
     
+    /// обработка нажатия кнопки одиночной игры
     @objc func wifiGamePressed(){
         self.navigationController?.pushViewController(WiFiGameViewController(), animated: true)
     }

@@ -14,7 +14,10 @@ class Router: RouterProtocol {
     init(viewController: WiFiGameViewController) {
         self.viewController = viewController
     }
-
+    
+    // MARK: RouterProtocol methods
+    
+    /// Выход в меню
     func exitToMenu(){
         viewController.navigationController?.popViewController(animated: true)
     }
