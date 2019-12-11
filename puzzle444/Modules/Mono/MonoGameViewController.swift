@@ -42,6 +42,7 @@ class MonoGameViewController: UIViewController {
         view.addSubview(scene)
 
         toolbar.autoresizesSubviews = true
+        labelGameStatus.textColor = .green
         labelGameStatus.text = game.status
         
         toolbar.setItems([itemGameMenu, divider], animated: true)
@@ -62,8 +63,8 @@ class MonoGameViewController: UIViewController {
         toolbar.heightAnchor.constraint(equalToConstant: 44).isActive = true
         
         labelGameStatus.translatesAutoresizingMaskIntoConstraints = false
-        labelGameStatus.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        labelGameStatus.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        labelGameStatus.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        labelGameStatus.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         labelGameStatus.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         labelGameStatus.heightAnchor.constraint(equalToConstant: 44).isActive = true
     }
@@ -92,19 +93,6 @@ class MonoGameViewController: UIViewController {
                 game.move(dotName: name )
             }
             labelGameStatus.text = game.status
-        }
-    }
-    
-    /// Обработка нажатий на кнопки тулбара
-    /// - Parameter sender: нажатая кнопка
-    @objc func placeButtons(sender: UIBarButtonItem){
-        print("test event fired with \(sender)")
-        // TODO: добавить запрос на выполнение действия
-        if sender.tag == 1 {
-            navigationController?.popViewController(animated: true)
-        }
-        if sender.tag == 2 {
-            resetGame()
         }
     }
     
@@ -141,7 +129,6 @@ class MonoGameViewController: UIViewController {
         menu.addAction(actionExit)
         
         self.present( menu, animated: true, completion: nil)
-        
     }
     
     /// Сбос игры
@@ -150,7 +137,9 @@ class MonoGameViewController: UIViewController {
         for node in (scene.scene?.rootNode.childNodes)! {
             node.geometry?.firstMaterial?.diffuse.contents = UIColor.gray
         }
-        itemText.title = game.status
+        labelGameStatus.text
+            = game.status
+        
     }
     
 

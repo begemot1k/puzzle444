@@ -33,7 +33,7 @@ class MPCHandler: NSObject, MCSessionDelegate, MCBrowserViewControllerDelegate {
     
     func setupBrowser(){
         browser = MCBrowserViewController(serviceType: "vkh-puzzle444", session: session)
-        
+        browser.maximumNumberOfPeers = 1
         browser.delegate = self
     }
     

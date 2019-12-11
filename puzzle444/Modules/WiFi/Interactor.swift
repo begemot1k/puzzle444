@@ -173,7 +173,7 @@ class Interactor: InteractorProtocol, MoveProtocol {
     }
     
     func closeGame(){
-        if game.isGameOver {
+        if opponentsName == "" {
             print("Игра окончена, покидаем экран спокойно")
             presenter.exitToMenu()
         } else {
@@ -212,7 +212,7 @@ class Interactor: InteractorProtocol, MoveProtocol {
     }
     
     @objc func networkMenu(){
-        let menu = UIAlertController(title: "Вы желаете", message: "выберите действие", preferredStyle: .actionSheet)
+        let menu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         if opponentsName == "" {
             let actionConnect = UIAlertAction(title: "Найти оппонента", style: .default, handler: { (UIAlertAction)->Void in
                 self.myFigure = .free
@@ -236,20 +236,20 @@ class Interactor: InteractorProtocol, MoveProtocol {
             } )
             menu.addAction(actionNew)
         }
-        if !game.isGameOver {
+        if !game.isGameOver && opponentsName != "" {
             let actionReset = UIAlertAction(title: "Предложить ничью", style: .default, handler: { (UIAlertAction)->Void in
                 self.sendDrawRequest()
             } )
             menu.addAction(actionReset)
         }
-        let actionContinue = UIAlertAction(title: "Подолжить игру", style: .cancel, handler: { (UIAlertAction)->Void in
-            
-        } )
-        menu.addAction(actionContinue)
         let actionExit = UIAlertAction(title: "Выход в меню", style: .destructive, handler: { (UIAlertAction)->Void in
             self.closeGame()
         } )
         menu.addAction(actionExit)
+        let actionContinue = UIAlertAction(title: "Продолжить игру", style: .cancel, handler: { (UIAlertAction)->Void in
+            
+        } )
+        menu.addAction(actionContinue)
         UIApplication.shared.delegate?.window?!.rootViewController!.present( menu, animated: true, completion: nil)
     }
     
