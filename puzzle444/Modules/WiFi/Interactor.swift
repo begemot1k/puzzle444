@@ -80,7 +80,7 @@ class Interactor: InteractorProtocol, MoveProtocol {
         myValue = 0.0
         stopGame()
         presenter?.setGameStatusText(status: "Найдите оппонента или ожидайте приглашения")
-        presenter?.setNetworkStatusColor(color: .green)
+        presenter?.setNetworkStatusColor(color: .gray)
         presenter?.setNetworkStatusText(status: "Соединение разорвано")
     }
     
@@ -117,6 +117,7 @@ class Interactor: InteractorProtocol, MoveProtocol {
                 self.mpcService.confirmDraw()
                 self.game.isGameOver = true
                 self.presenter.setGameStatusText(status: "Ничья. Начните новую игру")
+                self.presenter.setNetworkStatusColor(color: .green)
                 self.presenter.setNetworkStatusText(status: "Соединено.")
             }
             let actionDeny = UIAlertAction(title: "Отвергнуть", style: .destructive) { (UIAlertAction) in

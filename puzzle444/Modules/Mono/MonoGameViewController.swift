@@ -137,9 +137,7 @@ class MonoGameViewController: UIViewController {
         for node in (scene.scene?.rootNode.childNodes)! {
             node.geometry?.firstMaterial?.diffuse.contents = UIColor.gray
         }
-        labelGameStatus.text
-            = game.status
-        
+        labelGameStatus.text = game.status
     }
     
 

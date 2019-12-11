@@ -66,7 +66,7 @@ class Game: GameProtocol {
     
     /// Отмена последнего хода
     func undo(){
-        guard !isGameOver else {return}
+//        guard !isGameOver else {return}
         guard moves.count>0 else {return}
         let lastMove = moves.removeLast()
         dots[ Game.coordToIndex(coord: lastMove) ] = .free

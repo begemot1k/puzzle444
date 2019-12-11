@@ -42,7 +42,7 @@ class Presenter: PresenterProtocol {
     /// Начальная установка представления
     func configureView() {
         view?.setGameStatusText(status: "Начните игру или ждите приглашения")
-        view?.setNetworkStatusColor(color: .green)
+        view?.setNetworkStatusColor(color: .gray)
         view?.setNetworkStatusText(status: "Нет соединения")
         if interactor != nil {
             interactor.resetGame()
