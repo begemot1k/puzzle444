@@ -14,6 +14,8 @@
 		8952975C239ED80600801585 /* MPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8952975B239ED80600801585 /* MPCService.swift */; };
 		8952975E239ED83500801585 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8952975D239ED83500801585 /* Configurator.swift */; };
 		89529760239ED85500801585 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8952975F239ED85500801585 /* Protocols.swift */; };
+		896F625423A1299200DE2BC0 /* View_mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F625323A1299200DE2BC0 /* View_mock.swift */; };
+		896F625723A1300900DE2BC0 /* MPCHandler_mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F625623A1300900DE2BC0 /* MPCHandler_mock.swift */; };
 		896F72FF238577F800238FAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F72FE238577F800238FAF /* AppDelegate.swift */; };
 		896F7303238577F800238FAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F7302238577F800238FAF /* ViewController.swift */; };
 		896F7308238577F900238FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896F7307238577F900238FAF /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		8952975B239ED80600801585 /* MPCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCService.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		8952975D239ED83500801585 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		8952975F239ED85500801585 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		896F625323A1299200DE2BC0 /* View_mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View_mock.swift; sourceTree = "<group>"; };
+		896F625623A1300900DE2BC0 /* MPCHandler_mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPCHandler_mock.swift; sourceTree = "<group>"; };
 		896F72FB238577F800238FAF /* puzzle444.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = puzzle444.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		896F72FE238577F800238FAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		896F7302238577F800238FAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
@@ -124,6 +128,8 @@
 			children = (
 				896F7370238C460A00238FAF /* puzzle444Tests.swift */,
 				896F7372238C460A00238FAF /* Info.plist */,
+				896F625323A1299200DE2BC0 /* View_mock.swift */,
+				896F625623A1300900DE2BC0 /* MPCHandler_mock.swift */,
 			);
 			path = puzzle444Tests;
 			sourceTree = "<group>";
@@ -324,6 +330,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				896F625723A1300900DE2BC0 /* MPCHandler_mock.swift in Sources */,
+				896F625423A1299200DE2BC0 /* View_mock.swift in Sources */,
 				896F7371238C460A00238FAF /* puzzle444Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

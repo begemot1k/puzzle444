@@ -42,8 +42,11 @@ class Presenter: PresenterProtocol {
     /// Начальная установка представления
     func configureView() {
         view?.setGameStatusText(status: "Начните игру или ждите приглашения")
+        view?.setNetworkStatusColor(color: .green)
         view?.setNetworkStatusText(status: "Нет соединения")
-        interactor.resetGame()
+        if interactor != nil {
+            interactor.resetGame()
+        }
     }
     
     /// Обработка игрового события, которое произошло в представлении, в нашем случае событие передаётся в Interactor

@@ -98,6 +98,64 @@ class puzzle444Tests: XCTestCase {
         XCTAssertFalse(result)
     }
     
+    func testCoordinates(){
+        var result:Bool
+        let game=Game()
+        game.move(dotName: "000")
+        game.move(dotName: "333")
+
+        result = game.dots[Game.coordToIndex(coord: "000")] == .blue
+        XCTAssertTrue(result)
+        result = game.dots[Game.coordToIndex(coord: "333")] == .red
+        XCTAssertTrue(result)
+
+        result = Game.coordToIndex(coord: "123") == 57
+        XCTAssertTrue(result)
+    }
+    
+    func testPresenterViewProtocol(){
+        let view_mock = View_mock()
+        let presenter = Presenter(view: view_mock)
+        presenter.setGameStatusText(status: "kjvsdcf")
+        presenter.setNetworkStatusText(status: "kjsdgfbc")
+        presenter.setNetworkStatusColor(color: UIColor.black)
+        let myDots=Array.init(repeating: Player.free, count: 64)
+        presenter.updateDots(dots: myDots)
+        
+        XCTAssertEqual(view_mock.gameStatusCount, 1)
+        XCTAssertEqual(view_mock.networkStatusCount, 1)
+        XCTAssertEqual(view_mock.networkColorCount, 1)
+        XCTAssertEqual(view_mock.updateDotsCount, 1)
+    }
+    
+    func testPresenterConfigure(){
+        let view_mock = View_mock()
+        let presenter = Presenter(view: view_mock)
+        presenter.configureView()
+        XCTAssertEqual(view_mock.gameStatusCount, 1)
+        XCTAssertEqual(view_mock.networkStatusCount, 1)
+        XCTAssertEqual(view_mock.networkColorCount, 1)
+        XCTAssertEqual(view_mock.updateDotsCount, 0)
+
+    }
+    
+    func testPrimitivesNodesCount(){
+        let scene = PrimitivesScene()
+        let numberOfNodes = 64
+        XCTAssertEqual(scene.rootNode.childNodes.count, numberOfNodes)
+    }
+
+    func testPrimitivesNodesNames(){
+        let scene = PrimitivesScene()
+        for node in scene.rootNode.childNodes {
+            XCTAssertNotNil(node.name)
+        }
+
+        for node in scene.rootNode.childNodes {
+            XCTAssertEqual(node.name?.lengthOfBytes(using: .utf8), 3)
+        }
+    }
+
     func testPerformanceExample() {
         // This is an example of a performance test case.
         measure {
@@ -106,3 +164,5 @@ class puzzle444Tests: XCTestCase {
     }
 
 }
+
+
