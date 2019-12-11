@@ -115,6 +115,13 @@ class WiFiGameViewController: UIViewController, ViewProtocol {
         }
     }
     
+    /// Закрываем контроллер для выхода в меню
+    func exitToMenu(){
+        DispatchQueue.main.async {
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
+    
     // MARK: Обработка элементов управления
     
     /// Обработка нажатия кнопки меню в тулбаре, вызов меню для поиска оппонента, старта игры, ничьей и выхода

@@ -10,11 +10,14 @@ import UIKit
 @testable import puzzle444
 
 class View_mock: ViewProtocol {
+    var presenter: PresenterProtocol!
+    
     var gameStatusCount = 0
     var networkStatusCount = 0
     var networkColorCount = 0
     var updateDotsCount = 0
-
+    var exitToMenuCount = 0
+    
     func setGameStatusText(status: String){
         gameStatusCount += 1
     }
@@ -27,5 +30,7 @@ class View_mock: ViewProtocol {
     func updateDots(dots: Array<Player>){
         updateDotsCount += 1
     }
-
+    func exitToMenu() {
+        exitToMenuCount += 1
+    }
 }

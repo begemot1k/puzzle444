@@ -24,14 +24,14 @@ class puzzle444Tests: XCTestCase {
     func testGame() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let game=Game()
+        let game = Game()
         XCTAssertNotNil(game)
     }
 
     func testMovesisEmpty() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let game=Game()
+        let game = Game()
         let result = game.moves.count == 0
         XCTAssertTrue(result)
     }
@@ -39,7 +39,7 @@ class puzzle444Tests: XCTestCase {
     func testFirstPlayer() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let game=Game()
+        let game = Game()
         let result = game.activePlayer == .blue
         XCTAssertTrue(result)
     }
@@ -47,7 +47,7 @@ class puzzle444Tests: XCTestCase {
     func testNextPlayers() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let game=Game()
+        let game = Game()
         game.move(dotName: "111")
         var result = game.activePlayer == .red
         XCTAssertTrue(result)
@@ -71,7 +71,7 @@ class puzzle444Tests: XCTestCase {
     }
 
     func testGameOver(){
-        let game=Game()
+        let game = Game()
         game.dots[0] = .blue
         game.dots[1] = .blue
         game.dots[2] = .blue
@@ -85,7 +85,7 @@ class puzzle444Tests: XCTestCase {
     }
     
     func testNoGameOver(){
-        let game=Game()
+        let game = Game()
         game.dots[0] = .blue
         game.dots[1] = .blue
         game.dots[2] = .red
@@ -99,8 +99,8 @@ class puzzle444Tests: XCTestCase {
     }
     
     func testCoordinates(){
-        var result:Bool
-        let game=Game()
+        var result: Bool
+        let game = Game()
         game.move(dotName: "000")
         game.move(dotName: "333")
 
@@ -119,7 +119,7 @@ class puzzle444Tests: XCTestCase {
         presenter.setGameStatusText(status: "kjvsdcf")
         presenter.setNetworkStatusText(status: "kjsdgfbc")
         presenter.setNetworkStatusColor(color: UIColor.black)
-        let myDots=Array.init(repeating: Player.free, count: 64)
+        let myDots = Array.init(repeating: Player.free, count: 64)
         presenter.updateDots(dots: myDots)
         
         XCTAssertEqual(view_mock.gameStatusCount, 1)
@@ -156,6 +156,20 @@ class puzzle444Tests: XCTestCase {
         }
     }
 
+    func testRouter(){
+        let wifi = View_mock()
+        let router = Router(viewController: wifi)
+        router.exitToMenu()
+        XCTAssertEqual(wifi.exitToMenuCount, 1)
+    }
+    
+    func testConfigurator(){
+        let configurator : ConfiguratorProtocol = Configurator()
+        let view = View_mock()
+        configurator.configure(with: view)
+        
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         measure {

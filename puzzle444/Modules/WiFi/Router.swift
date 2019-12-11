@@ -9,9 +9,9 @@
 import UIKit
 
 class Router: RouterProtocol {
-    weak var viewController: WiFiGameViewController!
+    weak var viewController: ViewProtocol!
     
-    init(viewController: WiFiGameViewController) {
+    init(viewController: ViewProtocol) {
         self.viewController = viewController
     }
     
@@ -19,6 +19,6 @@ class Router: RouterProtocol {
     
     /// Выход в меню
     func exitToMenu(){
-        viewController.navigationController?.popViewController(animated: true)
+        viewController.exitToMenu()
     }
 }

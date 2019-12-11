@@ -10,10 +10,12 @@ import UIKit
 
 
 protocol ViewProtocol: class {
+    var presenter: PresenterProtocol! { set get }
     func setGameStatusText(status: String)
     func setNetworkStatusText(status: String)
     func setNetworkStatusColor(color: UIColor)
     func updateDots(dots: Array<Player>)
+    func exitToMenu()
 }
 
 protocol PresenterProtocol: class {
@@ -44,7 +46,7 @@ protocol InteractorProtocol: class {
 }
 
 protocol ConfiguratorProtocol: class {
-    func configure(with viewController: WiFiGameViewController)
+    func configure(with viewController: ViewProtocol)
 }
 
 protocol RouterProtocol: class {

@@ -10,7 +10,7 @@ import UIKit
 
 
 class Configurator: ConfiguratorProtocol {
-    func configure(with viewController: WiFiGameViewController) {
+    func configure(with viewController: ViewProtocol) {
         let presenter = Presenter(view: viewController)
         let interactor = Interactor(presenter: presenter)
         let router = Router(viewController: viewController)
@@ -19,5 +19,4 @@ class Configurator: ConfiguratorProtocol {
         presenter.interactor = interactor
         presenter.router = router
     }
-
 }
