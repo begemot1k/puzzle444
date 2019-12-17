@@ -138,6 +138,8 @@ class WiFiGameViewController: UIViewController, ViewProtocol {
             let result: SCNHitTestResult = hitResults[0]
             guard let name = result.node.name else { return }
             presenter.dotClicked(dotName: name)
+            print(scene.defaultCameraController.pointOfView?.position)
+            
         }
         
     }

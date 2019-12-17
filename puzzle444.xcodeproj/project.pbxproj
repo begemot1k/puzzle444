@@ -25,6 +25,23 @@
 		896F737923932D6400238FAF /* WiFiGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F737823932D6400238FAF /* WiFiGameViewController.swift */; };
 		896F737B2393BBAD00238FAF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F737A2393BBAD00238FAF /* Game.swift */; };
 		896F737F239A84DA00238FAF /* MPCHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F737E239A84DA00238FAF /* MPCHandler.swift */; };
+		89E1FF4B23A3FA8B00A18C4D /* puzzle444.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 896F7319238579B500238FAF /* puzzle444.entitlements */; };
+		89E1FF4C23A3FA8B00A18C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896F7307238577F900238FAF /* Assets.xcassets */; };
+		89E1FF4D23A3FA8B00A18C4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896F7309238577F900238FAF /* LaunchScreen.storyboard */; };
+		89E1FF5623A786C300A18C4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F7302238577F800238FAF /* ViewController.swift */; };
+		89E1FF5723A786C300A18C4D /* MonoGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F73562389EFA700238FAF /* MonoGameViewController.swift */; };
+		89E1FF5823A786C300A18C4D /* WiFiGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F737823932D6400238FAF /* WiFiGameViewController.swift */; };
+		89E1FF5923A786C300A18C4D /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89529755239ED7AA00801585 /* Presenter.swift */; };
+		89E1FF5A23A786C300A18C4D /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89529757239ED7B900801585 /* Interactor.swift */; };
+		89E1FF5B23A786C300A18C4D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89529759239ED7C600801585 /* Router.swift */; };
+		89E1FF5C23A786C300A18C4D /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8952975D239ED83500801585 /* Configurator.swift */; };
+		89E1FF5D23A786C300A18C4D /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8952975F239ED85500801585 /* Protocols.swift */; };
+		89E1FF5E23A786C300A18C4D /* MoveProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8939A934239D459500C87083 /* MoveProtocol.swift */; };
+		89E1FF5F23A786C300A18C4D /* PrimitivesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F7358238A9D6300238FAF /* PrimitivesScene.swift */; };
+		89E1FF6023A786C300A18C4D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F737A2393BBAD00238FAF /* Game.swift */; };
+		89E1FF6123A786C300A18C4D /* MPCHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F737E239A84DA00238FAF /* MPCHandler.swift */; };
+		89E1FF6223A786C300A18C4D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EB3EDF239C4A5300CA116D /* Player.swift */; };
+		89E1FF6323A786C300A18C4D /* MPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8952975B239ED80600801585 /* MPCService.swift */; };
 		89EB3EDE239A85BC00CA116D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 89EB3EDD239A85BC00CA116D /* README.md */; };
 		89EB3EE0239C4A5300CA116D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EB3EDF239C4A5300CA116D /* Player.swift */; };
 /* End PBXBuildFile section */
@@ -230,7 +247,7 @@
 			buildPhases = (
 				896F736A238C460A00238FAF /* Sources */,
 				896F736B238C460A00238FAF /* Frameworks */,
-				896F736C238C460A00238FAF /* Resources */,
+				89E1FF2223A3F88E00A18C4D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -257,7 +274,6 @@
 					};
 					896F736D238C460A00238FAF = {
 						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 896F72FA238577F800238FAF;
 					};
 				};
 			};
@@ -291,10 +307,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		896F736C238C460A00238FAF /* Resources */ = {
+		89E1FF2223A3F88E00A18C4D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E1FF4B23A3FA8B00A18C4D /* puzzle444.entitlements in Resources */,
+				89E1FF4C23A3FA8B00A18C4D /* Assets.xcassets in Resources */,
+				89E1FF4D23A3FA8B00A18C4D /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +346,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E1FF5623A786C300A18C4D /* ViewController.swift in Sources */,
+				89E1FF5723A786C300A18C4D /* MonoGameViewController.swift in Sources */,
+				89E1FF5823A786C300A18C4D /* WiFiGameViewController.swift in Sources */,
+				89E1FF5923A786C300A18C4D /* Presenter.swift in Sources */,
+				89E1FF5A23A786C300A18C4D /* Interactor.swift in Sources */,
+				89E1FF5B23A786C300A18C4D /* Router.swift in Sources */,
+				89E1FF5C23A786C300A18C4D /* Configurator.swift in Sources */,
+				89E1FF5D23A786C300A18C4D /* Protocols.swift in Sources */,
+				89E1FF5E23A786C300A18C4D /* MoveProtocol.swift in Sources */,
+				89E1FF5F23A786C300A18C4D /* PrimitivesScene.swift in Sources */,
+				89E1FF6023A786C300A18C4D /* Game.swift in Sources */,
+				89E1FF6123A786C300A18C4D /* MPCHandler.swift in Sources */,
+				89E1FF6223A786C300A18C4D /* Player.swift in Sources */,
+				89E1FF6323A786C300A18C4D /* MPCService.swift in Sources */,
 				896F625423A1299200DE2BC0 /* View_mock.swift in Sources */,
 				896F7371238C460A00238FAF /* puzzle444Tests.swift in Sources */,
 			);
@@ -473,6 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = puzzle444/puzzle444.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2YGH6RWHKR;
 				INFOPLIST_FILE = puzzle444/Info.plist;
@@ -482,7 +516,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.khamnuev.vadim.puzzle444;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -492,6 +527,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = puzzle444/puzzle444.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2YGH6RWHKR;
 				INFOPLIST_FILE = puzzle444/Info.plist;
@@ -501,7 +537,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.khamnuev.vadim.puzzle444;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -509,7 +546,6 @@
 		896F7376238C460A00238FAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2YGH6RWHKR;
@@ -522,16 +558,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.khamnuev.vadim.puzzle444Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/puzzle444.app/puzzle444";
 			};
 			name = Debug;
 		};
 		896F7377238C460A00238FAF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2YGH6RWHKR;
@@ -544,9 +578,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.khamnuev.vadim.puzzle444Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/puzzle444.app/puzzle444";
 			};
 			name = Release;
 		};

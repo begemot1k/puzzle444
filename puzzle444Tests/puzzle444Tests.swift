@@ -141,7 +141,7 @@ class puzzle444Tests: XCTestCase {
     
     func testPrimitivesNodesCount(){
         let scene = PrimitivesScene()
-        let numberOfNodes = 64
+        let numberOfNodes = 65
         XCTAssertEqual(scene.rootNode.childNodes.count, numberOfNodes)
     }
 

@@ -10,11 +10,14 @@ import UIKit
 import SceneKit
 
 class PrimitivesScene: SCNScene {
-    var cameraNode: SCNNode?
+    var cameraNode = SCNNode()
     
     override init() {
         super.init()
-        cameraNode?.position = SCNVector3(x: 0, y: 2, z: -3)
+        cameraNode.camera = SCNCamera()
+        cameraNode.position = SCNVector3Make( 2.7,  2.7,  20)
+        cameraNode.name = "cam"
+        self.rootNode.addChildNode(cameraNode)
         for x in 0...3 {
             for y in 0...3 {
                 for z in 0...3 {

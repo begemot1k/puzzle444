@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>1F7BF77B-E161-49E4-AF7C-5A0B6C4C3386</key>
+		<key>36D9414A-093F-4966-9CD8-02B78820985A</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,26 +15,26 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>1F7BF77B-E161-49E4-AF7C-5A0B6C4C3386.xcactivitylog</string>
+			<string>36D9414A-093F-4966-9CD8-02B78820985A.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 			</dict>
 			<key>signature</key>
-			<string>puzzle444-dnrttjzpcaocbkctraghszpzzpeo</string>
+			<string>puzzle444-cmpbhraqwfzhvbadwfsheqkupylr</string>
 			<key>timeStartedRecording</key>
-			<real>597775787.61884904</real>
+			<real>598181886.63562298</real>
 			<key>timeStoppedRecording</key>
-			<real>597775789.66369295</real>
+			<real>598181889.63088906</real>
 			<key>title</key>
 			<string>Build target puzzle444</string>
 			<key>uniqueIdentifier</key>
-			<string>1F7BF77B-E161-49E4-AF7C-5A0B6C4C3386</string>
+			<string>36D9414A-093F-4966-9CD8-02B78820985A</string>
 		</dict>
-		<key>BE851071-4172-4044-A101-B262897DFBC2</key>
+		<key>A2BBB162-2512-4A08-81E3-6839CD6F1F94</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -43,24 +43,24 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.bundle</string>
 			<key>fileName</key>
-			<string>BE851071-4172-4044-A101-B262897DFBC2.xcactivitylog</string>
+			<string>A2BBB162-2512-4A08-81E3-6839CD6F1F94.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 			</dict>
 			<key>signature</key>
-			<string>puzzle444Tests-dnrttjzpcaocbkctraghszpzzpeo</string>
+			<string>puzzle444Tests-cmpbhraqwfzhvbadwfsheqkupylr</string>
 			<key>timeStartedRecording</key>
-			<real>597774034.34096098</real>
+			<real>598181888.24351096</real>
 			<key>timeStoppedRecording</key>
-			<real>597774034.470469</real>
+			<real>598181889.858863</real>
 			<key>title</key>
 			<string>Build target puzzle444Tests</string>
 			<key>uniqueIdentifier</key>
-			<string>BE851071-4172-4044-A101-B262897DFBC2</string>
+			<string>A2BBB162-2512-4A08-81E3-6839CD6F1F94</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
